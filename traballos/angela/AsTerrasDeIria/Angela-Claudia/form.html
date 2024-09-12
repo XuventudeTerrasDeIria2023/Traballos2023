@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Untitled Form</title>
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+</head>
+
+<body id="main_body">
+
+    <img id="top" src="top.png" alt="">
+    <div id="form_container">
+
+        <h1><a>Untitled Form</a></h1>
+        <form id="form_49832" class="appnitro" method="post" action="mailto:mail@gmail.com">
+            <div class="form_description">
+                <h2>A Mariña</h2>
+                <p>Web de reservas</p>
+            </div>
+            <ul>
+
+                <li id="li_1">
+                    <label class="description" for="element_1">Nome e Apelido </label>
+                    <span>
+                        <input id="element_1_1" name="element_1_1" class="element text" maxlength="255" size="8" value="" placeholder="Nome">
+
+                    </span>
+                    <span>
+                        <input id="element_1_2" name="element_1_2" class="element text" maxlength="255" size="14" value="" placeholder="Apelido">
+
+                    </span>
+                </li>
+                <li id="li_2">
+                    <label class="description" for="element_2">Teléfono </label>
+                    <span>
+                        <input id="element_2_1" name="element_2_1" class="element text" size="3" maxlength="3" value="" type="text" placeholder="###"> -
+                     
+                    </span>
+                    <span>
+                        <input id="element_2_2" name="element_2_2" class="element text" size="3" maxlength="3" value="" type="text" placeholder="###"> -
+            
+                    </span>
+                    <span>
+                        <input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text" placeholder="###">
+                   
+                    </span>
+
+                </li>
+                <li id="li_3">
+                    <label class="description" for="element_3">Email </label>
+                    <div>
+                        <input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value="mail"  placeholder="cuenta@gmail.com"
+        pattern="[a-z0-9._%+-]+@[+@[gG][mM][aA][iI][lL][.][cC][oO][mM]" title="Sólo se permiten cuentas de Gmail">
+                    </div>
+                </li>
+                <li id="li_4">
+                    <label class="description" for="element_4">Data </label>
+                   
+                    <span>
+                        <input id="element_4_2" name="element_4_2" class="element text" size="2" maxlength="2" value="" type="text"  placeholder="DD"> /
+                       
+                    </span>
+                     <span>
+                        <input id="element_4_1" name="element_4_1" class="element text" size="2" maxlength="2" value="" type="text" placeholder="MM"> /
+                     
+                    </span>
+                    <span>
+                        <input id="element_4_3" name="element_4_3" class="element text" size="4" maxlength="4" value="" type="text"  placeholder="YYYY">
+                       
+                    </span>
+
+                    <span id="calendar_4">
+                        <img id="cal_img_4" class="datepicker" src="calendar.gif" alt="Pick a date.">
+                    </span>
+                    <script type="text/javascript">
+                        Calendar.setup({
+                            inputField: "element_4_3",
+                            baseField: "element_4",
+                            displayArea: "calendar_4",
+                            button: "cal_img_4",
+                            ifFormat: "%B %e, %Y",
+                            onSelect: selectDate
+                        });
+                    </script>
+
+                </li>
+                <li id="li_5">
+                    <label class="description" for="element_5">Número de persoas </label>
+                    <div>
+                        <input id="element_5" name="element_5" class="element text medium" type="number" maxlength="50" min="1" value="">
+                    </div>
+     
+                </li>
+ 
+                <li id="li_6"> </li>
+                <li id="li_7">
+                    <label class="description" for="element_7">Preferencias </label>
+                    <span>
+                        <input id="element_7_1" name="element_7_1" class="element checkbox" type="checkbox" value="1">
+                        <label class="choice" for="element_7_1">Terraza</label>
+                        <input id="element_7_2" name="element_7_2" class="element checkbox" type="checkbox" value="1">
+                        <label class="choice" for="element_7_2">Comedor</label>
+
+
+                    </span>
+                </li>
+                <label class="description" for="element_6">Información adicional </label>
+                <div>
+                    <textarea id="element_6" name="element_6" class="element textarea medium" placeholder="Alerxias, intolerancias, preferencias, ..."></textarea>
+                </div>
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="49832">
+
+                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar">
+                </li>
+            </ul>
+        </form>
+<!--
+        <div id="footer">
+           <a href="http://www.phpform.org"></a>
+        </div>
+-->
+    </div>
+<!--    <img id="bottom" src="bottom.png" alt="">-->
+</body>
+
+</html>
