@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../imagenes/efectos-img/imagenes.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* -----------------------LOGO----------------------- */
+
+.anterior {
+  text-decoration: none;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  height: 8.6vh;
+  padding: .8em;
+  background-color: #252928d8;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  align-items: center;
+}
+
+.anterior img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+#logo-img {
+  transition: transform .5s;
+}
+
+#logo-img:hover {
+  transform: scale(115%) rotate(45deg);
+}
+
+#logo-titulo {
+  margin-left: 1em;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+
+/*  ----------------------INTRO--------------------------- */
+
+.intro {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10em;
+  padding-top: 7em;
+  padding: 5em;
+  margin-bottom: 5em;
+  background-color: #25292875;
+}
+
+.intro p,
+.intro .formatos {
+  margin-bottom: 1.3em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.intro .formatos ul {
+  list-style-type: none;
+}
+
+.intro .formatos ul li {
+  margin-bottom: 1em;
+}
+
+
+
+/*  ----------------------FLASHCARDS---------------------- */
+
+.programas {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.col {
+  flex: flex-grow 8.3333%;
+  margin: auto;
+  padding: 0.25em;
+}
+
+.flashcard {
+  margin: 1rem;
+  width: 300px;
+  height: 321px;
+  position: relative;
+  display: inline-block;
+}
+
+.flashcard--face, .flashcard--back {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: .4rem;
+  background-color: #ffffffbe;
+  color: #000;
+  transition: transform 0.4s;
+  backface-visibility: hidden;
+  box-shadow: 0 0rem 3rem 1rem rgba(0, 0, 0, 0.797);
+}
+
+.flashcard--face {
+  transform: perspective(1000px) rotateY(0px);
+}
+
+.flashcard--back {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+
+.cambio-color {
+  background-color: #67851b;
+  color: #fff;
+}
+
+.flashcard--content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  /* text-align: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: .4rem;
+  justify-content: center;
+  padding: .5em;
+}
+
+.flashcard--content h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flashcard-flipped .flashcard--face {
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.flashcard-flipped .flashcard--back {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.flashcard--content p {
+  padding: .5rem 1.5rem .5rem .7rem;
+  font-size: 1em;
+}
+
+.flashcard--content img {
+  width: 70%;
+  margin-top: 3.5em;
+}
+
+#paint {
+  width: 60%;
+  margin-top: 3em;
+}
+
+
+/*  ----------------APARTADOS-------------------- */
+
+.apartados {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 3rem;
+  color: #000;
+}
+
+@media (max-width: 60em) {
+  .apartados {
+    padding: 3rem;
+  }
+}
+
+.grid {
+  display: grid;
+  width: 100rem;
+  grid-gap: 5em;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+@media (max-width: 60em) {
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+.grid .card {
+  width: 30rem;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffcb;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem 2rem rgba(0, 0, 0, 0.797);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid .card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.329);
+}
+
+.grid .card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.grid .card__content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 1rem;
+  padding: 2rem;
+  height: 100%;
+}
+
+.grid .card__content a {
+  text-decoration: none;
+}
+
+.grid .card__header {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
+.grid .card__text {
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.grid .card__btn {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.2em;
+  text-align: center;
+  color: #000;
+  background-color: #789b1ffd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.grid .card__btn a {
+  color: #000;
+}
+
+.grid .card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.grid .card__btn:hover, .grid .card__btn:active {
+  background-color: #7ca0219c;
+}
+
+.grid .card__btn:hover span, .grid .card__btn:active span {
+  margin-left: 1.5rem;
+}
