@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Enriqueta:wght@400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: medium;
+  line-height: 1.7em;
+}
+
+h2 {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+header {
+  background-image: url(../imagenes/banner2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 850px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-bar {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  list-style-type: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.3em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+#seleccion {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}
+
+.nav-bar a:hover {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}
+
+.contenedor {
+  width: 60%;
+}
+
+.historia {
+  margin-top: 7em;
+}
+
+.historia img {
+  float: left;
+  width: 45%;
+  margin-right: 3em;
+  margin-bottom: 2em;
+}
+
+.historia .negrita {
+  font-weight: bold;
+}
+
+.historia .subrayado {
+  text-decoration: underline;
+}
+
+.cronograma {
+  width: 70%;
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.cronograma h4 {
+  /* width: 50px;
+  text-align: center; */
+  font-size: large;
+  background-color:  #d2acde;
+  padding: .7em;
+  border-radius: 2em;
+  margin-bottom: .5em;
+}
+
+.cronograma .derecha,
+.cronograma .izquierda {
+  position: relative;
+}
+
+.cronograma .derecha {
+  text-align: right;
+  padding: 20px 20px 0 20px;
+  margin-right: 50%;
+  border-right: 2px solid #c380da;
+  border-bottom: 2px solid #ffffff00;
+}
+
+.cronograma .izquierda {
+  text-align: left;
+  padding: 20px 0 0 20px;
+  margin-bottom: auto;
+  margin-left: 50%;
+  border-left: 2px solid #c380da;
+  border-bottom: 2px solid #ffffff00;
+}
+
+.cronograma .derecha::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  right: -10px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #c380da;
+}
+
+.cronograma .izquierda::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -10px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #c380da;
+}
+
+
+.flecha {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #c4a3cf;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity .3s ease;
+}
+
+.flecha:hover {
+  background-color: #e4c1f0;
+  border-radius: 50%;
+}
+footer {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 4em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}

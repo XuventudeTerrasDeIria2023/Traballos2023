@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Enriqueta:wght@400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: medium;
+  line-height: 1.7em;
+}
+
+h2 {
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+header {
+  background-image: url(../imagenes/banner2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 850px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-bar {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  list-style-type: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.3em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+#seleccion {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}
+
+.nav-bar a:hover {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}
+
+.contenedor {
+  width: 70%;
+}
+
+.morado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.5em;
+  margin-bottom: 10em;
+}
+
+.texto {
+  width: 50%;
+}
+
+.texto .negrita {
+  font-weight: bold;
+}
+
+.texto .subrayado {
+  text-decoration: underline;
+}
+
+.texto blockquote>p {
+  font-style: italic;
+  margin-left: 1.5em;
+  margin-right: 2em;
+}
+
+.morado img {
+  width: 35%;
+  margin-left: 2.5em;
+}
+
+.sufragistas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.5em;
+}
+
+.sufragistas img {
+  width: 95%;
+}
+
+.teorias {
+  width: 85%;
+  text-align: center;
+}
+
+.flecha {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #c4a3cf;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.flecha:hover {
+  background-color: #e4c1f0;
+  border-radius: 50%;
+}
+
+footer {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 4em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: #c4a3cf;
+  border-bottom: 2px solid #c4a3cf;
+}
