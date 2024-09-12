@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    background: #000;
+/*
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+*/
+}
+
+.slide {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/suicune.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.slide2 {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/samurott.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slide2:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+.slide3 {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/mewtwo.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slide3:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+.slide4 {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/greninja.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slide4:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+.slide5 {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/flareon.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slide5:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+.slide6 {
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    background-image: url(imaxes/zapdos_jolteon.gif);
+
+
+    /*
+    flex-grow:1;
+    transition:flex-grow 0.8s ease, opacity 0.5s ease;
+*/
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+.slide6:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+.slide:hover {
+    // flex-grow:10;
+    width: 200%;
+    opacity: 1;
+}
+
+/*
+div {
+    background-image: url(imaxes/suicune.gif);
+    background-image: url(imaxes/samurott.gif);
+    background-image: url(imaxes/greninja.gif);
+    background-image: url(imaxes/mewtwo.gif);
+    background-image: url(imaxes/flareon.gif);
+    background-image: url(imaxes/zapdos_jolteon.gif);
+}
+*/
