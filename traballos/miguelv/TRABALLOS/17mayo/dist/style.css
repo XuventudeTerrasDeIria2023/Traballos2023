@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+
+#imagen2{
+    width: 18em;
+}
+
+.container {
+  height: 100vh;
+    margin: 0 auto;
+    background-image: url(https://www.espacios.media/wp-content/uploads/2021/10/Happy-Internet-Day-dia-mundial-de-internet-en-mexico-scaled.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index:1;
+    
+}
+.flecha{
+    position: absolute;
+    top: 50em;
+    left: 107em;
+    background-color: lightgrey;
+    padding: 1.5em;
+    border-radius: 1em;
+}
+
+/*
+.container img {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1
+}
+*/
+
+.main-title {
+/*
+   position: absolute;
+   top: 50%;
+   left: 50%;
+*/
+   font-size: 5em;
+    width: 100%;
+    text-align: center;
+    color: peru;
+/*   transform: translate(-50%, -50%);*/
+}
+
+.color{
+    color: black;
+}
+
+.content {
+  width: 100%;
+  background: rgb( 24, 24, 24);
+  min-height: 100vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.content-images {
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 60vh;
+text-align: center;
+}
+
+.text {
+  padding: 2rem 20rem;
+}
