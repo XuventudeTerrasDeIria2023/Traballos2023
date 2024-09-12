@@ -1,0 +1,49 @@
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #252928;
+  transition: transform .5s linear;
+}
+
+#button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  
+}
+
+#button:active {
+  /* background-color: #555; */
+  
+  transform: translateY(-20px);
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
