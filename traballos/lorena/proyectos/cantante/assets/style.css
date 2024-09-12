@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+}
+
+/* --------------------------------------------------
+  header
+-------------------------------------------------- */
+
+
+header {
+    height: 70vh;
+    margin: 0 auto;
+    background: url(../img/Cabecera.png) no-repeat center/101%;
+    display: flex;
+    align-items: end;
+}
+
+nav {
+    width: 100%;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #000;
+    margin-left: 5%;
+    padding: .5em;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.biografia,
+.discografia,
+.gira {
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+/* --------------------------------------------------
+  biografía
+-------------------------------------------------- */
+
+
+
+.biografia img {
+    width: 50%;
+    float: left;
+    margin: 3.7em 3em 2.5em 1em;
+}
+
+/* --------------------------------------------------
+  discografía
+-------------------------------------------------- */
+
+.time-line-box {
+    height: 80px; 
+    width: 100%;
+    margin-bottom: 22em;
+  }
+  
+  .time-line-box .timeline {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .time-line-box .timestamp {
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .time-line-box .status {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #fff;
+    position: relative;
+    transition: all 200ms ease-in;
+  }
+
+  .time-line-box .status span {
+    padding-top: 8px;
+  }
+
+  .time-line-box .status span:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-in;
+  }
+  
+  .swiper-container {
+    margin: 0 auto;
+    overflow-y: auto;
+    background-color: #000;
+    padding:  70px 0;
+  }
+
+  .swiper-wrapper{
+    display: inline-flex;
+    flex-direction: row;
+    overflow-y:auto;
+    justify-content: center;
+  }
+
+  .swiper-container::-webkit-scrollbar-track{
+     background:#a8a8a8b6;
+  }
+
+  .swiper-container::-webkit-scrollbar{
+    height: 2px;
+  }
+
+  .swiper-container::-webkit-scrollbar-thumb{
+     background: #4F4F4F !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: 430px;
+    height: 100%;
+    position: relative;
+    color: #fff;
+  }
+
+
+/* --------------------------------------------------
+  gira
+-------------------------------------------------- */
+
+
+table {
+    border: 0;
+    cellspacing: 0;
+    cellpadding: 5;
+    width: 35%;
+}
+
+.gira .fondo {
+    background-color: #000;
+    color: #fff;
+}
+
+.fondo span {
+    font-size: 15px;
+}
+
+tbody {
+    border: 0;
+}
+
+td {
+    border: 0;
+    padding: 5px;
+}
+
+
+/* --------------------------------------------------
+  galería
+-------------------------------------------------- */
+.controls {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+}
+
+.controls img {
+  width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+  height: auto; /* Ajustar la altura automáticamente */
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: -55px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: -370px;
+}
+
+.carrousel {
+  width: 1400px;
+  margin: auto;
+  height: 450px;
+  overflow:hidden;
+}
+.controls:hover {
+  background-color: rgba(0,0,0,.5);
+}
+.item {
+  width: 335px;
+  height: 400px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  background-color: #202225;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s all;
+  /*box-shadow: 0 9px 10px rgba(6,6,7,.3);*/
+}
+.cont {
+  position: absolute;
+  width: 1100px;
+  margin-top: 190px;
+}
+.tapa {
+  width: 12000px;/* 	change if the size is >     12000  :) */
+  transition: .9s all;
+}
+.item img {
+  width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+  height: 100%; /* Ajustar la altura automáticamente para mantener la proporción */
+  margin: 0; /* Eliminar cualquier margen por defecto */
+  display: block; /* Cambiar a "block" para ajustar el ancho y el margen automáticamente */
+  position: auto;
+  top: 50%;
+  left: 0;
+}
+.item:hover {
+  margin-top: -6px;
+}
+
+
+/* --------------------------------------------------
+  web
+-------------------------------------------------- */
+.web {
+  margin-top: 5em;
+}
+
+.web p>a {
+  width: 117px;
+  background-color: #000;
+  padding: .5em;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.web p>a:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+
+/* --------------------------------------------------
+  footer
+-------------------------------------------------- */
+
+footer {
+  margin-top: 5em;
+  background-color: #000;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  padding: .5em;
+}
+
+footer a:hover {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* --------------------------------------------------
+  flecha para volver arriba
+-------------------------------------------------- */
+
+  #button {
+    display: inline-block;
+    /* background-color: #000; */
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
