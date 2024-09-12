@@ -1,0 +1,202 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	background: #592CAB;
+}
+
+svg {
+	width: 0;
+	height: 0;
+	display: block;
+}
+
+.grid {
+	width: 80vmin;
+	margin: 10vmin auto;
+	display: flex;
+	flex-wrap: wrap;
+	transform-style: preserve-3d;
+	box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, 0.1), inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, 0.1);
+	perspective: 2000;
+}
+
+.item-box {
+	position: relative;
+	width: 26.66667vmin;
+	height: 26.66667vmin;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
+}
+
+.item-box:nth-child(1) .puzzle:before {
+	background-image: url(teresa.jpg);
+}
+
+.item-box:nth-child(2) .puzzle:before {
+	background-image: url(chanel.jpg);
+}
+
+.item-box:nth-child(3) .puzzle:before {
+	background-image: url(valentina.jpg);
+}
+
+.item-box:nth-child(4) .puzzle:before {
+	background-image: url(margaret.jpg);
+}
+
+.item-box:nth-child(5) .puzzle:before {
+	background-image: url(diana.jpg);
+}
+
+.item-box:nth-child(6) .puzzle:before {
+	background-image: url(marilyn.jpg);
+}
+
+.item-box:nth-child(7) .puzzle:before {
+	background-image: url(frida.jpg);
+}
+
+.item-box:nth-child(8) .puzzle:before {
+	background-image: url(hedy.jpg);
+}
+
+.item-box:nth-child(9) .puzzle:before {
+	background-image: url(amelia.jpg);
+}
+
+.item-box:hover {
+	transform: scale(1.6, 1.6);
+	box-shadow: 3px 3px 50px 20px white;
+	z-index: 100;
+}
+/*rgba(0, 0, 0, 0.2)*/
+
+[data-title]:after {
+	text-transform: none;
+	font-size: 1em;
+}
+
+[data-title]:hover:after {
+	opacity: 1;
+	transition: all 0.1s ease 0.5s;
+	visibility: visible;
+}
+
+[data-title]:after {
+	content: attr(data-title);
+	background-color: grey;
+	color: #fff;
+	font-size: .7em;
+	font-family: "Roboto Slab", serif;
+	position: absolute;
+	padding: 5px;
+	width: 123px;
+	text-align: center;
+	top: 100px;
+/*	left: 10px;*/
+	white-space: nowrap;
+	box-shadow: 1px 1px 3px #ccc;
+	opacity: 0;
+	border: 1px solid #ccc;
+	z-index: 99999;
+	visibility: hidden;
+	border-radius: 5px;
+	text-align: start;
+	/*	text-transform: lowercase;*/
+}
+
+.item-box:hover .puzzle {
+	transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+	opacity: 1;
+}
+
+.item-box .item-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-style: preserve-3d;
+}
+
+.piece {
+	position: absolute;
+	width: 13.33333vmin;
+	height: 13.33333vmin;
+	transform-style: preserve-3d;
+}
+
+.piece:nth-child(1) {
+	transform: translateX(-100%) translateY(-100%) rotate(0deg);
+}
+
+.piece:nth-child(1) .puzzle:before {
+	background-position: 0% 0%;
+	transform: rotate(0deg);
+}
+
+.piece:nth-child(2) {
+	transform: translateX(0%) translateY(-100%) rotate(90deg);
+}
+
+.piece:nth-child(2) .puzzle:before {
+	background-position: 100% 0%;
+	transform: rotate(-90deg);
+}
+
+.piece:nth-child(3) {
+	transform: translateX(0%) translateY(0%) rotate(180deg);
+}
+
+.piece:nth-child(3) .puzzle:before {
+	background-position: 100% 100%;
+	transform: rotate(-180deg);
+}
+
+.piece:nth-child(4) {
+	transform: translateX(-100%) translateY(0%) rotate(270deg);
+}
+
+.piece:nth-child(4) .puzzle:before {
+	background-position: 0% 100%;
+	transform: rotate(-270deg);
+}
+
+.puzzle {
+	position: absolute;
+	width: 17.17505vmin;
+	height: 17.17505vmin;
+	background-color: #000;
+	-webkit-clip-path: url(#puzzle);
+	clip-path: url(#puzzle);
+	opacity: .8;
+	transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
+	transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
+	z-index: 100;
+}
+
+.puzzle:before {
+	content: "";
+	position: absolute;
+	width: 17.17505vmin;
+	height: 17.17505vmin;
+	background-size: 155.264%;
+}
+
+@-webkit-keyframes init {
+	from {
+		transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+	}
+}
+
+@keyframes init {
+	from {
+		transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+	}
+}
