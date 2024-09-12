@@ -1,0 +1,170 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ojuju:wght@200..800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+  body {
+      margin: 0 auto;
+      width: 90%;
+       background-color: black;
+  }
+
+  .nav {
+      text-align: center;
+      /*margin: 2em;*/
+      padding: 2em;
+      border: 1px solid transparent;
+      font-family: "Cinzel", serif;
+      background-color: violet;
+      color: white;
+      font-size: 150%;
+      width: 69%;
+      margin-left: 9.4em;
+      font-weight: bold;
+
+
+
+  }
+
+
+  nav a {
+      text-align: center;
+      color: white;
+      background-color: violet;
+      margin: 1em;
+      margin-top: -2em;
+      padding: 1em;
+  }
+
+  a:hover {
+      text-align: center;
+      color: rebeccapurple;
+
+  }
+
+
+  h1 {
+      color: white;
+      text-align: center;
+      font-family: "Cinzel", serif;
+
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  .foto1 {
+      margin-top: 4em;
+      width: 45%;
+      margin-left: 1em;
+      box-shadow: 3px 3px 20px 20px white;
+  }
+.uno{
+    padding: 8em;
+     background-color: rebeccapurple;
+     width: 60%;
+     margin-left: 14em;
+}
+  /*.uno {
+      padding: 4em;
+      margin-top: -3em;
+
+  }*/
+
+  .uno h2 {
+      margin-top: -3em;
+      text-align: center;
+      color: white;
+      text-shadow: 5px 5px black;
+
+  }
+
+  .uno p {
+      display: inline-flex;
+      margin-top: 2em;
+      margin-right: 5em;
+      width: 30%;
+      float: right;
+      color: white;
+      font-family: "Ojuju", sans-serif;
+      font-style: normal;
+
+
+}
+
+.dos{
+      padding: 8em;
+     background-color: rebeccapurple;
+     width: 60%;
+     margin-left: 14em;
+    padding-bottom: 27em;
+
+    
+  }
+
+  .dos h2 {
+      text-align: center;
+      /*padding: 3em;*/
+      color: white;
+      margin-top: -3em;
+      text-shadow: 5px 5px black;
+  }
+
+  .dos p {
+      display: inline-flex;
+      float: left;
+      width: 40%;
+      margin-top: 2em;
+      margin-left: 2em;
+      text-align: left;
+      font-family: "Ojuju", sans-serif;
+      font-style: normal;
+      color: white;
+  }
+
+  .foto2 {
+      width: 35%;
+      float: right;
+      margin-right:5em;
+      /*margin-top: -3em;*/
+      margin-top: 4em;
+      box-shadow: 3px 3px 20px 20px white;
+  }
+.flecha {
+     position: fixed;
+     background-color: violet;
+     box-shadow: none;
+     float: right;
+     width: 2%;
+     bottom: 40px;
+     right: 100px;
+ }
+
+footer{
+    background-color: violet;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 3em;
+    width: 69.7%;
+    margin-left: 13.6em;
+    
+    
+    
+}
+footer a{
+    color: black;
+    margin-left: 2em;
+}
+footer a:hover{
+    color: blueviolet;
+}
+footer img{
+    width: 2%;
+    margin-left: 22em;
+}
+footer img:hover{
+     box-shadow: none;
+     transform: scale(1.2);
+}
+
+

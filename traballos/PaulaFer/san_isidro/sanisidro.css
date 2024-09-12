@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Tenor+Sans&display=swap') ;
+body{
+    margin: 0 auto;
+    width: 80%;
+    background-color: beige;
+    
+   
+   
+}
+section{
+    width: 70%;
+    /*margin-left: 9em;
+     margin-bottom: 3em;*/
+    display:inline;
+    /*justify-content: center;
+    text-align: center;*/
+   
+    
+}
+img{
+   /*margin-top: 3em;
+    margin-bottom: 3em;*/
+    float: left;
+    width: 40%;
+   /* margin-left: 9em;*/
+    display: flex;
+    margin: 4em;
+    
+}
+
+
+h1{
+    font-family: "Anton", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 420%;
+    text-shadow: 3px 3px 20px orange;
+}
+h2{
+    font-family: "Anton", sans-serif; 
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+.todos{
+    display:inline;
+    align-content: center;
+    justify-content:center;
+    display: inline-block;
+    float: right;
+     padding: 2em;
+    margin: 2em;
+    
+}
+.participacion{
+    background-color: orangered;
+    color: white;
+    /*float: right;*/
+    /*margin-right: 8em;
+    margin-top: 2.7em;*/
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+li{
+    text-align: left;
+    font-family: "Tenor Sans", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+}
+.presentacion{
+    /*float: right;*/
+    background-color: black;
+    color: white;
+    /*margin-right: 8em;
+    margin-top: 4em;*/
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+.caracteristicas{
+    /*float: right;*/
+    background-color: orangered;
+    color: white;
+    /*margin-right: 8em;*/
+    /*margin-top: 4em;*/
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+.premio{
+    /*float: right;*/
+    background-color: black;
+    color: white;
+    /*margin-right: 8em;
+    margin-top: 4em;*/
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+a{
+    color: orangered; 
+   
+}
+
+footer{
+    margin: 2em;
+
+}

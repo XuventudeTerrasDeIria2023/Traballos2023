@@ -1,0 +1,250 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ojuju:wght@200..800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+ body {
+     margin: 0 auto;
+     width: 90%;
+     /*background-color: rebeccapurple;*/
+     background-color: black;
+ }
+
+ .nav {
+     text-align: center;
+     /*margin: 2em;*/
+     padding: 2em;
+     border: 1px solid transparent;
+     font-family: "Cinzel", serif;
+     background-color: violet;
+     color: white;
+     font-size: 150%;
+     width: 69%;
+     margin-left: 9.4em;
+     font-weight: bold;
+ }
+
+ nav a {
+     text-align: center;
+     color: white;
+     background-color: violet;
+     margin: 1em;
+     margin-top: -2em;
+     padding: 1em;
+ }
+
+ a:hover {
+     text-align: center;
+     color: rebeccapurple;
+ }
+
+ h1 {
+     color: white;
+     text-align: center;
+     font-family: "Cinzel", serif;
+ }
+
+ h2 {
+     color: white;
+     font-family: "El chico más afortunado", cursive;
+     font-style: normal;
+     text-shadow: 5px 5px 5px violet;
+     font-size: 2em;
+ }
+
+ p {
+     color: black;
+     /*background-color: violet;*/
+     width: 20%;
+     padding: 4em;
+     font-weight: bold;
+ }
+
+ #klara {
+     padding: 8em;
+     background-color: rebeccapurple;
+     width: 60%;
+     margin-left: 14em;
+ }
+
+ #klara p {
+     padding: 7em;
+     /*border-radius: 70%;*/
+     margin-top: 7em;
+     width: 30%;
+ }
+
+ #klara img {
+     margin-left: 5em;
+     display: inline-flex;
+     float: right;
+     margin-top: -27em;
+     margin-right: 8em;
+     border-radius: 50%;
+
+
+ }
+
+ #marie {
+     padding: 8em;
+     background-color: violet;
+     width: 60%;
+     margin-left: 14em;
+
+ }
+
+ #marie h2 {
+     text-shadow: 5px 5px 5px rebeccapurple;
+ }
+
+ #marie p {
+     padding: 7em;
+     border-radius: 60%;
+     margin-top: 7em;
+     width: 30%;
+ }
+
+ #marie img {
+     width: 33%;
+     display: inline-flex;
+     float: right;
+     margin-top: -33em;
+     margin-right: 7em;
+     border-radius: 50%;
+ }
+
+ #concepcion {
+     padding: 8em;
+     background-color: rebeccapurple;
+     width: 60%;
+     margin-left: 14em;
+ }
+
+ #concepcion p {
+     padding: 7em;
+     border-radius: 70%;
+     margin-top: 7em;
+     width: 30%;
+ }
+
+ #concepcion img {
+     width: 30%;
+     display: inline-flex;
+     float: right;
+     margin-top: -27em;
+     margin-right: 7em;
+     border-radius: 50%;
+ }
+
+ #eleanor {
+     padding: 8em;
+     background-color: violet;
+     width: 60%;
+     margin-left: 14em;
+ }
+
+ #eleanor h2 {
+     text-shadow: 5px 5px 5px rebeccapurple;
+ }
+
+ #eleanor p {
+     padding: 7em;
+     border-radius: 70%;
+     margin-top: 7em;
+     width: 30%;
+ }
+
+ #eleanor img {
+     width: 30%;
+     display: inline-flex;
+     float: right;
+     margin-top: -28em;
+     margin-right: 7em;
+     border-radius: 50%;
+ }
+
+ #campoamor {
+     padding: 8em;
+     background-color: rebeccapurple;
+     width: 60%;
+     margin-left: 14em;
+     margin-bottom: 3em;
+ }
+
+ #campoamor p {
+     padding: 7em;
+     border-radius: 70%;
+     margin-top: 7em;
+     width: 30%;
+     margin-left: 2em;
+ }
+
+ #campoamor img {
+     width: 26%;
+     display: inline-flex;
+     float: right;
+     margin-top: -27em;
+     margin-right: 7em;
+     border-radius: 50%;
+ }
+
+ img {
+     box-shadow: 3px 3px 20px 20px white;
+ }
+
+ img:hover {
+     transform: scale(1.2);
+     box-shadow: 3px 3px 20px 20px black;
+ }
+
+ footer {
+     background-color: violet;
+     margin-top: 2em;
+     margin-bottom: 2em;
+     padding: 3em;
+     width: 69.7%;
+     margin-left: 13.6em;
+
+
+ }
+
+ footer a {
+     color: black;
+     margin-left: 2em;
+ }
+
+ footer a:hover {
+     color: blueviolet;
+
+ }
+
+ footer img {
+     width: 2%;
+     margin-left: 20em;
+     box-shadow: none;
+ }
+
+ footer img:hover {
+     box-shadow: none;
+ }
+
+
+ .flecha {
+     position: fixed;
+     background-color: violet;
+     box-shadow: none;
+     float: right;
+     width: 2%;
+     bottom: 40px;
+     right: 100px;
+ }
+
+ /*.flecha {
+     float: right;
+     width: 2%;
+     margin-top: -8em;
+     background-color: violet;
+      box-shadow: none;
+     position: sticky;
+            top: 20px;
+ }*/
