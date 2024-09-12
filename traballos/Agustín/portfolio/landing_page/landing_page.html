@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Agustín">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín </title>
+    <style>
+        body {
+            margin: 0 auto;
+            background-image: url(imaxes/fondo_%C3%B1aliexpress.webp);
+        }
+
+        img {
+            width: 50%;
+            margin-left: 25%;
+            box-shadow: 10px 5px 5px blue;
+        }
+
+        .offer-title {
+            margin-left: 45%;
+            color: blue;
+            font-family: sans-serif;
+        }
+
+        .offer-description {
+            margin-left: 45%;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .offer-price {
+            margin-left: 45%;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .offer-button {
+            margin-left: 45%;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+
+        .offer-validity {
+            font-size: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            color: black;
+            padding: 40px;
+            animation: moveRight 15s infinite alternate;
+            font-family: sans-serif;
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="imaxes/ali.webp" alt="Oferta Especial" class="offer-image">
+        <h1 class="offer-title">¡Oferta Especial!</h1>
+        <p class="offer-description">3 articulos por 5,99€</p>
+        <p class="offer-price">Envío en 48h</p>
+        <a href="#" class="offer-button">¡Compra ahora!</a>
+        <div class="offer-validity">Oferta válida hasta el 15 de Marzo</div>
+    </div>
+
+</body>
+
+</html>
