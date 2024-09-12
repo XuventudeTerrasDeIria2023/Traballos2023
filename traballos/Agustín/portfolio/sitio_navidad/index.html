@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Agustín">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad 2023 </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap">
+</head>
+
+<body>
+    <style>
+        header {
+            background-color: red;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        h1 {
+            font-family: 'Mountains of Christmas', serif;
+            color: #fff;
+            margin: 0;
+            font-size: 3em;
+
+        }
+
+        header img {
+            width: 10%;
+
+        }
+
+        nav {
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            margin-top: 1em;
+            padding: 10px;
+
+        }
+
+        nav a {
+            margin: 0 1em;
+            padding: 3em;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+
+        }
+
+        nav a:hover {
+            color: #007bff;
+
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        .deseo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .deseo {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            max-width: 800px;
+            margin: 20px;
+
+        }
+
+        .deseo2 {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            max-width: 800px;
+            margin: 20px;
+            text-align: right;
+            float: right;
+             justify-content: center;
+
+        }
+
+        /*
+       .texto2 {
+            flex: 1;
+            padding: 20px;
+            text-align: right;
+            float: right;
+            border: 1px solid blue;
+        }
+*/
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            text-align: right;
+            float: right;
+        }
+
+        .imagen {
+            flex: 1;
+            overflow: none;
+        }
+
+        /*
+
+       .imagen2 {
+            flex: 1;
+            overflow: none;
+           text-align: right;
+        }
+*/
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+
+        }
+
+        .leer-mas {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .leer-mas:hover {
+            background-color: red;
+        }
+
+
+        .ofertas-container {
+
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+
+
+            /*display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+*/
+        }
+
+        .oferta img {
+            margin: 10px;
+            border: 2px solid #ff0000;
+            border-radius: 6px;
+            width: 30em;
+
+        }
+
+        .oferta img:hover {
+            border: 2px solid green;
+
+        }
+
+        #Donar {
+            margin: 0 auto;
+            width: 75%;
+            background-color: #ccc;
+            text-align: center;
+        }
+
+        .donar {
+            margin: 10px;
+            border-radius: 8px;
+
+            text-align: center;
+        }
+
+
+        .donar img {
+            width: 50%;
+            height: auto;
+            border: 3px solid white;
+        }
+
+        .donar img:hover {
+            border: 3px solid lime;
+        }
+
+        .testimonios-container {
+            text-align: center;
+        }
+
+
+        .logo1 {
+            align-items: center;
+            width: 10%;
+        }
+
+        .contacto-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: red;
+        }
+
+        .red-social {
+            margin: 0 10px;
+            color: red;
+        }
+
+        .direccion {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        footer-menu {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer-menu a {
+            background-color: red;
+
+        }
+
+        .contacto a {
+            color: #ff0000;
+        }
+
+    </style>
+    <header>
+        <img id="logo" src="imaxes/logo_navidad.jpg" alt="logo navidad">
+
+        <h1>Navidad Mágica</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#deseos">Deseos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#donar">Donar</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="deseo-container">
+        <div class="deseo">
+            <div class="imagen">
+                <img src="imaxes/deseo_1.jpg" alt="Deseo 1">
+
+            </div>
+            <div class="texto">
+                <div id="Deseo">
+                    <h2>Deseo 1</h2>
+                    <p>Árbol de Navidad Blanco Artificial Abeto de Hoja Espumillón, C/Soporte Metálico Arboles de plástico de primera calidad con efecto mate, súper natural y relleno.
+                        Las puntas / ramas sin plastificante son flexibles, no dañarán a los niños, pueden utilizarlo sin preocupaciones tanto en interior como en exterior.
+                        Todas las ramas vienen atado en el tronco central y sólo hace falta ajustar de la posición y la orientación, dependiendo de la medida del árbol vienen 2 ó 3 troncos central individuales que se unen linealmente entre sí.</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="deseo">
+
+            <div class="texto">
+                <div id="Deseo">
+                    <h2>Deseo 1</h2>
+                    <p>Árbol de Navidad Blanco Artificial Abeto de Hoja Espumillón, C/Soporte Metálico Arboles de plástico de primera calidad con efecto mate, súper natural y relleno.
+                        Las puntas / ramas sin plastificante son flexibles, no dañarán a los niños, pueden utilizarlo sin preocupaciones tanto en interior como en exterior.
+                        Todas las ramas vienen atado en el tronco central y sólo hace falta ajustar de la posición y la orientación, dependiendo de la medida del árbol vienen 2 ó 3 troncos central individuales que se unen linealmente entre sí.</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imaxes/deseo_2.jpg" alt="Deseo 2">
+
+            </div>
+        </div>
+        <!--
+        <div class="deseo2">
+            <div class="texto">
+                <div id="Deseo">
+                    <h2>Deseo 2</h2>
+                    <p>Calcetines de Navidad para estas Navidades: Estos calcetines divertidos para toda la familia tienen diferentes colores brillantes y un bonito estampado. Los colores brillantes combinan bien con la sensación navideña y te mantienen abrigado durante todo el invierno. Adecuado para invierno, primavera, otoño.</p>
+                    <a href="#" class="leer-mas">Leer más</a>
+
+                </div>
+                <div class="imagen">
+                    <img src="imaxes/deseo_2.jpg" alt="Deseo 2">
+                </div>
+            </div>
+        </div>
+-->
+    </div>
+    <h2>Ofertas</h2>
+    <div class="ofertas-container">
+        <!--            <div id="Ofertas">-->
+
+        <div class="oferta">
+            <img src="imaxes/gorro.jpg" alt="Oferta 1">
+
+            <img src="imaxes/bola_de_navidad.webp" alt="Oferta 2">
+        </div>
+        <!--
+        </div>
+        <div class="ofertas-container">
+-->
+        <div class="oferta">
+            <img src="imaxes/luces.jpg" alt="Oferta 3">
+
+            <img src="imaxes/mu%C3%B1eco.jpg" alt="Oferta 4">
+        </div>
+
+        <!--            </div>-->
+    </div>
+    <!--            <div class="donar-container">-->
+    <section id="Donar">
+        <h2>Donar</h2>
+        <div class="donar">
+            <img src="imaxes/donacion.jpg" alt="Donar 1">
+        </div>
+        <div class="donar">
+            <img src="imaxes/donacion.jpg" alt="Donar 2">
+        </div>
+    </section>
+    <!--            </div>-->
+    <div class="testimonios-container">
+        <section id="Testimonios">
+            <h2>Testimonios</h2>
+            <div class="logo1">
+                <img src="imaxes/logo_navidad.jpg">
+            </div>
+            <p>¡Bienvenidos a nuestro rincón festivo y lleno de alegría! En Navidad Mágica, celebramos la magia de la Navidad durante todo el año. Sumérgete en un mundo encantado donde las luces brillantes, los villancicos alegres y el espíritu navideño llenan cada rincón.
+
+                Desde decoraciones deslumbrantes hasta recetas deliciosas para compartir en familia, aquí encontrarás inspiración para hacer de cada día un momento especial. Explora nuestras secciones llenas de ideas para regalos, manualidades festivas y tradiciones que te conectarán con el espíritu navideño en cualquier estación.</p>
+
+        </section>
+    </div>
+
+
+    <div class="contacto-container">
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <div class="redes-sociales">
+                <a href="https://facebook.com" class="red-social" target="_blank">Facebook</a>
+                <a href="https://twitter.com" class="red-social" target="_blank">Twitter</a>
+                <a href="https://instagram.com" class="red-social" target="_blank">Instagram</a>
+            </div>
+            <p class="direccion">Dirección: Praza de Macías nº5, Padrón, A Coruña, Galicia, España</p>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-menu">
+            <p>Copyright© 2023 </p>
+            <p>Todos los derechos reservados</p>
+            <div class="contacto">
+                <p>Contacto: <a href="tendanavidad@gmail.com">tendanavidad@gmail.com</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
