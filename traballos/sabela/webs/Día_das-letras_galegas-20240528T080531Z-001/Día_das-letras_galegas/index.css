@@ -1,0 +1,305 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+
+}
+
+body {
+    width: 65%;
+    box-shadow: 0px 1px 10px black;
+
+}
+
+#header-index-luisa {
+    height: 51.4em;
+    background-image: url(img_letras-galegas/header/header_index.png);
+    border-bottom: #2a93a6;
+}
+
+#img_logo {
+    width: 13em;
+    margin-left: 7em;
+
+}
+
+#invisible {
+    visibility: hidden;
+}
+
+.navegador {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+li {
+    margin: 2em;
+    list-style: none;
+    font-size: 1.3em;
+
+}
+
+.nave_enlaces {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+}
+
+.nave_enlaces:focus {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
+button {
+    margin-top: 2.3em;
+    width: 13em;
+    height: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(130, 223, 240 0.4);
+    color: #2a93a6;
+    transform: translateY(-7px);
+}
+
+#saber_nav {
+    display: flex;
+    margin-left: 8em;
+    margin-top: 19em;
+    text-decoration: none;
+    color: #2a93a6;
+    font-size: 1.5em;
+}
+
+#saber_nav:hover {
+    display: flex;
+    margin-left: 8em;
+    margin-top: 19em;
+    text-decoration: none;
+    color: #5e6e8a;
+    font-size: 1.5em;
+}
+
+main {
+    margin: 0 auto;
+    align-content: center;
+}
+
+#libro_festexos {
+    width: 15em;
+    margin-left: 38em;
+
+
+}
+
+#festexos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4em;
+}
+
+.color_separaci {
+    padding: 1em;
+    background-color: #82dff0;
+
+}
+
+.color_separaci h4 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: .5em;
+}
+
+.color_separaci a {
+    text-decoration: none;
+    color: #2a93a3;
+    font-family: cursive;
+}
+
+.color_separaci a:hover {
+    color: white;
+}
+
+#padron {
+    border-radius: 1em;
+    background-color: #2a93a3;
+    text-align: center;
+}
+
+#padron h4,
+a {
+    margin-top: .7em;
+}
+
+#padron img {
+    width: 20em;
+    margin: 2em;
+}
+
+#rois {
+    text-align: center;
+    border-radius: 1em;
+    background-color: #2a93a3;
+}
+
+#rois img {
+    width: 20em;
+    margin: 2em;
+
+}
+
+#rois h4,
+a {
+    margin-top: .7em;
+}
+
+
+
+#dodro {
+    text-align: center;
+    border-radius: 1em;
+    background-color: #2a93a3;
+
+}
+
+#dodro img {
+    width: 20em;
+    margin: 2em;
+}
+
+#dodro h4,
+a {
+    margin-top: .4em;
+}
+
+footer {
+    border-top: 5px solid #2a93a3;
+    background-color: #82dff0;
+    height: 5em;
+}
+
+#logos_footer {
+    margin-top: 1em;
+    padding-right: .5em;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#logos_footer img {
+    width: 3em;
+}
+
+#copy {
+    text-decoration: none;
+    margin-left: 1em;
+    margin-top: 1em;
+
+}
+
+span {
+    font-size: 2em;
+    color: white;
+
+}
+
+#biogafria {
+    margin-right: 20em;
+
+}
+
+#biogafria img {
+    width: 7em;
+    padding-left: 2em;
+}
+
+#biogafria td {
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+#obras {
+    text-align: center;
+
+}
+
+#obras img {
+    width: 9em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 2em;
+
+}
+
+#obras td {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    padding: 1em;
+}
+
+#descripcion {
+    padding: 2em;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+#descripcion strong {
+    font-size: 1.3em;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #2a93a3;
+    font-family: sans-serif;
+
+}
+
+#curiosidades {
+    list-style: disc;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    border-left: 2px solid #2a93a3;
+    margin-bottom: 1em;
+}
+
+#curiosidades li {
+
+    list-style: disc;
+    font-family: sans-serif;
+
+}
