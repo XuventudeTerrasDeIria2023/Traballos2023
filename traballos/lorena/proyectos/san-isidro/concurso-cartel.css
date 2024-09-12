@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap");
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  width: 100%;
+  height: 90vh;
+  margin-top: 2em;
+  background: url(imagenes/cartel-isidro2.png) no-repeat top left/70%;
+}
+
+.datos {
+  float: right;
+  width: 25%;
+  margin-right: 6em;
+  margin-top: 9.5em;
+}
+
+.datos .eventos {
+  height: 7vh;
+  margin-bottom: 4em;
+  background-color: #f3d18a;
+  border-radius: 2em;
+  padding: .2em;
+  transition: height .5s ease;
+}
+
+.datos .eventos h2 {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: .2em;
+  margin-left: .7em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.datos .eventos div {
+  padding-bottom: .5em;
+  opacity: 0;
+  transition: opacity .8s ease;
+}
+
+.datos .eventos p {
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+.datos .eventos p span {
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.datos .eventos:hover {
+  background-color: #F7E7C3;
+}
+
+.datos .evento1:hover {
+  height: 130px;
+} 
+
+.datos .evento2:hover {
+  height: 100px;
+} 
+
+.datos .evento3:hover {
+  height: 180px;
+} 
+
+.datos .evento4:hover {
+  height: 100px;
+} 
+
+.datos .eventos:hover div {
+  opacity: 1;
+}
+
+footer {
+  background-color: black;
+  height: 5vh;
+  padding: .5em;
+}
+
+footer div {
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .1em;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #E4A150;
+}
+
+footer a:hover {
+  color: #f3d18a;
+}
+/* 
+footer a:visited {
+  color: #f3d18a;
+} */

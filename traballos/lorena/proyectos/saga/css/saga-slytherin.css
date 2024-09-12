@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Enriqueta", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../imagenes/fondo7.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-image: url(../imagenes/snitch7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+  height: 300px;
+  box-shadow: 1px 1px 50px rgba(245, 215, 45, 0.658);
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  background-color: #000000c7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  list-style-type: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+}
+
+#casa-slytherin {
+  color: rgb(252, 215, 9);
+  background-color: black;
+  box-shadow: 1px 1px 50px rgba(252, 219, 33, 0.774);
+}
+
+.menu a:hover {
+  color: rgb(252, 215, 9);
+  background-color: black;
+  box-shadow: 1px 1px 50px rgba(252, 219, 33, 0.774);
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 3em;
+  background-color: #000000af;
+  box-shadow: 1px 1px 50px rgba(245, 215, 45, 0.658);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenedor img {
+  width: 250px;
+  height: 400px;
+  margin-left: 10em;
+  margin-bottom: 1.5em;
+  box-shadow: 1px 1px 50px rgba(245, 215, 45, 0.658);
+}
+
+.contenedor div {
+  width: 45%;
+  height: 350px;
+  color: white;
+  padding: 1.2em 1em 1.2em 3em;
+  border-left: 2px solid rgb(252, 215, 9);
+}
+
+.contenedor div>p {
+  margin-top: 1.2em;
+  font-size: 17px;
+}
+
+footer {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 70%;
+  height: 50px;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 1.2em;
+}
+
+.pie a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.pie a:hover {
+  color: rgb(252, 215, 9);
+}
