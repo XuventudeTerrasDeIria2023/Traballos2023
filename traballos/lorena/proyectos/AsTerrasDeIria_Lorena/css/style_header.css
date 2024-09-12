@@ -1,0 +1,64 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Calibri';
+}
+
+header {
+    padding: 80px;
+    background: #cbdee6;
+}
+
+header img {
+    margin-left: 38%;
+    margin-right: 10%;
+    width: 25%;
+
+}
+
+header h1 {
+    font-size: 45px;
+    font-family: Cambria;
+    font-weight: bold;
+    color: #293613;
+    text-align: center;
+}
+
+nav {
+    background-color: #293613;
+    border-bottom: 1px solid #33411a;
+    text-align: center;
+    padding: 1em;
+
+}
+
+nav a {
+    background-color: #293613;
+    color: white;
+    padding: 0.5em;
+    font-size: 1.3em;
+    margin-right: 5%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #293613;
+}
+
+
+footer {
+    text-align: left;
+    background-color: #293613;
+    color: white;
+    margin-top: 5%;
+    padding: 0.4em;
+
+}
+
+footer img {
+    margin-left: 3%;
+    margin-top: 2%;
+}
