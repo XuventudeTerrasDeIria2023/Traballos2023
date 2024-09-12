@@ -13,8 +13,8 @@
  	--default-color-rgb: 68, 68, 68;
  	--heading-color: #37423b;
  	--heading-color-rgb: 55, 66, 59;
- 	--accent-color: #339966;
- 	--accent-color-rgb: 51, 153, 102;
+ 	--accent-color: #00a7e7;
+ 	--accent-color-rgb: 0, 167, 231;
  	--contrast-color: #ffffff;
  	--contrast-color-rgb: 255, 255, 255;
  	--gold-color: #E5B80B;
@@ -245,7 +245,7 @@
  }
 
  .page-title .heading {
- 	padding: 1em 0;
+ 	padding: 0;
  	border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
  }
 
@@ -291,9 +291,9 @@
  .section {
  	color: var(--default-color);
  	background-color: var(--background-color);
- 	padding: 60px 0;
+ 	padding:  0;
  	scroll-margin-top: 900px;
- 	overflow: clip;
+ 	overflow: clip;	 
  }
 
  @media (max-width: 1199px) {
@@ -322,6 +322,7 @@
  	text-transform: uppercase;
  	color: rgba(var(--default-color-rgb), 0.5);
  	position: relative;
+
  }
 
  .section-title h2::after {
@@ -452,25 +453,35 @@
  /*--------------------------------------------------------------
 # Trainers Section
 --------------------------------------------------------------*/
- .trainers .member {
+.trainers .container{
+	width: 99%;
+}
+.trainers .member {
  	position: relative;
-
- 	margin: .2em;
- 	padding: .2em 0;
- 	border: 1px dotted #E5B80B;
-
+ 	margin: .5em;
+ 	padding: .5em;
+ 	border: 1px dotted var(--default-color);
  }
+
+ .block-center {
+	padding: .2em;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+}
 
  .trainers .member .member-img {
  	margin: 0 80px;
  	border-radius: 50%;
- 	overflow: hidden;
+ 	overflow: auto;
  	position: relative;
+	width: 60%;
  }
 
  @media (max-width: 1024px) {
  	.trainers .member .member-img {
- 		margin: 0 60px;
+ 		margin: 0 60px;	
  	}
  }
 
@@ -479,33 +490,65 @@
  	z-index: 1;
  }
 
- .trainers .member .member-info.social {
- 	background-color: rgba(0, 0, 0, 0.6);
- 	display: inline-flex;
+ .member [data-title]:hover:after {
+    opacity: 0.8;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+.member [data-title]:after {
+    content: attr(data-title);
+    position: relative;
+    bottom: auto;
+    right: 1%;
+    padding: .5em;
+    color: #fff;
+    background:  var(--accent-color);
+     white-space: nowrap;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 0px 0px 4px #ccc;
+    -moz-box-shadow: 0px 0px 4px #ccc;
+    -webkit-box-shadow: 0px 0px 4px #ccc;
+
+    opacity: ;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+.member [data-title] {
+    position: relative;
+}
+ .trainers .member .member-info .social {
+ 
+	display: inline-flex;
  	justify-content: center;
  	align-items: center;
  	align-content: stretch;
  	z-index: 2;
- 	padding: .5em;
+ 	padding: 0em;
  	transition: 0.3s;
- 	/* 	visibility: hidden;*/
- 	opacity: 0;
+ 	opacity: 1;	 
  }
 
  .trainers .member .social a {
  	transition: 0.3s;
  	color: var(--gold-color);
- 	font-size: 1em;
- 	font-weight: 700;
- 	margin: 1em .5em;
+ 	font-size: .8em;
+ 	font-weight: 500;
+ 	margin: 0em 0em;
+	width: 100%;
  	/* 	border-bottom: 1px solid #E5B80B;*/
  }
 
  .trainers .member .social a:hover {
  	color: var(--accent-color);
- 	border-bottom: 5px solid #E5B80B;
- 	border-top: 5px solid #E5B80B;
- 	transform: scale(1.5)
+ 	border-bottom: 2px solid #E5B80B;
+ 	border-top: 2px solid #E5B80B;
+ 	transform: scale(1.2)
  }
 
  .trainers .member .member-info {
