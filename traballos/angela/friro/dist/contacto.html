@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto -Friro</title>
+    <link rel="stylesheet" href="contacto.css">
+  <link rel="icon" type="image/png" href="../Fotos/Logos/LogotipoFriros.jpg">
+
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+        <!--Fonts-->
+
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--FontAwesome-->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </head>
+
+    <body class="stop-scroll">
+       
+        <!--End loader-->
+
+
+        <!--Start Header-->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <div class="toggle">
+                    <span class="first"></span>
+                    <span class="middle"></span>
+                    <span class="last"></span>
+                </div>
+                <div class="navigation-bar">
+                    <ul>
+                        <li><a href="index.html">Inicio<span class="underline"></span></a></li>
+                        <li><a href="historia.html">Historia<span class="underline"></span></a></li>
+                        <li><a href="eventos.html">Eventos<span class="underline"></span></a></li>
+                        <li><a href="carta2.html">Carta<span class="underline"></span></a></li>
+                        <li><a href="reservas.html">Reservas<span class="underline"></span></a></li>
+                        <li  class="active"><a href="contacto.html">Contacto<span class="underline"></span></a></li>
+                        <li><a href="equipo.html">Equipo<span class="underline"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text">
+                <img src="../Fotos/Logos/Logotipo_Friros-removebg-preview.png" width="40%">
+            </div>
+<!--
+            <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+                <path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+            </svg>
+            <div class="arrow-down">
+            </div>
+-->
+        </header>
+        <!--End Header-->
+
+
+      
+
+            <div class="informacion">
+
+                <h2>Trabaja con nosotros</h2>
+                <p>Si estás interesado/a en formar parte de nuestro equipo envia tu curriculum a través del siguiente formulario, nos pondremos en contacto con usted lo antes posible.</p>
+                <p>Para actuaciones, enviar solicitud solicitando fecha a traves del mismo formulario.</p>
+            </div>
+         
+                <form name="formulario" id="form" method="post" action="mailto:mail@gmail.com">
+                  
+                    <!--        <img src="../Logotipo_Friros-removebg-preview.png">-->
+                    <br><br>
+                    <label for="nome">Nombre completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nombre" pattern="[A-Za-z]" required>
+                    <input type="text" id="nome" name="nome" placeholder="Apellidos" pattern="[A-Za-z]" required>
+
+                    <br><br>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[+@[gG][mM][aA][iI][lL][.][cC][oO][mM]]" title="solo contas de correo" required>
+
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+
+                    <br><br>
+
+
+                    <label for="reserva">Motivo:</label>
+                    <select name="reserva" id="reserva" required>
+                        <option value="un">Curriculums camarero</option>
+                        <option value="dous">Propuesta musical/actuacións</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="archivo">Adjuntar archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                    <br><br>
+
+                    <legend>Anotacións (250 caracteres)</legend>
+                    <textarea name="text" placeholder="Escriba aquí, por favor" cols="120" rows="8" maxlength="250"></textarea>
+                    <br><br>
+                    <button type="reset" value="borrar" form="form">Borrar</button>
+                    <button type="submit" value="enviar" form="form">Enviar</button>
+                </form>
+
+
+                <!--Start Footer-->
+                <footer>
+                    <div class="text">
+                        <h2>Sobre Friro</h2>
+                       
+                        <p>Friro es un Bar de copas acogedor y elegante en el que disponemos de una gran variedad de cócteles, cervezas frescas de barril y cafés de calidad. Tenemos frecuentemente espectáculos de música en directo y una sala para eventos de todo tipo.</p>
+                    </div>
+                    <div class="contact-container">
+                        <div class="social-media">
+                            <h3>Siguenos</h3>
+                            <div class="links">
+                                <a href="https://www.instagram.com/friro_copas_y_mas/"><i class="fab fa-instagram"></i></a>
+
+                            </div>
+                        </div>
+                         <div class="newsletter">
+                            <h3>Subscribete al boletín</h3>
+                            <form method="post" action="mailto:mail@gmail.com">
+                                <input type="email" name="email" placeholder="Type Your Email"  pattern="[a-z0-9._%+-]+@[+@[gG][mM][aA][iI][lL][.][cC][oO][mM]]">
+                                <i class="fas fa-envelope"></i>
+                            </form>
+                        </div>
+                    </div>
+                </footer>
+                <!--End Footer-->
+                <!--Start Copy-Right-->
+                <div class="copyright">
+                    <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+                        <path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+                    </svg>
+                    <i class="fas fa-angle-double-up arrow-up"></i>
+                    <ul class="info">
+                        <li>&copy;FRIRO</li>
+                        <li>15704 Santiago de Compostela </li>
+                        <li>Tel: 685479658</li>
+                      
+                    </ul>
+                    <ul class="CTA">
+                        <li><a href="../documentos/privacidad.pdf.pdf">Politica de Privacidad</a></li>
+                    </ul>
+                </div>
+                <!--End Copy-Right-->
+
+                <!-- Add your site or application content here -->
+                <script src="js/main.js"></script>
+                <script src="js/main.min.js"></script>
+   
+        
+
+
+        <!-- partial -->
+        <script src="./script.js"></script>
+</body>
+
+    </html>

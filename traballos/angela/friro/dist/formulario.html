@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="angela">
+    <meta name="viewport" charset="width-device=widht, initial-sacle=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        form {
+            margin-left: 15em;
+            border: 1px solid black;
+            width: 60%;
+            height: 40em;
+            padding: 2em;
+
+        }
+
+        form h2 {
+            text-align: center;
+        }
+
+        form label,
+        legend {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form name="formulario" id="form" method="post" action="mailto:mail@gmail.com">
+        <h2>RESERVAS</h2>
+        <!--        <img src="../Logotipo_Friros-removebg-preview.png">-->
+        <br><br>
+        <label for="nome">Nombre completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nombre" pattern="[A-Za-z]" required>
+        <input type="text" id="nome" name="nome" placeholder="Apellidos" pattern="[A-Za-z]" required>
+
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[+@[gG][mM][aA][iI][lL][.][cC][oO][mM]]" title="solo contas de correo" required>
+
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+
+        <br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <br><br>
+
+        <label for="hora">Hora:</label><br><br>
+        <select name="hora" id="hora" required>
+            <option value="un">17:00</option>
+            <option value="dous">18:00</option>
+            <option value="tres">19:00</option>
+            <option value="catro">20:00</option>
+            <option value="un">21:00</option>
+            <option value="dous">22:00</option>
+            <option value="tres">23:00</option>
+            <option value="catro">00:00</option>
+        </select>
+        <br><br>
+
+        <label for="reserva">Tipo de reserva:</label><br><br>
+        <select name="reserva" id="reserva" required>
+            <option value="un">Reserva de mesa</option>
+<!--            <option value="dous">Propuesta musical/actuacións</option>-->
+            <option value="dous">Salón de eventos</option>
+        </select>
+        <br><br>
+        <legend>Anotacións (250 caracteres)</legend>
+        <textarea name="text" placeholder="Escriba aquí, por favor" cols="120" rows="8" maxlength="250"></textarea>
+        <br><br>
+        <button type="reset" value="borrar" form="form">Borrar</button>
+        <button type="submit" value="enviar" form="form">Enviar</button>
+    </form>
+</body>
+
+</html>
