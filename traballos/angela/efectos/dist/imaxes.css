@@ -1,0 +1,403 @@
+* {
+    font-family: sans-serif;
+}
+
+/*CSS Menu*/
+body {
+    margin: 0;
+    background: black;
+}
+
+img {
+    height: 50px;
+}
+
+.menu {
+    background: black;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: impact;
+    color: #D14A9A;
+    text-decoration: none;
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a:hover {
+    background: #D14A9A;
+    color: black;
+}
+
+.a-1 {
+    color: black;
+}
+
+/*Encabezado*/
+.main-section {
+    height: 600px;
+    width: 100%;
+    background-image: url('../Fotos/imaxeInicio.jpg');
+    position: relative;
+    background-size: cover;
+}
+
+.main-section span {
+    margin-top: 3em;
+
+}
+
+.overlay {
+    background: #ff00003d;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logos {
+    margin-left: 15px;
+}
+
+.let-white {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.espace {
+    margin-left: 25%;
+}
+
+/*CSS Tarjetas*/
+
+.inicio {
+    width: 90%;
+    height: 5em;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+
+.inicio span {
+    font-weight: bold;
+}
+
+.un {
+    text-align: justify;
+    display: inline-flex;
+    width: 90%;
+    margin-top: -6em;
+}
+
+.un h3 {
+    text-align: center;
+    width: 18%;
+    color: salmon;
+}
+
+.un h3:hover {
+    color: black;
+}
+
+.lista,
+.listaGratuitas {
+    width: 40%;
+    color: white;
+    margin-left: 6em;
+    padding: 1em;
+    border: 2px dashed #D14A9A;
+
+}
+
+.lista:hover,
+.listaGratuitas:hover {
+    background-color: #FCBFBF;
+    color: black;
+}
+
+.lista dt,
+.listaGratuitas dt {
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hg-light {
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+
+.d-flex-md {
+    display: flex;
+}
+
+.texto,
+.parrafo,
+.optimizacion p,
+.implementacion p {
+    font-size: 18px;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+/*Componentes*/
+.hg-light h2,
+.seleccion h2,
+.optimizacion h2,
+.implementacion h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #D14A9A;
+
+}
+
+.card {
+    color: white;
+    padding: 1rem;
+    margin-left: 2em;
+    width: 50%;
+    margin-top: 1em;
+    transform: scale(1);
+    transition: all 1s;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.card li {
+    padding: 0.3em;
+    text-align: justify-all;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card h5 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.card h6 {
+    text-align: center;
+    font-size: 12px;
+}
+
+.card:hover {
+
+    background: #FCBFBF;
+    transition: all 0.7s;
+    box-shadow: 1px 2px 2px #D14A9A;
+    color: black;
+}
+hr{
+    border: 1px dashed #D14A9A;
+    margin-left:1em;
+}
+section {
+    padding: 5%
+}
+
+.seleccion {
+    color: white;
+}
+
+.contedor {
+    display: inline-flex;
+}
+
+.tipos,
+.resolucion,
+.profundidade,
+.modocolor {
+    width: 20%;
+    color: white;
+    padding: 1em;
+    margin-left: 2em;
+    border: 2px solid #D14A9A;
+}
+
+.tipos:hover,
+.resolucion:hover,
+.profundidade:hover,
+.modocolor:hover {
+    box-shadow: 3px 3px 3px 3px grey;
+    transform: scale(1.1);
+}
+
+.tipos h3,
+.resolucion h3,
+.profundidade h3,
+.modocolor h3 {
+    text-align: center;
+    color: pink;
+
+}
+
+.tipos li {
+    margin-top: 0.5em;
+}
+
+.tipos span,
+.profundidade span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.resolucion li,
+.profundidade li {
+    margin-top: 1em;
+}
+
+.modocolor dd {
+    margin-top: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.optimizacion p {
+    color: white;
+}
+
+
+.optimizar,
+.implementar {
+    display: inline-flex;
+}
+
+
+.escalar,
+.png,
+.jpeg,
+.gif {
+    /*    border: 2px solid #D14A9A;*/
+    margin: 1em;
+    padding: 0.5em;
+    color: white;
+}
+
+.escalar:hover,
+.png:hover,
+.jpeg:hover,
+.gif:hover {
+    box-shadow: 2px 2px 2px 2px #D14A9A;
+}
+
+.escalar h3,
+.png h3,
+.jpeg h3,
+.gif h3,
+.implementar h3 {
+    color: pink;
+    text-align: center;
+}
+
+.implementacion p {
+    font-size: 18px;
+}
+
+
+.sustitucion img {
+    width: 20%;
+    height: 5em;
+    margin-left: 5em;
+}
+
+.sustitucion,
+.secuenciales,
+.plugins {
+    color: white;
+    margin: 1em;
+    border: 3px solid #D14A9A;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+img {
+    width: 20%;
+    height: 5em;
+    margin-left: 5em;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#slideshow-container {
+    width: 80%;
+    margin: auto;
+}
+
+#slideshow-container img {
+    width: 15%;
+    height: auto;
+    display: inline-flex;
+}
+
+
+.flecha img {
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 3%;
+    height: 3em;
+    float: right;
+    margin-top: -4em;
+    margin-right: -2em;
+}
+
+/*Titulos*/
+.title-2 {
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 4rem;
+    color: white;
+}
+
+.title-3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.title-4 {
+    font-size: 1.3rem;
+}
+
+.title-5 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}

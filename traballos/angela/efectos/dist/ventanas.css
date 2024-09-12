@@ -1,0 +1,210 @@
+* {
+    font-family: sans-serif;
+    
+}
+
+/*CSS Menu*/
+body {
+    margin: 0;
+    background: black;
+}
+
+img {
+    height: 50px;
+}
+
+.menu {
+    background: black;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: impact;
+    color: #D14A9A;
+    text-decoration: none;
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a:hover {
+    background: #D14A9A;
+    color: black;
+}
+.a-1{
+    color: black;
+}
+/*Encabezado*/
+.main-section{
+  height: 600px;
+  width: 100%;
+  background-image: url('../Fotos/imaxeInicio.jpg');
+  position: relative;
+  background-size:cover;
+}
+
+.main-section span{
+   margin-top:3em;
+ 
+}
+
+.overlay {
+  background: #ff00003d;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.logos {
+  margin-left:15px;
+}
+.let-white{
+  color:white;
+  margin-bottom:50px;
+}
+.espace {
+    margin-left:25%;
+}
+ /*Acerca de mi*/
+.col-md-1 {
+    padding:1rem;
+    margin:1rem;
+    }
+.col-md-2{
+    padding:1rem;
+    margin:1rem;
+  }
+.foto{
+    display:inline.block;
+    height:300px;
+    padding:5px;
+  }
+
+/*CSS Tarjetas*/
+.d-flex-md {
+    display: flex;
+}
+
+.col-md-3 {
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*Componentes*/
+.introduccion, .creacion, .interactividade{
+    border: 1px dotted #d14a9a;
+    color: white;
+}
+.introduccion{
+    padding: 0.5em;
+}
+.introduccion p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.creacion h1{
+    text-align: center;
+    color: #d14a9a;
+    text-decoration: underline;
+    padding: 1em;
+}
+
+.creacion p{
+    margin-top:5em;
+    font-size: 16px;
+    padding:0.5em;
+}
+.un{
+ 
+    margin-top: -6em;
+}
+
+.contenedor{
+    color: white;
+}
+
+.contenedor h2{
+    color:salmon;
+}
+.interactividade h2{
+    color: #d14a9a;
+    text-align: center;
+}
+
+.bloqueo p,.apertura p, .interactividade p{
+    padding:0.5em;
+    margin-top: -1em;
+}
+
+.apertura{
+    display: inline-flex;
+    padding: 0.5em;
+}
+
+.columna1, .columna2{
+    width:40%;
+    margin-left:6em;
+}
+
+.columna1 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+dl, dt, dd{
+    padding: 0.5em;
+}
+dt{
+    text-decoration: underline;
+    color: pink;
+  
+}
+li span{
+    color: deeppink;
+    font-weight: bold;
+}
+
+dt{
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px 2px grey;
+}
+.flecha img{
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 3%;
+    float: right;
+    margin-top: -4em;
+    margin-right:-2em;
+}
+
+/*Titulos*/
+.title-2 {
+    text-align: center;
+  display:block;
+  margin-bottom:15px;
+  font-size:4rem;
+  color:white;
+}
+
+.title-3 {
+  font-size:2rem;
+  color:black;
+}
+.title-4 {
+  font-size:1.3rem;
+}
+.title-5{
+     font-size:2rem;
+  color:white;
+    text-align: center;
+}

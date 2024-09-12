@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efectos especiais en páxinas web</title>
+    <link rel="stylesheet" href="./efectos.css">
+    <link rel="stylesheet" href="efectos.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!--Menu-->
+    <div class="menu">
+        <a class="a-1" href="https://cdpn.io/Jack_BSK/debug/PoZyePd/vWMRwRDmoKQr"></a>
+        <a href="index.html">Introducción</a>
+        <a href="imaxes.html">Traballar con imaxes</a>
+        <a href="textos.html">Traballar con texto</a>
+        <a href="marcos.html">Traballar con marcos</a>
+        <a href="ventanas.html">Traballar con ventás</a>
+        <a href="efectos.html">Outros efectos</a>
+
+    </div>
+    <!--Encabezado-->
+    <div class="main-section">
+        <div class="overlay text-center">
+            <span class="text-center title-2"> Efectos especiaias </span>
+            <h1 class="title-5 ver-ali">en páxinas web</h1>
+
+        </div>
+    </div>
+
+    <!--Tarjetas-->
+    <section class="html">
+        <h2>Efectos con HTML</h2>
+        <div class="contedor1">
+            <p>Utilizando só HTML é moi difícil crear ningún efecto de movemento nin efectos estáticos que non se consiga mediante o posicionamento normal dos elementos. Por iso os novos estándares de HTML5 intentan solventar as limitacions de HTML mediante a inclusión de novas etiquetas como "canvas".</p>
+
+            <canvas id="canvas" width="600" height="300">
+                <script>
+                    var posicion, canvas, ctx, direccion;
+                    var logo = new Image();
+                    logo.src = "./imaxes/cerezas.gif";
+
+                    window.onload = function() {
+                        canvas = document.getElementById("canvas");
+                        ctx = canvas.getContext("2d");
+                        posicion = 0;
+                        direccion = 0;
+                        setInterval("movimiento()", 25);
+                    }
+
+                    function movimiento() {
+                        if (direccion == 0) {
+                            posicion++
+                        } else {
+                            posicion--
+                        }
+                        if (posicion == 1515) {
+                            direccion = 1
+                        }
+                        if (posicion == 0) {
+                            direccion = 0
+                        }
+                        canvas.width = canvas.width;
+                        ctx.drawImage(logo, posicion, 0);
+                    }
+
+                </script>
+
+
+
+            </canvas>
+        </div>
+    </section>
+
+    <section class="css">
+        <h2>Efectos con CSS</h2>
+        <div class="contedor2">
+            <p>Usando só CSS é posible crear efectos que a simple vista poden parecer elaborados con outros lenguaxes de programación. Gracias as novas propiedades de CSS combinadas coas de CSS2 e unha correcta definición podense conseguir efectos sorprendentes.<br><br>
+                Ademais, co adecuado coñecemento de CSS3 podense crear numerosos efectos e pequenas animacións que antes só eran posibles coa inclusión doutros lenguaxes como ActionScript ou JavaScript.</p>
+
+            <div class="galeria">
+                <li><a href="#"><img src="imaxes/Bangkok.jpg" /><span>
+                            <img src="imaxes/Bangkok.jpg" /></span></a></li>
+
+                <li><a href="#"><img src="imaxes/berlin.jpg" /><span>
+                            <img src="imaxes/berlin.jpg" /></span></a></li>
+
+                <li><a href="#"><img src="imaxes/venecia.jpg" /><span>
+                            <img src="imaxes/venecia.jpg" /></span></a></li>
+
+                <li><a href="#"><img src="imaxes/roma.jpeg" /><span>
+                            <img src="imaxes/roma.jpeg" /></span></a></li>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="capas">
+        <h2>Efectos con capas</h2>
+
+        <p class="titulo">HTML reserva a etiqueta "div" para crear capas. Son efectos discretos que non complican a navegación, ainda que en ocasións requieren animacións complexas.</p>
+
+        <img class="imagen" src="imaxes/estambul.jpg">
+        <div class="contedor3">
+            <div class="hide">
+                <h3>hide() show()</h3>
+                <p>-Serven para ocultar e mostrar elementos usados para crear efectos de desvanecemento a calquera obexeto.</p>
+                <ul>
+
+                    <li>Hide <button class="btn1">Ocultar foto</button></li><br>
+                    <li>Show <button class="btn2">Mostrar foto</button></li>
+                </ul>
+                <script>
+                    $(document).ready(function() {
+                        $(".btn1").click(function() {
+                            $(".imagen").hide();
+                        });
+                        $(".btn2").click(function() {
+                            $(".imagen").show();
+                        });
+                    });
+
+                </script>
+            </div>
+
+
+            <div class="fade">
+                <h3>Eventos fade</h3>
+                <p>Método similar aos anteriores, só que estos manteñen ao obxeto no fluxo normal da páxina, simplemente modificando a súa opacidade.</p>
+
+                <ul>
+                    <li>-fadeIn(): fai aparecer un elemento non visible.</li>
+                    <button class="btn2">Mostrar foto</button>
+                    <li>-fadeOut(): fai desaparecer un elemento visible. </li><button class="btn1">Ocultar foto</button>
+                    <li>-fadeToggle(): alterna entre os dous métodos anteriores.</li><button>Alternar entre ocultar() y mostrar() de la foto</button>
+                    <li>-fadeTo(): permite específicar un valor de opacidade para a aparición e desaparición.</li><button class="opacidad">Cambia gradualmente la opacidad de la foto</button>
+
+
+
+                </ul>
+                <script>
+                    $(document).ready(function() {
+                        $(".btn1").click(function() {
+                            $(".imagen").fadeInt();
+                        });
+                        $(".btn2").click(function() {
+                            $(".imagen").fadeOut();
+                        });
+                    });
+                    $(document).ready(function() {
+                        $("button").click(function() {
+                            $(".imagen").toggle('slow');
+                        });
+                    });
+
+                    $(document).ready(function() {
+                        $(".opacidad").click(function() {
+                            $(".imagen").fadeTo(1000, 0.4);
+                        });
+                    });
+
+                </script>
+            </div>
+
+            <div class="slide">
+                <h3>Eventos slide</h3>
+                <p>Usanse para crear efectos de deslizamento , sendo posible deslizar calquera elemento hacia arriba, abaixo ou lateralmente.</p>
+                <ul>
+                    <li>-slideDown(): o elemento aparece con un efecto de deslizamento hacia abaixo.</li>
+                    <button class="slideDown">SlideDown</button>
+                    <li>-slideUp(): o elemento desaparece con un efecto de deslizamento hacia arriba. </li> <button class="slideUp">SlideUp</button>
+                    <li>-slideToggle(): alterna os dous métodos anteriores.</li> <button class="slideToggle">SlideToggle</button>
+                </ul>
+                <script>
+                    function slideDown() {
+                        $('.imagen').slideDown(1000, function() {
+                            alert('Elemento completamente visible');
+                        });
+
+                        function slideUp() {
+                            $('.imagen').slideUp(1000, function() {
+                                alert('Elemento completamente oculto');
+                            });
+
+
+                            function slideToggle() {
+                                $('.imagen').slideToggle(1000, function() {
+                                    alert('Animación completada');
+                                });
+                            }
+
+                </script>
+            </div>
+        </div>
+        <div class="contedor4">
+
+            <div class="animate">
+                <h3>animate()</h3>
+                <ul>
+                    <li>Permite crear animacións personalizadas según as propias necesidades.</li>
+                    <li>Podese definir casi calquera propiedade do elemento seleccionado.</li>
+                    <li>É posible ir enlazando distintos métodos "animate()" que se irán realizando progresivamente, resultando unha animación completa. </li><br>
+
+                    <button class="animar">Animar Elemeto</button>
+                </ul>
+                <script>
+                    $('.imagen').ready(function() {
+                        $(".animar").click(function() {
+                            $(".imagen").animate({
+                                left: '80%',
+                                width: '10%'
+                            }, 2000);
+                            $(".imagen").animate({
+                                top: '80%',
+                                width: '5%'
+                            }, 2000);
+                            $(".imagen").animate({
+                                left: '5%',
+                                width: '10%'
+                            }, 2000);
+                            $(".imagen").animate({
+                                top: '10%',
+                                width: '10%'
+                            }, 2000);
+                        });
+                    });
+
+                </script>
+            </div>
+
+            <div class="stop">
+                <h3>stop()</h3>
+                <ul>
+                    <li>Serve para parar calquera animación antes de que acabe.</li>
+                    <li>É posible ir enlazando distintos métodos "animate()" que se irán realizando progresivamente, resultando unha animación completa. </li>
+                    <li>Podese parar toda a cola "animate()" co valor "stopAll" como true, pola contra se o valor é false só se para o método "animate()" que se está executando nese momento.</li><br>
+                    <button id="parar">Parar </button>
+                </ul>
+                <script>
+                    $(document).ready(function() {
+                        $("#parar").click(function() {
+                            $(".imagen").stop(true);
+                            $(".imagen").stop();
+                        });
+                    });
+
+                </script>
+            </div>
+
+
+            <div class="callback">
+                <h3>callback</h3>
+                <ul>
+                    <li>Parámetro opcional que se pode incluír dentro de todos os efectos para que cando rematen o seu funcionamento chamen a unha función definida previamente.</li>
+                    <li>Tamén se poden incluír funcions tan complexas como se necesiten ou invocar funcions que se declararan previamente.</li>
+                    <li>É posible crear animacións tan elaboradas como sexa necesario para aportar dinamismo a calquera sitio web. </li><br>
+                    <input type="button" value="inicia" onclick="funcionPrimera();" />
+                    <!--                    <div id="div" style="width:100px; height:100px; background:pink;"></div>-->
+                </ul>
+                <script>
+                    function functionUltima() {
+                        alert("hola");
+                    }
+
+                    function funcionPrimera() {
+                        $(".imagen").fadeOut(1000, function() {
+                            //una función anónima puede servir tambien y se ejecuta como callback      
+                            $(".imagen").fadeIn(1000, functionUltima) //funcion ultima ejecuta una funcion existente 
+                        })
+                    }
+
+                </script>
+
+            </div>
+
+            <div class="encadenamento">
+                <h3>Encadenamento de efectos</h3>
+                <ul>
+                    <li>É posible encadenar todos os efectos nunha mesma liña para evitar que os navegadores teñan que buscar o mesmo elemento cada vez que se lle aplique un efceto diistinto.</li>
+                    <li>Estos efectos iranse encadenando por orde de aparición.</li>
+                    <li>Asi podense agregar múltiples efectos a un mesmo obxecto sen ter que facer referencia a él para cada un dos efectos, optimizando así o código final. </li><br>
+                    <button class="encadenar">Encadenar</button>
+                </ul>
+                <script>
+                    $(document).ready(function() {
+                        $(".encadenar").click(function() {
+                            $(".imagen").slideUp(2000).slideDown(2000);
+                        });
+                    });
+
+                </script>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <script src='https://kit.fontawesome.com/8ba2187214.js'></script>
+    
+    <div class="flecha">
+        <a href="efectos.html"><img src="imaxes/subir.png"></a>
+    </div>
+</body>
+
+</html>

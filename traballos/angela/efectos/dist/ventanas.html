@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efectos especiais en páxinas web</title>
+    <link rel="stylesheet" href="./ventanas.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!--Menu-->
+    <div class="menu">
+        <a class="a-1" href="https://cdpn.io/Jack_BSK/debug/PoZyePd/vWMRwRDmoKQr"></a>
+        <a href="index.html">Introducción</a>
+        <a href="imaxes.html">Traballar con imaxes</a>
+        <a href="textos.html">Traballar con texto</a>
+        <a href="marcos.html">Traballar con marcos</a>
+        <a href="ventanas.html">Traballar con ventás</a>
+        <a href="efectos.html">Outros efectos</a>
+
+    </div>
+    <div class="main-section">
+        <div class="overlay text-center">
+            <span class="text-center title-2"> Efectos especiaias </span>
+            <h1 class="title-5 ver-ali">en páxinas web</h1>
+
+        </div>
+    </div>
+
+    <section class="introduccion">
+        <p>As ventás dos navegadores son a parte fundamental da navegación, xa que se usan para mostrar todos os documentos dun sitio.</p>
+        <p>Con HTML só é posible facer que un enlace mostre o seu contido nunha ventá distinta da principal mediante o atributo "target" co seu valor definido como "_blank".</p>
+        <p>Con JavaScript podemos controlar a aparición e desaparición de ventás e interactuar con elas.</p>
+
+
+    </section>
+
+    <section class="creacion">
+        <h1>Creación de varias ventás</h1>
+
+        <div class="un">
+            <p>Co lenguaxe JavaScript é moi sinxela a creación dunha ou varias ventás que mostran información adicional ao sitio, ferramentas de navegación, animacións, etc, sin necesidade de que o usuario abandone a páxina principal coa posible pérdida de información introducida.<br><br>
+                O uso de ventás emerxentes non solicitadas pode resultar unha práctica moi molesta polo que se recomenda usalo solo en casos requeridos pola funcionalidade do sitio ou algún motivo xustificado.</p>
+        </div>
+   
+    <section class="contenedor">
+
+        <div class="bloqueo">
+            <h2>-Detectar o bloqueo de ventás emerxentes ou pop-ups:</h2>
+            <p>É moi frecuente que os usuarios teñan activada a opción do seu navegador para que non permita ventás secundarias, polo que si para o correcto funcionamento da páxina é necesario o uso de ventás emerxentes deberase avisar ao usuario para que desactive esa opción e asi poida navegar correctamete polo sitio.</p>
+
+        </div>
+        <div class="ventanas">
+            <h2>-Apertura e peche de ventás:</h2>
+
+            <div class="apertura">
+                <div class="columna1">
+                    <p>Para a apertura de pop-ups existe unha sentencia en JavaScript na que se poden modificar unha serie de parámetros:</p>
+
+                    <dl>
+                        <dt>URL:</dt>
+                        <dd>Será a dirección do contido que mostrará a nova ventá emerxente.</dd>
+                        <dt>NOME DA VENTÁ OU ATRIBUTO DE DESTINO:</dt>
+                        <dd>Establecese un nome para a nova ventá, co que se poderá identificar para facer referencia a ela cando se necesite. No seu lugar pódese establecer o destino da nova ventá usando os mesmos valores que se lle poderían dar ao atributo "target", é decir:<br><br>
+                            <li><span class="span">_blank:</span>A URL abrese nunha ventá nova.</li>
+                            <li><span class="span">_parent:</span> A URL cargase na ventá principal.</li>
+                            <li><span class="span">_self:</span> A URL sustituirá o contido da páxina actual.</li>
+                            <li><span class="span">_top:</span> A URL sustitúe calquera conxunto de marcos que poidan ser cargados.</li>
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="columna2">
+                    <dt>FORMA DA VENTÁ:</dt>
+                    <dd>Establecese a forma da nova ventá emerxente, o seu tamaño, etc. Os atributos que se poden definir aquí son:<br><br>
+                        <li><span class="span">channel/fullscreen:</span> establece que a ventá se mostre en modo pantalla completa.</li>
+                        <li><span class="span">height/width:</span> establece en píxeles o alto e ancho da nova pantalla emerxente.</li>
+                        <li><span class="span">left/top:</span> indica a posicion inicial donde se mostrará a nova ventá.</li>
+                        <li><span class="span">location:</span> defínese cando queremos que a nova ventá non mostre a barra de direccions.</li>
+                        <li><span class="span">menubar:</span> defínese cando queremos que a nova ventá non mostre a barra de menús do navegador.</li>
+                        <li><span class="span">resizable:</span> defínese cando queremos que se poida modificar o tamaño da ventá.</li>
+                        <li><span class="span">scrollbar:</span>mostra ou non as barras desplzamento.</li>
+                        <li><span class="span">statusbar:</span>agrega ou quita a barra de estado da nova ventá.</li>
+                        <li><span class="span">titlebar:</span>si se desea agrgar ou quitar a barra do título. Normalmente os navegadores omiten este parámetro.</li>
+                        <li><span class="span">toolbar:</span>mostra ou deshabilita a barra de ferramentas da nova ventá.</li>
+                    </dd>
+                    <dt>REEMPLAZAR:</dt>
+                    <dd>Especifíca se a dirección URL definida creará unha entrada nova no historial do navegador ou se polo contrario sustitúe a entrada actual na lista do historial. </dd>
+                </div>
+            </div>
+        </div>
+         </section>
+        <div class="interactividade">
+            <h2>Interactividade entre varias ventás</h2>
+            <p>Ao igual que os marcos, mediante JavaScript é posible unha comunicación entre todalas ventás, tanto a principal como todas as emerxentes que se abriran.
+                Para facer posible esta interacción é necesario almacenar as distintas ventás secundarias en variables, para poder referirse a elas fácilmente.</p>
+            <p>Podemos modificar o atributo "location" definido nunha ventá previamente aberta para que mostre un archivo HTML do sitio ou cargue unha dirección externa, mediante a sentencia "windows.location".</p>
+            <p>Coa sentencia "ventana.focus()" serve para aplicar o foco sobre esa ventá e que o seu contido aparezca en segundo plano.</p>
+            <p>Tamén podemos facer que unha ventá secundaria se comunique coa principal para enviar información ou cambiar o contido dalguns dos seus elementos, esto faise coa sentencia "window.opener".</p>
+
+        </div>
+    </section>
+<div class="flecha">
+        <a href="ventanas.html"><img src="imaxes/subir.png"></a>
+    </div>
+</body>
+
+</html>

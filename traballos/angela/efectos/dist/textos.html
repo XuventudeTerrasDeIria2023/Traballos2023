@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efectos especiais en páxinas web</title>
+    <link rel="stylesheet" href="./textos.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!--Menu-->
+    <div class="menu">
+        <a class="a-1" href="https://cdpn.io/Jack_BSK/debug/PoZyePd/vWMRwRDmoKQr"></a>
+        <a href="index.html">Introducción</a>
+        <a href="imaxes.html">Traballar con imaxes</a>
+        <a href="textos.html">Traballar con texto</a>
+        <a href="marcos.html">Traballar con marcos</a>
+        <a href="ventanas.html">Traballar con ventás</a>
+        <a href="efectos.html">Outros efectos</a>
+
+    </div>
+    <!--Encabezado-->
+    <div class="main-section">
+        <div class="overlay text-center">
+            <span class="text-center title-2"> Efectos especiaias </span>
+            <h1 class="title-5 ver-ali">en páxinas web</h1>
+
+        </div>
+    </div>
+    <section class="textos">
+
+        <div class="texto1">
+            <p>Igual que coas imaxes, tamén é posible aplicar efectos especiais aos textos.</p>
+        </div>
+        <div class="texto2">
+            <p>Pode servir para destacar unha palabra ou dar dinamismo á páxina.</p>
+        </div>
+        <div class="texto3">
+            <p>Para realizar estos efectos podemos recurrir a HTML, CSS e JavaScript, coas súas diferentes librerías.</p>
+        </div>
+        <div class="texto4">
+            <p>Para cambiar o aspecto de calquera texto da páxina web, é recomendable facelo mediante CSS.</p>
+        </div>
+
+    </section>
+
+    <section class="efectos">
+        <h2>CREACIÓN DE TEXTOS MELLORADOS E CON MOVEMENTO</h2>
+        <div class="lista">
+            <ul class="hover">
+
+                <h3>EFECTO HOVER:</h3>
+                <li>Prodúcese cando o rato pasa por encima dun enlace, para destacar máis o texto. </li>
+                <li>Pode aumentar o tamaño da letra, cambiar a cor, etc.</li>
+                <li>Si se aplican moitos efectos poden saturar ao usuario e facer incomodo o uso da páxina web. </li>
+            </ul>
+
+            <ul class="mousedown">
+
+                <h3>EFECTO MOUSEDOWN:</h3>
+                <li>Prodúcese cando o usuario pulsa o botón sobre o enlace sin levantalo. </li>
+                <li>Normalmente o efecto é sutil, como cambio de cor.</li>
+                <li>Con CSS podese conseguir coa pseudoclase ":active". </li>
+            </ul>
+
+            <ul id="mouseup">
+
+                <h3>EFECTO MOUSEUP:</h3>
+                <li>Prodúcese cando o usuario deixa de pulsar o botón. </li>
+                <li>Normalmente o efecto é sutil, como cambio de cor.</li>
+            </ul>
+
+
+            <script>
+                mouseup.onmouseover = function(event) {
+                    let target = event.target;
+                    target.style.background = 'pink';
+
+                    text.value += `over -> ${target.tagName}\n`;
+                    text.scrollTop = text.scrollHeight;
+                };
+
+                mouseup.onmouseout = function(event) {
+                    let target = event.target;
+                    target.style.background = '';
+
+                    text.value += `out <- ${target.tagName}\n`;
+                    text.scrollTop = text.scrollHeight;
+                };
+
+            </script>
+
+
+
+
+            <ul class="visited">
+
+                <h3>EFECTO VISITED:</h3>
+                <a href="https://www.youtube.com/?app=desktop&hl=es">Youtube</a><br><br>
+                <li>Prodúcese cando os enlaces xa foron visitados. </li>
+                <li>Estos cambian de cor para avisar ao usuario.</li>
+                <li>Usase a pseudoclase CSS ":visited". </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <section class="contedor">
+        <div class="implementacion">
+            <h2>IMPLEMENTACIÓN DE EFECTOS</h2>
+            <p>Igual que para as imaxes, hai moitos efectos para os textos. A mellor opción é simular o mismo efecto aplicando o código JavaScript necesario.</p>
+
+        </div>
+        <div class="adecuacion">
+            <h2>ADECUACIÓN DOS EFECTOS A PÁXINA WEB</h2>
+            <p>Á hora de aplicar os efectos necesarios á páxina web, haberá que ter en conta características como a súa correcta visualización en todolos navegadores e dispositivos posibles.</p>
+            <p>Moitos plugins desarrollados para o uso libre non contemplaron o deseño adaptativo polo que haberá que ter especial coidado nestos casos e intentar modificar os plugins para o seu correcto comportamento, ou implementar unha consulta de medios para que aplique outras follas de estilo ou librerías JavaScript previamente definidas para cada dispositivo.</p>
+        </div>
+    </section>
+<div class="flecha">
+        <a href="textos.html"><img src="imaxes/subir.png"></a>
+    </div>
+
+</body>
+
+</html>
