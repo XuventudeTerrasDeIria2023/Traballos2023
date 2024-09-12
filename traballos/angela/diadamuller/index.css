@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    /*    height: ;ight: 100vh;    */
+}
+
+header {
+    background: #E7B9E0 url(imaxes/fondo2.jpg) no-repeat bottom/85%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+nav {
+    /*    margin: 0 auto;*/
+    width: 20%;
+    /*    margin-top: -38em;*/
+    margin: 0;
+    flex-direction: end;
+
+
+}
+
+.horizontal {
+    display: inline-flex;
+    margin-left: 30em;
+}
+
+.vertical {
+    display: grid;
+}
+
+.menu CSS ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menuCSS li,
+.menuCSS li a {
+    width: 60%;
+    list-style-type: none;
+}
+
+.menuCSS a {
+    display: block;
+    font-size: 18px;
+    margin-left: 1em;
+    text-decoration: none;
+    list-style-type: none;
+    color: darkviolet;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.menuCSS a:hover {
+    width: 60%;
+    color: white;
+    list-style-type: none;
+    background-color: violet;
+
+}
+
+.menuCSS ul li ul {
+    display: none;
+    list-style-type: none;
+
+}
+
+.menuCSS ul li a:hover + ul,
+.menuCSS ul li ul:hover {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+
+}
+
+a#active {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.contido {
+    border: 1px solid violet;
+    background-color: plum;
+    width: 100%;
+    height: auto !important;
+    /*
+    margin-top: 27em;
+    margin-left: 5em;
+*/
+
+}
+
+.texto1 h2 {
+    margin-left: 40em;
+    margin-top: -17em;
+    font-family: "Dancing Script";
+}
+
+.texto1 img {
+    width: 20%;
+    margin-left: 10em;
+    margin-top: 5em;
+    box-shadow: 2px 2px 5px 5px white;
+}
+
+.texto1 p {
+    margin-top: 4em;
+    color: black;
+    text-align: justify;
+    width: 50%;
+    margin-left: 45em;
+    border: 2px solid violet;
+    box-shadow: 2px 2px 5px 5px violet;
+    padding: 1em;
+}
+
+hr {
+    width: 60%;
+    margin-top: 15em;
+    color: darkviolet;
+}
+
+.texto2 {
+    height: 25em;
+}
+
+.texto2 h2 {
+
+
+    margin-top: 5em;
+    margin-left: 8em;
+    font-family: "Dancing Script";
+}
+
+.texto2 p {
+
+    margin-top: 5em;
+    margin-left: 2em;
+    text-align: justify;
+    width: 50%;
+    border: 2px solid violet;
+    box-shadow: 2px 2px 5px 5px violet;
+    padding: 1em;
+}
+
+.texto2 img {
+    width: 30%;
+    margin-left: 65em;
+    margin-top: -30em;
+}
+
+.flecha img{
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 3%;
+    float: right;
+    margin-top: -4em;
+    margin-right: 1.3em;
+    box-shadow: 2px 2px 3px 3px darkviolet;
+   
+}
+footer {
+    background-color: violet;
+    /*    margin-left: 5em;*/
+    text-align: center;
+    width: 100%;
+    height: auto !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}

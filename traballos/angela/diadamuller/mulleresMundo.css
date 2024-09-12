@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+/*
+body {
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+*/
+/*
+
+.fondo img {
+    width: 90%;
+    margin-left: 5em;
+}
+*/
+
+nav {
+    margin: 0 auto;
+    width: 20%;
+    margin-top: -38em;
+    padding: 0.5em;
+}
+
+
+.contido {
+/*    background-color: plum;*/
+/*    width: 100%;*/
+    /*
+    margin-top: 30em;
+    margin-left: 5em;
+*/
+/*    padding: 2em;*/
+}
+.contido img{
+    box-shadow: 2px 2px 3px 4px darkviolet;
+}
+.contido img:hover {
+    box-shadow: 2px 2px 3px 3px darkviolet;
+    transform: scale(1.1);
+}
+h1{
+    text-align: center;
+    font-family: Dancing Script;
+    color: darkviolet;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px violet;
+}
+.clara img {
+    width:20%;
+    margin-left: 6em;
+    margin-top: 4em;
+}
+
+.clara h2 {
+    margin-top: -13em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+    color:black;
+}
+
+.clara p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+    
+}
+
+.Dorothy img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 12em;
+}
+
+.Dorothy h2 {
+    margin-top: -14em;
+    margin-left: 20em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Dorothy p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Emmeline img {
+    width: 20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.Emmeline h2 {
+    margin-top: -12em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Emmeline p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.Josephine img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 6em;
+}
+
+.Josephine h2 {
+    margin-top: -10em;
+    margin-left: 20em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Josephine p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Lillian img {
+    width:20%;
+    margin-left: -60em;
+    margin-top: 15em;
+}
+
+.Lillian h2 {
+    margin-top: -10em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Lillian p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.Malala img {
+    width:20%;
+    margin-left: 75em;
+    margin-top: 8em;
+}
+
+.Malala h2 {
+    margin-top: -10em;
+    margin-left: 20em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Malala p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Marie img {
+    width:20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.Marie h2 {
+    margin-top: -10em;
+    margin-left: 25em;
+   font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Marie p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.Rosa img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 8em;
+}
+
+.Rosa h2 {
+    margin-top: -10em;
+    margin-left: 20em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Rosa p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Stephanie img {
+    width:20%;
+    margin-left: -65em;
+    margin-top: 18em;
+}
+
+.Stephanie h2 {
+    margin-top: -10em;
+    margin-left: 25em;
+  font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Stephanie p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 3em;
+}
+
+.Virginia{
+    margin: 10% 0 0 0;    
+    height: 40em;
+}
+
+.Virginia img {
+    width:20%;
+    margin-left: 75em;
+    margin-top: 8em;
+}
+
+.Virginia h2 {
+    margin-top: -12em;
+    margin-left: 20em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Virginia p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+.flecha img{
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 3%;
+    float: right;
+    margin-top: -4em;
+    margin-right: 1.3em;
+    box-shadow: 2px 2px 3px 3px darkviolet;
+   
+}
+
+footer {
+    background-color: violet;
+    
+    /*    margin-left: 5em;*/
+    text-align: center;
+    width: 100%;
+    height: auto !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+

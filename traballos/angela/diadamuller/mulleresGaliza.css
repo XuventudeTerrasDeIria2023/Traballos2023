@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+/*
+body {
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+*/
+/*
+
+.fondo img {
+    width: 90%;
+    margin-left: 5em;
+}
+*/
+
+nav {
+    margin: 0 auto;
+    width: 20%;
+    margin-top: -38em;
+    padding: 0.5em;
+}
+
+
+
+.contido {
+/*    background-color: plum;*/
+/*    width: 100%;*/
+    /*
+    margin-top: 30em;
+    margin-left: 5em;
+*/
+/*    padding: 2em;*/
+}
+.contido img{
+    box-shadow: 2px 2px 3px 4px darkviolet;
+    
+}
+.contido img:hover {
+    box-shadow: 2px 2px 3px 3px darkviolet;
+     transform: scale(1.1);
+}
+h1{
+    text-align: center;
+    font-family: Dancing Script;
+    color: darkviolet;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px violet;
+}
+
+
+.Rosalia img {
+    width: 20%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Rosalia h2 {
+    margin-top: -12em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+
+.Rosalia p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 3em;
+}
+
+
+
+.Emilia img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 10em;
+}
+
+.Emilia h2 {
+    margin-top: -12em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Emilia p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 4em;
+}
+
+
+
+.Sofia img {
+    width: 20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.Sofia h2 {
+    margin-top: -14em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Sofia p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.Concepcion img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 10em;
+}
+
+.Concepcion h2 {
+   margin-top: -12em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Concepcion p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.Isabel img {
+    width: 20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.Isabel h2 {
+    margin-top: -14em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.Isabel p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.MariaPita img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 10em;
+}
+
+.MariaPita h2 {
+    margin-top: -14em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.MariaPita p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.MariaLuz img {
+    width: 20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.MariaLuz h2 {
+     margin-top: -14em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.MariaLuz p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.MarcelaElisa img {
+    width: 20%;
+    margin-left: 75em;
+    margin-top: 6em;
+}
+
+.MarcelaElisa h2 {
+     margin-top: -12em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.MarcelaElisa p {
+    float: left;
+    display: inline-flex;
+    width: 60%;
+    margin-left: 6em;
+    margin-top: 2em;
+}
+
+.CeliaRivas img {
+    width: 20%;
+    margin-left: -60em;
+    margin-top: 20em;
+}
+
+.CeliaRivas h2 {
+    margin-top: -10em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.CeliaRivas p {
+    float: right;
+    display: inline-flex;
+    width: 60%;
+    margin-right: 4em;
+    margin-top: 3em;
+}
+
+.IsabelZendal  {
+   
+    margin: 10% 0 0 0;    
+    height: 40em;
+}
+
+.IsabelZendal img {
+    width: 20%;
+    margin-left: 70%;
+    margin-top: 10em;
+}
+
+.IsabelZendal h2 {
+     margin-top: -8em;
+    margin-left: 25em;
+    font-family: Dancing Script;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px  white;
+    font-size: 30px;
+}
+
+.IsabelZendal p {
+/*    float:     left;*/
+/*    display: inline-flex;*/
+    width: 60%;
+    margin-left: 6em;
+/*    margin-top: 2em;*/
+}
+
+.flecha img{
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    width: 3%;
+    float: right;
+    margin-top: -4em;
+    margin-right: 1.3em;
+    box-shadow: 2px 2px 3px 3px darkviolet;
+   
+}
+footer {
+    background-color: violet;
+    
+    /*    margin-left: 5em;*/
+    text-align: center;
+    width: 100%;
+    height: auto !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+
