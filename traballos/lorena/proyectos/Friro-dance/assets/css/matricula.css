@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../imagenes/banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*////////// BANNER - LOGO ///////////*/
+
+.hero {
+    position: fixed;
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    float: right;
+    margin: 2em 1em;
+    width: 8%;
+    transition: transform .5s;
+}
+
+.logo:hover {
+    transform: scale(107%);
+}
+
+
+/*//////////////// MATRICULA //////////////////*/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    margin-bottom: 3.5em;
+    padding: 10px;
+  }
+  
+  
+.titulo h1 {
+    position: relative;
+    font-family: "Handlee", cursive;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 600;
+    color: #252525;
+    line-height: 1.5em;
+    display: block;
+    color: #fff;
+}
+
+.info p,
+.info ul {
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 1.1em;
+}
+
+.info a {
+    text-decoration: none;
+    color: #FFECA8;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .info p,
+    .info ul {
+        width: 80%;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 799px) {
+    
+    .info p,
+    .info ul {
+        width: 80%;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 625px) {
+    
+    .info p,
+    .info ul {
+        width: 80%;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .info p,
+    .info ul {
+        width: 80%;
+        font-size: 15px;
+    }
+
+}
