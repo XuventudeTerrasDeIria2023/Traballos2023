@@ -1,0 +1,3 @@
+fondo: #232029
+blanco: #FDF9EE
+negro: #232029
