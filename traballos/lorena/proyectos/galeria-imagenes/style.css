@@ -1,0 +1,52 @@
+.contenedor {
+	margin: 0 auto;
+	width: 80%;
+	padding-left: 7.7em;
+}
+
+.contenedor img {
+	width: 25%;
+	float: left;
+	margin: 1.66%;
+	transition: transform .5s linear;
+}
+
+.contenedor p{
+	font-family: 'Raleway';
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	width: 30%;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #F1F1F1;	
+}
+
+.contenedor img:hover {
+	transform: scale(1.1);
+	box-shadow: 1px 1px 15px #8f8a8a;
+}
+
+footer {
+	position: absolute;
+	top: 1750px;
+	left: 15%;
+	width: 63%;
+	margin-top: 5em;
+	border-top: 2px solid #000;
+	font-family: 'Raleway';
+	text-align: center;
+	padding: 1.5em;
+  }
+  
+  footer a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #000;
+	padding: .5em;
+  }
+  
+  footer a:hover {
+	text-decoration: underline;
+  }

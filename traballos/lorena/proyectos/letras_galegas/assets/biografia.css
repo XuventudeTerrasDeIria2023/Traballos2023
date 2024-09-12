@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.biografia {
+    margin: 0 auto;
+    width: 60%;
+    font-family: "Questrial", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.bio-uno {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.bio-uno img {
+    max-width: 30%;
+    margin-right: 40px;
+}
+
+.bio-uno p {
+    margin-top: 3em;
+}
+
+.bio-dos {
+    display: flex;
+}
+
+.bio-dos img {
+    width: 40%;
+    margin-top: 1em;
+    /* margin-left: 40px; */
+}
+
+.bio-dos p {
+    margin-top: 2em;
+}
+

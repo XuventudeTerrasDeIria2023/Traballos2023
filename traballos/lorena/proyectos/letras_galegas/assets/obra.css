@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=League+Gothic&family=Patrick+Hand&display=swap');
+
+.contenedor {
+    margin: 0 auto;
+    width: 60%;
+    font-family: "Questrial", sans-serif;
+}
+
+h2 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #330429;
+    margin-top: 3em;
+}
+
+.genero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3em;
+}
+
+.datos img {
+    width: 75%;
+    display: block;
+}
+
+.datos {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+  
+.datos:hover .overlay {
+    opacity: 1;
+    background-color: #f6f5fac7;
+}
+
+.obra {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+  
+.datos:hover .obra {
+    transform: translateY(0);
+}
