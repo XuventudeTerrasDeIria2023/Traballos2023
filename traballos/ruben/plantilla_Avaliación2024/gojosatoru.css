@@ -1,0 +1,295 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background: url(fondojujutsu.jpg) no-repeat top/100%;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    background-color: #EDEDED; /* Color de fondo */
+    border-radius: 1px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px; /* Tamaño de fuente aumentado */
+}
+
+nav ul li a:hover {
+    background-color: #ccc; /* Cambiar el color de fondo al hacer hover */
+    color: #333; /* Cambiar el color del texto al hacer hover */
+}
+
+header {
+    background-color: #EDEDED; /* Color de fondo */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px; /* Tamaño de fuente aumentado */
+}
+
+nav ul li a:hover {
+    background-color: #ccc; /* Cambiar el color de fondo al hacer hover */
+    color: #333; /* Cambiar el color del texto al hacer hover */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+}
+
+#pageContent {
+    margin-left: 45px;
+    width: 45%;
+    margin-top: -17px;
+    margin-left: 18.5%;
+}
+
+.articulo {
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(204, 174, 228, 0.6);
+}
+
+footer {
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    text-align: right;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    padding: 20px;
+}
+
+address {
+    padding: 10px 20px 30px 10px;
+}
+
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo img {
+    width: 150px;
+}
+
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.articulo1,
+.articulo2,
+.articulo3,
+.articulo4 {
+    background-color: rgba(204, 174, 228, 0.6);
+    margin-bottom: 1%;
+}
+
+/* Fotos */
+.foto1 {
+    margin-bottom: 20px;
+    width: 26%;
+    position: absolute;
+    top: 143px;
+    right: 8%;
+}
+
+.foto2 {
+    margin-top: 20px;
+    width: 26%;
+    position: absolute;
+    top: 440px;
+    right: 3%;
+}
+
+.foto3 {
+    margin-top: 20px;
+    width: 26%;
+    position: absolute;
+    top: 750px;
+    right: 8%;
+}
+
+.foto5 {
+    margin-top: 20px;
+    width: 390px;
+    position: absolute;
+    top: 120px;
+    right: 78%;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+aside img:hover {
+    transform: scale(1.2);
+}
+
+aside > div {
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #D94A85;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

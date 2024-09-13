@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMEVERSE</title>
+    <meta name="description" content="ANIMEVERSE">
+    <link rel="stylesheet" href="goku.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="logo.jpg" alt="Logo de ANIMEVERSE"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="anime.html" class="dropbtn">ANIMES</a>
+                    <div class="dropdown-content">
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="personajes.html" class="dropbtn">PERSONAJES</a>
+                </li>
+                <li id="login"><a href="iniciodesesion.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mensaje">
+        <p>¡Bienvenido a ANIMEVERSE! Haz clic aquí para escuchar la música de Goku.</p>
+        <button id="playButton">Reproducir Música</button>
+    </div>
+    <!-- Elemento de audio para reproducir la canción -->
+    <audio id="miCancion" src="micorazonencantado.mp3" preload="auto" loop></audio>
+    <!-- Script para reproducir la canción automáticamente -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var cancion = document.getElementById('miCancion');
+            cancion.volume = 0.1; // Establecer volumen al 20%
+            cancion.play();
+        });
+
+    
+        document.getElementById('playButton').addEventListener('click', function() {
+            var cancion = document.getElementById('miCancion');
+            cancion.play();
+            document.getElementById('mensaje').style.display = 'none'; 
+        });
+
+    </script>
+    <main role="main">
+        <aside>
+            <div class="foto foto1"><img src="goku1.jpg" alt="Imagen de Gojo Satoru"></div>
+            <!--            <div class="foto foto6"><img src="tanjiro.jpg" alt="Imagen de Gojo Satoru"></div>-->
+        </aside>
+        <section id="pageContent">
+            <!-- Contenido de la página aquí -->
+            <article class="articulo articulo1">
+                <h2>Goku</h2>
+                <p>"Goku, un personaje de enorme relevancia en el universo de "Dragon Ball", es una figura que va más allá de ser simplemente un luchador extraordinario. Su impacto en la serie y en la audiencia es innegable, y su presencia en pantalla se siente como un faro de esperanza y valentía en un mundo lleno de desafíos y peligros.</p>
+
+                <p>Desde su primera aparición en la serie, Goku captura la atención del espectador con su carisma único y su habilidad incomparable en la lucha contra los villanos. Su dominio del "Ultra Instinct" y su técnica de "Kamehameha" lo colocan en una posición de autoridad indiscutible en el mundo de los guerreros, pero es su personalidad genuina lo que lo convierte en un personaje verdaderamente memorable.</p>
+
+                <p>Por un lado, Goku es conocido por su actitud optimista y su amor por la vida y la aventura, lo que lo convierte en un héroe accesible y querido por sus amigos y aliados. Sin embargo, debajo de esta fachada alegre se encuentra un guerrero profundamente comprometido con la protección de sus seres queridos y la paz en el universo. Su determinación inquebrantable y su espíritu de lucha son evidentes en cada uno de sus enfrentamientos, y su voluntad de superar sus límites inspira a aquellos que lo rodean a hacer lo mismo.</p>
+
+                <p>El trasfondo de Goku añade otra capa de complejidad a su personaje. Aunque se han revelado algunos detalles sobre su origen y su entrenamiento, gran parte de su historia sigue siendo un misterio. Este aura de enigma que lo rodea no solo agrega intriga a su personaje, sino que también despierta la curiosidad de los fans, quienes anhelan descubrir más sobre el legendario guerrero Saiyan.</p>
+
+                <p>Además de su relación con otros personajes importantes en la serie, como Vegeta y Gohan, la dinámica de Goku con sus rivales, como Vegeta y Freezer, es especialmente intrigante. Aunque comparten una historia de enfrentamientos épicos y están en lados opuestos en la lucha por la supremacía, su conexión es profunda y compleja, y sus batallas inevitablemente darán forma al curso de la historia en "Dragon Ball".</p>
+
+
+
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>
