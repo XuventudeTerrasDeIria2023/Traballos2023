@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="miguel">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>perro</title>
+	<style>
+		body {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		.caja {
+			position: relative;
+			display: block;
+			width: 500px;
+			height: 500px;
+			margin: auto;
+			border: 1px solid black;
+			border-radius: 1em;
+			margin-top: 5em;
+		}
+
+		.ojo-left {
+			position: absolute;
+			top: 25%;
+			display: block;
+			width: 14%;
+			height: 15%;
+			border-radius: 50%;
+			background-color: #000000;
+			left: 25%;
+		}
+		
+		.ojo-right{
+			position: absolute;
+			top: 25%;
+			display: block;
+			width: 14%;
+			height: 15%;
+			border-radius: 50%;
+			background-color: #000000;
+			right: 25%;
+			left: 60%;
+		}
+		
+		.nariz{
+			position: absolute;
+			top: 44%;
+			display: block;
+			width: 20%;
+			height: 15%;
+			border-radius: 50%;
+			background-color: #000000;
+			right: 25%;
+			left: 39%;
+		}
+		
+		.brillo-ojo{
+			position: absolute;
+			top: 20%;
+			display: block;
+			width: 15%;
+			height: 15%;
+			border-radius: 50%;
+			background-color: white;
+			right: 25%;
+			left: 55%;
+		}
+		
+		.mejilla-left{
+			position: absolute;
+			top: 45%;
+			display: block;
+			width: 25%;
+			height: 25%;
+			border-radius: 50%;
+			background-color: white;
+			border: 5px solid black;
+			left: 25%;
+		}
+		
+		.mejilla-right{
+			position: absolute;
+			top: 45%;
+			display: block;
+			width: 25%;
+			height: 25%;
+			border-radius: 50%;
+			background-color: white;
+			border: 5px solid black;
+			left: 45%;
+		}
+		
+		.punto{
+			position: absolute;
+			top: 55%;
+			display: block;
+			width: 7%;
+			height: 7%;
+			border-radius: 50%;
+			background-color: #000000;
+			left: 30%;
+		}
+		
+		.puntodos{
+			position: absolute;
+			top: 70%;
+			display: block;
+			width: 7%;
+			height: 7%;
+			border-radius: 50%;
+			background-color: #000000;
+			left: 45%;
+		}
+		
+		.puntotres{
+			position: absolute;
+			top: 55%;
+			display: block;
+			width: 7%;
+			height: 7%;
+			border-radius: 50%;
+			background-color: #000000;
+			left: 60%;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="caja">
+		<div class="ojo-left">
+			<div class="brillo-ojo"></div>
+		</div>
+		<div class="ojo-right">
+			<div class="brillo-ojo"></div>
+		</div>
+		<div class="mejilla mejilla-left">
+			<div class="punto"></div>
+			<div class="puntodos"></div>
+			<div class="puntotres"></div>
+		</div>
+		<div class="mejilla mejilla-right">
+			<div class="punto"></div>
+			<div class="puntodos"></div>
+			<div class="puntotres"></div>
+		</div>
+		<div class="nariz"></div>
+	</div>
+
+</body>
+
+</html>

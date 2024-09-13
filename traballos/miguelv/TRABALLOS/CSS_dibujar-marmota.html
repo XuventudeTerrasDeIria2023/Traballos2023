@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="miguel">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>marmota</title>
+	<style>
+		body {
+			width: 60%;
+			margin: 0 auto;
+			background-color: #04b33c;
+		}
+
+		.cabeza {
+			position: absolute;
+			border-radius: 50%;
+			background-color: #6f4012;
+			top: 10%;
+			left: 40%;
+			width: 20%;
+			height: 35%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+
+		.cuerpo {
+			position: absolute;
+			border-radius: 40%;
+			background-color: #5d3511;
+			top: 40%;
+			left: 37.5%;
+			width: 25%;
+			height: 45%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+
+		.cola {
+			position: absolute;
+			background-color: #5C3D2E;
+			border-top-right-radius: 30%;
+			border-bottom-right-radius: 70%;
+			top: 50%;
+			left: 50%;
+			width: 20%;
+			height: 20%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+
+		.pieleft {
+			position: absolute;
+			border-radius: 30%;
+			left: 40%;
+			top: 80%;
+			width: 7%;
+			height: 13%;
+			background-color: #81573e;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+
+		.pieright {
+			position: absolute;
+			border-radius: 30%;
+			left: 53.5%;
+			top: 80%;
+			width: 7%;
+			height: 13%;
+			background-color: #81573e;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.manoleft{
+			position: absolute;
+			border-radius: 35%;
+			width: 4%;
+			height: 8%;
+			top: 55%;
+			left: 41%;
+			background-color: #704012;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.manoright{
+			position: absolute;
+			border-radius: 35%;
+			width: 4%;
+			height: 8%;
+			top: 55%;
+			left: 54.5%;
+			background-color: #704012;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.orejaleft{
+			position: absolute;
+			border-radius: 50%;
+			width: 7%;
+			height: 11%;
+			top: 7%;
+			left: 40%;
+			background-color: #63432e;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.orejaright{
+			position: absolute;
+			border-radius: 50%;
+			width: 7%;
+			height: 11%;
+			top: 7%;
+			left: 53%;
+			background-color: #63432e;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.bigoteleft{
+			position: absolute;
+			background-color: #82583f;
+			width: 10%;
+			height: 17%;
+			top: 31%;
+			left: 41%;
+			border-radius: 50%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.bigoteright{
+			position: absolute;
+			background-color: #82583f;
+			width: 10%;
+			height: 17%;
+			top: 31%;
+			left: 49%;
+			border-radius: 50%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.nariz{
+			position: absolute;
+			background-color: #704012;
+			border-radius: 50%;
+			width: 3%;
+			height: 5%;
+			top: 30%;
+			left: 48.5%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.ojoleft{
+			position: absolute;
+			background-color: white;
+			border-radius: 50%;
+			width: 5%;
+			height: 10%;
+			top: 23%;
+			left: 45.3%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.ojoright{
+			position: absolute;
+			background-color: white;
+			border-radius: 50%;
+			width: 5%;
+			height: 10%;
+			top: 23%;
+			left: 49.7%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.colorojoleft{
+			position: absolute;
+			background-color: black;
+			border-radius: 50%;
+			width: 2%;
+			height: 4%;
+			top: 26%;
+			left: 46.6%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.colorojoright{
+			position: absolute;
+			background-color: black;
+			border-radius: 50%;
+			width: 2%;
+			height: 4%;
+			top: 26%;
+			left: 51%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.puntoblancoleft{
+			position: absolute;
+			background-color: white;
+			border-radius: 50%;
+			border: 3px solid black;
+			width: .5%;
+			height: 1%;
+			top: 25.8%;
+			left: 47.9%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.puntoblancoright{
+			position: absolute;
+			background-color: white;
+			border-radius: 50%;
+			border: 3px solid black;
+			width: .5%;
+			height: 1%;
+			top: 25.8%;
+			left: 52.3%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.dienteleft{
+			position: absolute;
+			background-color: white;
+			border-bottom-left-radius: 20%;
+			border-bottom-right-radius: 20%;
+			width: 3%;
+			height: 15%;
+			top: 40%;
+			left: 47%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+		
+		.dienteright{
+			position: absolute;
+			background-color: white;
+			border-bottom-left-radius: 20%;
+			border-bottom-right-radius: 20%;
+			width: 3%;
+			height: 15%;
+			top: 40%;
+			left: 50%;
+			box-shadow: 1px 1px 20px 1px black;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="pieleft"></div>
+	<div class="pieright"></div>
+	<div class="cola"></div>
+	<div class="cuerpo"></div>
+	<div class="cabeza"></div>
+	<div class="manoleft"></div>
+	<div class="manoright"></div>
+	<div class="orejaleft"></div>
+	<div class="orejaright"></div>
+	<div class="ojoleft"></div>
+	<div class="ojoright"></div>
+	<div class="dienteleft"></div>
+	<div class="dienteright"></div>
+	<div class="bigoteleft"></div>
+	<div class="bigoteright"></div>
+	<div class="nariz"></div>
+	<div class="colorojoleft"></div>
+	<div class="colorojoright"></div>
+	<div class="puntoblancoleft"></div>
+	<div class="puntoblancoright"></div>
+	
+
+</body>
+
+</html>
