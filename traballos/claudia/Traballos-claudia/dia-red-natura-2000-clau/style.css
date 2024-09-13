@@ -1,0 +1,179 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  transition: 1s;
+  
+}
+
+body {
+  padding-top: 15vh;
+  position: relative;
+}
+
+body > div {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(20, 0, 0);
+  color: lightgrey;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 6vw;
+  color: white;
+  width: 70vw;
+  padding: 8%;
+  font-size: 7vw;
+  font-family: 'Handlee',   cursive;
+  border-bottom: solid 2px white;
+}
+
+h2 {
+  margin-top: 10vh;
+  max-width: 80vw;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 3.5vw;
+  color: white;
+  font-family: 'Handlee',   cursive;
+}
+
+#contactBis {
+  margin-bottom: 15vh;
+  font-size: 9vh;
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  font-size: 3.5vh;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+a {
+  color: white;
+}
+button {
+  outline: none;
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 3.5vh;
+}
+a:hover, button:hover {
+  text-decoration: none !important;
+}
+.active {
+  color: white;
+  font-weight: bold;
+}
+
+body > div {
+  position: relative;
+  background-image: url("https://images7.alphacoders.com/370/370795.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blank {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+}
+.j-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 50%;
+}
+.j-2 {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 30%;
+  height: 100%;
+}
+.j-3 {
+  position: absolute;
+  top: 0;
+  left: 67%;
+  width: 32%;
+  height: 40%;
+}
+
+.j-4 {
+  position: absolute;
+  top: 51%;
+  left: 0%;
+  width: 33%;
+  height: 49%;
+}
+
+.j-5 {
+  position: absolute;
+  top: 41%;
+  left: 67%;
+  width: 33%;
+  height: 59%;
+}
+p {
+  color: white;
+  font-family: 'Handlee',   cursive;
+  font-size: 3vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+/* #test {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  background-image: url("https://img00.deviantart.net/7c77/i/2005/171/c/3/morning_sky_3_by_enframed.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+img:hover {
+  transform: scale(1.1);
+} */
