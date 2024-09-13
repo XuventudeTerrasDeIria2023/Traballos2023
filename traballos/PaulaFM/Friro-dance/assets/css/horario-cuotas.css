@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+
+body {
+    background: url(../../imagenes/banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*////////// BANNER - LOGO ///////////*/
+
+.hero {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    min-height: 0vh;
+    z-index: 1;
+}
+
+.logo img {
+    width: 55%;
+}
+
+.logo {
+    position: fixed;
+    top: 80px;
+    left: 1670px;
+    transition: transform .5s;
+}
+
+.logo:hover {
+    transform: scale(107%);
+}
+
+
+/*//////////////// CONTENEDOR //////////////////*/
+
+.contenedor {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: -1;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5em;
+  padding: 10px;
+}
+
+
+.titulo h1 {
+    position: relative;
+    font-family: "Handlee", cursive;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 600;
+    color: #252525;
+    line-height: 1.5em;
+    display: block;
+    color: #fff;
+}
+
+
+
+/*//////////////////// HORARIO ////////////////////*/
+
+.horario {
+    width: 80%;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    padding: 7em;
+}
+
+.horario table {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 5px solid #fff;
+    text-align: center;
+}
+
+.horario th {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 5px solid #fff;
+}
+
+tr {
+    border-bottom: 1px solid #fff;
+}
+
+.dia {
+    font-size: 22px;
+    padding: .5em;
+}
+
+.hora {
+    font-size: 20px;
+    padding: .5em;
+}
+
+.cerrado {
+    font-size: 17px;
+}
+
+.descripcion {
+    font-size: 15px;
+}
+
+
+
+/*//////////////////// CUOTAS ////////////////////*/
+
+
+#cuotas {
+    margin-top: 9em;
+}
+
+.cuotas table {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 5px solid #fff;
+}
+
+.mes {
+    font-size: 25px;
+    padding: .5em;
+    text-align: left; 
+}
+
+.precio {
+    font-size: 20px;
+    padding: .5em;
+    text-align: left; 
+}
