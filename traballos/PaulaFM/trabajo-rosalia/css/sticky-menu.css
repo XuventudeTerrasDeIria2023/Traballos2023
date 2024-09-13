@@ -1,0 +1,267 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+    .container2 {
+        font-family: sans-serif;
+    }
+
+    .container {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    #back2Top {
+        width: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        -moz-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        position: fixed;
+        bottom: 50px;
+        right: 0;
+        background-color: #FFF;
+        color: #337AB7;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .introduccion {
+        color: white;
+      
+    }
+
+    .azul {
+/*        background: #46DB82;*/
+        color: black;
+        padding: 2%;
+        margin: 8%;
+        border-radius: 1em;
+    }
+
+    #back2Top:hover {
+/*        background-color: #009627;*/
+        color: #FFF;
+    }
+
+    .welcome-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background: url(../fotos/banner)no-repeat center/100%;
+    }
+
+    .about-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background: #EEF7FF;
+    }
+
+    .whatwedo-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: center;
+        background: #EADFB4;
+    }
+
+
+    .navbar-default .navbar-nav > li > a {
+        color: #000;
+        font-size: 1.2em;
+    }
+
+   
+
+    .navbar-default .navbar-nav > li > a:active {
+        color: #000;
+        background-color: white;
+    }
+
+    .navbar-header > a:active {
+        color: #000;
+        background-color: white;
+    }
+
+    .navbar-default {
+        background-color: #EEF7FF;
+        border: 2px solid black;
+        border-radius: .5em;
+        box-shadow: 3px 2px 2px black;
+       
+    }
+    
+     .navbar-default .navbar-nav > li > a:hover {
+        color: blue;
+        color: #000;
+        background-color: white;
+        border-radius: 1em;
+    }
+
+    .navbar-header a.navbar-brand {
+        color: #000;
+        
+    }
+
+    .navbar-header a.navbar-brand:hover {
+        color: blue;
+        color: #000;
+        background-color: white;
+        border-radius: 1em;
+    }
+
+    .contact-section {
+        height: 100%;
+        /*        padding-top: 150px;*/
+        /*        text-align: center;*/
+        background: #EEF7FF;
+    }
+
+    .contact-section h1,
+    #poematitulo h1 {
+
+        display: block;
+    }
+
+    #contact {
+        /*        border: 2px solid blue;*/
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #contact div {
+        /*         border: 2px solid red;  */
+        width: 100%;
+        display: flex;
+
+    }
+
+    #contact h2 {
+        /*        border: 2px solid red;*/
+        display: inline-block;
+        position: relative;
+        max-height: 1.5em;
+        clear: both;
+
+    }
+
+    #poematitulo {
+        margin-top: 2em;
+    }
+
+    .poema1 {
+        
+   text-align: center;
+        font-family: sans-serif;
+        line-height: 2em;
+        padding: .5em;
+        border-left: 2px solid black;
+
+
+    }
+
+    .titulo {
+        text-align: left;
+        font-family: serif;
+        padding: .5em;
+        column-rule-color: aliceblue;
+    }
+
+    .titulo  span {
+        display: block;
+        font-style: italic;
+        font-size: .5em;
+        text-align: right;
+    }
+
+    .poema2 {
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 2em;
+        border-left: 2px solid black;
+
+
+    }
+
+    .poema3 {
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 2em;
+        border-left: 2px solid black;
+
+    }
+
+    /*
+    .titulo3 {
+        text-align: right;
+        font-family: serif;
+    }
+*/
+    #introducion {
+        text-align: center;
+        /*        float: left;*/
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 2em;
+        box-shadow: 4px 4px 4px white;
+        padding: .5em;
+    }
+    /**********************FOTER*********************/
+.ss-copyright span {
+    display : inline-block;
+}
+
+.ss-copyright span::after {
+    content : "|";
+    display : inline-block;
+    padding : 0 .8rem 0 1rem;
+    color   : var(--color-gray-10);
+}
+
+.ss-copyright span:last-child::after {
+    display : none;
+}
+    
+    .lg-5 {
+    flex  : none;
+    width : 41.66667%;
+}
+    
+     .md-6 {
+        flex  : none;
+        width : 50%;
+    }
+     .tab-12 {
+        flex  : none;
+        width : 100%;
+    }
