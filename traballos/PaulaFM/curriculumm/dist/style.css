@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Monoton');
+/*color: #2962FF*/
+*::selection{
+  color: white;
+  background: #FF8F00;
+}
+body{
+  font-family: sans-serif;
+  overflow:scrollY;
+  min-width:470px;
+}
+img{
+  filter:grayscale(1.2);
+  transition: filter 0.7s;
+  cursor: pointer;
+}
+img:hover{
+  filter:none;
+}
+
+h5{
+    font-size: 2em;
+}
+.section-profile{
+  /* z-index:-1; */
+  margin: auto;
+  margin-top: 100px;
+  overflow: hidden;
+  width: 70%;
+  min-width:390px;
+  max-width: 810px;
+  border: 3px solid #2962FF;
+  border-radius:5px;
+}
+.section-work, .section-education, .section-skills, .section-contact{
+  z-index: 2;
+  background: #2962FF;
+  padding-bottom:130px;
+}
+.section-work{
+  background: #2962FF;
+  margin-top:45px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.section-work a{
+  color:white;
+}
+.section-education{
+  background: #3498db;
+}
+.section-skills{
+  padding-bottom:0px;
+}
+.section-contact{
+  background: #3498db;
+  padding-bottom:0px;
+}
+.profile-img{
+  background: #2962FF;
+  height: 370px;
+}
+.profile-desc{
+  background: white;
+  height: 370px;
+}
+.img-circle{
+  height: 220px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.contact-icons-container-profile{
+  display:inline-block;
+}
+.contact-icons-container-profile .contact-icon{
+  padding:3px;
+  margin:2px;
+  margin-bottom:10px;
+  border-color: #2962FF;
+}
+
+.nav li a, .section-title{
+  font-variant:small-caps;
+}
+.section-title{
+  color: white;
+  font-family: 'Black Ops One', cursive;
+  font-size: 3.5em;
+}
+.navbar-default{
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.cursive{
+  font-family: 'Pacifico', cursive;
+}
+.cursive h1{
+  overflow: hidden;
+  border-right: .05em solid #2962FF; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0px;
+  animation: 
+    typing 3.5s steps(25, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #2962FF; }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Currently not supported by any browser */
+}
+.main-content{
+  text-align:center;
+  margin-bottom:0px;
+}
+
+hr.hr-style-heading {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #2962FF;
+    text-align: center;
+    width:20%;
+}
+hr.hr-style-sm-heading {
+    padding: 0;
+    border: none;
+    border-top: 2px solid #eee;
+    text-align: center;
+    width:20%;
+}
+.navbar-brand-pic{
+  border:2px solid gray;
+  margin-top:9px;
+}
+.card-deck-wrapper{
+  margin-left: 10%;
+  max-width: 80%;
+}
+.card-deck{
+  margin-top:20px;
+}
+.card-img-top{
+   width:20%;  
+}
+.card{
+  background: white;
+  color: black;
+  border: 1px solid #2196F3;
+  transition: all 0.7s;
+}
+.card a{
+  text-decoration: underline;
+}
+.card:hover{ 
+  background:rgba(21,96,243,0.4);
+  color:white;
+}
+.text-muted{
+  color:white;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline{
+  color:black;
+  overflow:hidden;
+}
+.timeline ul {
+  background: inherit;
+  padding: 50px 0;
+}
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgba(1,1,1,0.4);
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  font-family: sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: white; 
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -19px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgba(1,1,1,0.4) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -339px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -19px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgba(1,1,1,0.4);
+}
+
+time {
+  font-family: 'Bungee Inline', cursive;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color:black;
+}
+.edu-desc{
+  background:white;
+}
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: rgba(1,1,1,0.4); 
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 200px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -239px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(80vw - 101px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -19px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent rgba(1,1,1,0.4) transparent transparent;
+  }
+}
+
+/*----------------------------------------*/
+
+.skills-table{
+  width:80%;
+  text-align:right;
+  max-width:800px;
+  margin-left: 10%;
+}
+.skills-table tr{
+  min-height:40px;
+  line-height:40px;
+}
+.skills-table td{
+  font-size:1.2em;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.skills-table .progress{
+  display:inline-flex;
+  height:20px;
+  margin-top:15px;
+}
+.progress{
+  border-radius: 0px;
+  box-shadow: -3px 5px 2px rgba(0,0,0,0.5);
+}
+.progress-bar{
+  transition: all 0.3s;
+  border: 1px solid transparent; 
+  border-radius: 0px;
+  box-shadow: -3px 5px rgba(0,0,0,0.5);
+}
+.skills-table td{
+  width:30%;
+}
+.skills-table tr td::nth-child(odd){
+  margin-right:20px;
+  width:20%;
+}
+.skills-table .skillprogbar{
+  width: 50%; 
+  height: 10px; 
+  background: #34a8eb; 
+  color: white; 
+  font-size: 0.6em;
+}
+
+.contact-icons-container{
+  display: table;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.contact-icons-container{
+  background: white;
+  border:2px solid white;    
+    border-radius: 2em;
+    padding: 1em;
+  box-shadow: -4px 5px 2px 0px rgba(1,1,1,0.5);
+} 
+.contact-icons-container:hover{
+  border-color:white;
+  animation: none;
+}
+@keyframes rotateBorder{
+  25%{border-color:transparent #2962FF transparent transparent;
+    border-style:dashed;
+  }
+  50%{border-color:transparent transparent #2962FF transparent;
+    border-style:ridge;
+  }
+  75%{border-color:transparent transparent transparent #2962FF; 
+    border-style:double;
+  }
+}
