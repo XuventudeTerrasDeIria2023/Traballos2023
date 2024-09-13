@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(imaxes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.fondoup {
+    border: 1px solid transparent;
+    padding: 8em;
+    background-image: url(imaxes/disney.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 3px 3px darkviolet;
+    margin: 1em;
+}
+
+h1 {
+    text-align: left;
+    font-family: "Sofia", cursive;
+    font-weight: 600;
+    font-size: 500%;
+    color:  violet;
+
+}
+header{
+    margin-top: 2em;
+}
+.nav {
+    text-align: center;
+    margin: 2em;
+    padding: 2em;
+    border: 1px solid transparent;
+    font-family: "Sofia", cursive;
+    background-color: darkviolet;
+    color: white;
+    opacity: 0.5;
+    box-shadow: 3px 3px 3px 3px darkviolet;
+
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    background-color: darkviolet;
+    margin: 1em;
+    margin-top: -2em;
+    padding: 1em;
+
+
+
+}
+#active{
+     text-align: center;
+    color: darkviolet;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+a:hover {
+    text-align: center;
+    color: darkviolet;
+    background-color: white;
+    border-radius: 50%;
+}
+
+div {
+
+    background-color: white;
+    box-shadow: 5px 3px 3px 3px white;
+
+}
+
+img {
+    margin: 2em;
+    padding: 4em;
+    display: flex;
+    display: inline-flex;
+    box-shadow: 2px 2px 5px 5px darkviolet;
+    border-radius: 50%;
+
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    text-align: center;
+    padding: 2em;
+    font-family: "Sofia", cursive;
+}
+
+.bellaybestia {
+    width: 23%;
+}
+
+.blancanieves {
+    width: 21.3%;
+}
+
+.sirenita {
+    width: 21%;
+}
+footer {
+    border: 2px solid darkviolet;
+    margin: 2em;
+    padding: 1em;
+    background-color: darkviolet;
+    text-align: center;
+    font-family: "Sofia", cursive;
+    opacity: 0.5;
+}
+
+footer a {
+    margin: 1em;
+    color: white;
+
+}
