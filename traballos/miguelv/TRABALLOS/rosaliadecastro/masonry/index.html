@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="https://html5-templates.com/" />
+	<title>Rosalía de Castro</title>
+	<meta name="description" content="A brief page description">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="script.js"></script>
+</head>
+<style>
+.texto {
+			font-size: 1.4em;
+/*
+			width: 80%;
+			max-width: 90%;
+			margin: 2em 0em;
+*/
+	
+		}
+/*
+	#texto span {
+		color: blue!important;
+	}
+*/
+		span.tooltip {
+			border-bottom: 3px dotted white;
+			cursor: pointer;
+			position: relative;	
+			top: 80%;
+			}
+
+		span.tooltip::before {
+			display: none;
+			content: attr(data-title);
+			color: white;
+			font-size: 1em;
+			padding: .5em;
+			background: #00000090;
+			border-radius: 5px;
+			position: absolute;
+			top: 100%;
+			left: 1%;
+			min-width: 500px;
+			z-index: 999;
+		}
+
+		span.tooltip:hover::before {
+			display: block;
+		}
+
+</style>
+
+<body>
+	<div class="grid">
+		<div class="grid-item" class="texto"><span class="tooltip" data-title="
+		
+Adiós ríos, adiós fontes
+adiós, regatos pequenos;
+adiós, vista dos meus ollos,
+non sei cándo nos veremos."
+>....</span></div>
+		<div class="grid-item" class="texto"><span class="tooltip" data-title="
+Miña terra, miña terra,
+terra donde m’eu criei,
+hortiña que quero tanto,
+figueiriñas que prantei.">....</span></div>
+		<div class="grid-item" class="texto"><span style="color: white" class="tooltip" data-title="
+Prados, ríos, arboredas,
+pinares que move o vento,
+paxariños piadores,
+casiña d’o meu contento.">....</span></div>
+		<div class="grid-item" class="texto"><span class="tooltip" data-title="
+Muiño dos castañares,
+noites craras do luar,
+campaniñas timbradoiras
+da igrexiña do lugar.">....</span></div>
+		<div class="grid-item" class="texto"><span class="tooltip" data-title="
+Amoriñas das silveiras
+que eu lle daba ó meu amor,
+camiñiños antre o millo,
+¡adiós para sempre adiós!">....</span></div>
+		<div class="grid-item" class="texto"><span class="tooltip" data-title="
+¡Adiós, gloria! ¡Adiós, contento!
+¡Deixo a casa onde nacín,
+deixo a aldea que conoso,
+por un mundo que non vin!">....</span></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item grid-item-double"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item grid-item-double" class="texto"><span class="tooltip" data-title="
+Deixo amigos por extraños,
+deixo a veiga polo mar;
+deixo, en fin, canto ben quero…
+¡quén puidera non deixar!">....</span></div>
+		<div class="grid-item"></div>
+		<div class="grid-item grid-item-double"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item grid-item-double"></div>
+		<div class="grid-item grid-item-double"></div>
+	</div>
+<!--	<p style="padding: 20px; text-align: right;">&copy; You can modify and publish this template without limitations but please leave a link to our website: <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5-Templates.com</a></p>-->
+
+	<script>
+		$('.grid').masonry({
+			// options
+			itemSelector: '.grid-item',
+			columnWidth: 200
+		});
+
+	</script>
+</body>
+
+</html>
