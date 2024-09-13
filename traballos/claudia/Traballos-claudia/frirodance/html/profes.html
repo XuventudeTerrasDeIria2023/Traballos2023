@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Claudia Dios, Paula Forján, Lorena Vilariño">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Friro Dance - Profesorado</title>
+    <link rel="icon" href="../favicon_silueta.png">
+   
+    <link rel="stylesheet" href="../assets/css/profes.css">
+    <link rel="stylesheet" href="../assets/css/profes-flechas.css">
+    <link rel="stylesheet" href="../assets/css/profes-flechas2.css">
+    <link rel="stylesheet" href="../assets/css/nav-footer.css">
+    
+    <!-- iconos nav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#">Bailes <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="flamenco.html">Flamenco</a></li>
+                        <li><a href="tango.html">Tango</a></li>
+                        <li><a href="salon.html">Salón</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="#">Profesorado</a>
+                <li><a class="nav-link" href="#">Información <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="horario.html">Horario y Cuotas</a></li>
+                        <li><a href="intalaciones.html">Instalaciones</a></li>
+                        <li><a href="matricula.html">Matrícula</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------------------LOGO-------------------------->
+    <section class="hero">
+        <a href="../index.html" title="Friro Dance">
+            <img class="logo" src="../imagenes/FriroDance-logo-sombra.png" alt="logo" title="Friro Dance">
+        </a>
+    </section>
+  
+
+    <!------------------------PROFESORADO-------------------------->
+    <div class="wrapper">
+
+        <section class="module-team">
+            <div class="team">
+                <h1 class="title">Profesorado</h1>
+                <div class="team-cards">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="navigation">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+        
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
+    
+    <script  src="../assets/js/script-profes.js"></script>
+
+
+<!------------------------FOOTER-------------------------->
+    <footer class="top-part footer-profes">
+        <div class="trabaja">
+            <h3>Trabaja con nosotros</h3>
+            <p>¿Eres un apasionado del baile y te encanta enseñar? ¡Esta es tu oportunidad! Si estás listo para llevar tu carrera en la danza a nuevas alturas, ¡queremos conocerte! Envíanos tu curriculum.</p>
+            <form action="mailto:frirodance@gmail.com" method="post" id="form">
+                <input name="curriculum" type="file" id="curriculum" required title="Solo formato pdf">
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+
+            <div id="confirmacion" class="confirmacion">Currículum enviado</div>
+        </div>
+    </footer>
+
+</body>
+</html>

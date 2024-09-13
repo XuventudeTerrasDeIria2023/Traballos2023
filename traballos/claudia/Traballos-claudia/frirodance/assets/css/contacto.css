@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../imagenes/banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+/*////////// BANNER - LOGO ///////////*/
+
+.hero {
+    position: fixed;
+    height: 100vh;
+    width: 100%; 
+}
+
+.logo {
+    float: right;
+    margin: 2em 1em;
+    width: 8%;
+    transition: transform .5s;
+}
+
+.logo:hover {
+    transform: scale(107%);
+}
+
+
+/*////////// CONTACTO ///////////*/
+
+li,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sec-title {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+
+.sec-title h1 {
+    position: relative;
+    font-family: "Handlee", cursive;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 600;
+    color: #252525;
+    line-height: 1.5em;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-page-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    z-index: 9999;
+}
+
+.contact-page-section .inner-container {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0.2em 1.2em grey;
+}
+
+.contact-page-section .form-column {
+    position: relative;
+    padding: 0 0 0 15px
+}
+
+.contact-page-section .form-column .inner-column {
+    position: relative;
+    padding: 60px 45px 30px;
+    background-color: #000;
+}
+
+.contact-page-section .info-column {
+    position: relative
+}
+
+.contact-page-section .info-column .inner-column {
+    position: relative;
+    padding: 60px 35px
+}
+
+.contact-page-section .info-column h2 {
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 45px
+}
+
+.contact-page-section .info-column .list-info {
+    position: relative;
+    margin-bottom: 60px
+}
+
+.contact-page-section .info-column .list-info li {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.8em;
+    padding-left: 45px
+}
+
+.contact-page-section .info-column .list-info li:last-child {
+    margin-bottom: 0
+}
+
+.contact-page-section .info-column .list-info li i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #000;
+    font-size: 30px
+}
+
+.contact-page-section .info-column .list-info li a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.contact-page-section .info-column .list-info li a:hover {
+    color: #FADB6F;
+}
+
+.contact-form {
+    position: relative
+}
+
+.contact-form .form-group {
+    position: relative;
+    margin-bottom: 20px
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    color: #000;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -webkit-transition: all .3s ease
+}
+
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus,
+.contact-form textarea:focus {
+    border-color: #000000
+}
+
+.contact-form textarea {
+    height: 250px;
+    resize: none
+}
+
+.contact-form .theme-btn {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    padding: 6px 9px;
+    background: #FFECA8;
+    display: inline-block;
+    position: relative;
+    line-height: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.contact-form .theme-btn:hover {
+    color: #000000;
+    background: #FADB6F;
+}
+
+.contact-form .theme-btn:active {
+    background: #FADB6F;
+}
+
+.contact-form input.error,
+.contact-form select.error,
+.contact-form textarea.error {
+    border-color: red !important
+}
+
+.contact-form label.error {
+    display: block;
+    line-height: 24px;
+    padding: 5px 0 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: red;
+    font-weight: 500
+}
+
+.social-icon-four {
+    position: relative
+}
+
+.social-icon-four li {
+    position: relative;
+    margin-right: 18px;
+    display: inline-block
+}
+
+.social-icon-four li.follow {
+    color: #000;
+    font-family: "Handlee", cursive;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px
+}
+
+.social-icon-four li a {
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.social-icon-four li a:hover {
+    color: #FADB6F;
+}

@@ -1,0 +1,231 @@
+* {
+    font-family: sans-serif;
+}
+
+/*////////////// NAV /////////////*/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+header #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:9999;
+    width: 100%;
+    padding: 1em;
+    background-color: #000;
+}
+
+#nav-bar {
+    font-size: 1.1em;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#nav-bar i {
+    font-size: .7em;
+}
+
+#nav-bar a {
+    display: block;
+    padding: .1em;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#nav-bar ul li ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #000;
+    padding-bottom: 1em;
+}
+
+#nav-bar ul li ul a {
+    padding: .5em 1em .3em 0em;
+    color: #fff;
+}
+
+#nav-bar ul li a:hover+ul,
+#nav-bar ul li ul:hover {
+    display: inline-block;
+    margin: 0;
+}
+
+#nav-bar ul li a:hover {
+    color: #FFECA8;
+}
+
+#nav-bar ul li ul li:hover {
+    color: #FFECA8;
+}
+
+
+/*////////////// FOOTER /////////////*/
+
+footer{
+    width: auto;
+}
+
+.top-part {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width:auto;
+    margin: 0;
+    padding: 3em 5em 2em 0em;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    height: auto;
+    display: flex;
+    top: 100vh;
+}
+
+.footer-baile {
+   top: 2vh;
+    margin-left: 0;
+}
+
+.footer-profes {
+    top: 25vh;
+}
+
+.footer-horario {
+    top: 0vh;
+}
+
+.footer-aulas {
+    top: 7vh;
+}
+
+.footer-contacto {
+    top: 7vh;
+}
+
+.footer-matricula {
+    top: 15vh;
+}
+
+/* TRABAJA CON NOSOTROS */
+
+.trabaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.trabaja h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.trabaja p {
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+
+form input[type=file] {
+    font-size: 1em;
+    margin-right: 1.7em;
+}
+
+button {
+    font-weight: bold;
+    font-size: .9em;
+    color: #000;
+    padding: .5em 1em .5em 1em;
+    background-color: #FFECA8;  
+}
+
+button:hover {
+    background-color: #FADB6F;
+}
+
+form button:visited {
+    background-color: #FFECA8;
+}
+
+.confirmacion {
+    margin-top: 20px;
+    display: none;
+    font-size: 16px;
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+ 
+    .top-part.trabaja {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: transparent;
+        padding-top: 25rem;
+        margin: 0;;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    
+    #nav-bar {
+        font-size: .8em;
+    }
+    
+    .logo {
+        margin-top: 3.5em;
+        width: 15%;
+    }
+    
+    .intro {
+        height: auto;
+    }
+
+    .intro h1 {
+        font-size: 300%;
+    }
+
+    .seccion {
+        padding-left: 1em;
+    }
+
+    .seccion img {
+        width: 90%;
+    }
+    
+    .trabaja {
+        width:350px;
+        margin: 0 0 0 5em;
+    }
+
+    form {
+        width: 80%;
+        margin: 0;
+    }
+
+    form input[type=file] {
+        font-size: .8em;
+        margin-left: 0;
+    }
+}
