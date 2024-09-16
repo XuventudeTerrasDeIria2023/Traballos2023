@@ -1,0 +1,73 @@
+	@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+	body {
+		background: #f9d45b;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#saga-1 {
+		background: orange;
+	}
+
+	#saga-2 {
+		background: red;
+	}
+
+	header {
+		border-bottom: 1px solid #ff1333;
+	}
+
+	header img {
+		width: 20%;
+		margin-right: 20%;
+	}
+
+	nav {
+		background-color: #ff1333;
+		width: 100%;
+		padding: .5em;
+	}
+
+	nav a {
+		text-decoration: none;
+		margin-left: 2em;
+		font-size: 2em;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		padding: .5em;
+	}
+
+	nav a:hover {
+		background-color: blueviolet;
+		border-radius: 12%;
+	}
+
+	img {
+		Border: dotted;
+		border-radius: 2em;
+		color: orchid;
+		box-shadow: 1px 1px 10px 10px pink;
+		width: 30em;
+		margin: 3em;
+	}
+
+	img:hover {
+		width: 40em;
+		box-shadow: 1px 1px 10px 10px #376cd4;
+	}
+
+	.saga {
+		background: orange;
+	}
+
+	.saga2 {
+		background: #ff1333;
+		color: white;
+	}
+
+	footer {
+		background: white;
+		color: blueviolet;
+	}
