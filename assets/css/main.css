@@ -78,6 +78,8 @@
 
  }
 
+ .texto-azul-oscuro {}
+
  /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -249,10 +251,11 @@
      border-top: 1px solid rgba(var(--default-color-rgb), 0.1);
  }
 
- .page-title .heading h2 {
-     font-size: 2em;
+ .page-title .heading h2,
+ .page-title .heading p {
+     font-size: 1.5em;
      font-weight: 700;
-     color: var(--default-color);
+     color: rgba(var(--heading-color-rgb), 0.5);
  }
 
  .page-title nav {
@@ -504,7 +507,8 @@
      right: 1%;
      padding: .5em;
      color: #fff;
-     background: var(--heading-color);
+     background: rgba(var(--heading-color-rgb), 0.5);
+
      white-space: nowrap;
 
      border-radius: 5px;
