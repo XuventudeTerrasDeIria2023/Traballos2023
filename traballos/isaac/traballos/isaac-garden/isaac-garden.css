@@ -1,0 +1,36 @@
+body {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #BC6923;
+	padding: 1em;
+}
+
+header img {
+	width: 10%;
+}
+
+table {
+	background: rgba(43, 146, 116,0.1)
+}
+
+td img {
+	width: 50%;
+}
+
+#footer img {
+	width: 3%;
+}
+
+td {
+	padding: 1.5em;
+}
+
+td p {
+	font-weight: bold;
+	color: #BC6923;
+	font-size: 1.5em;
+}
+
+p.descripcion {
+	font-weight: 500
+}
