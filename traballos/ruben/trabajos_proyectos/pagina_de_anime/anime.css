@@ -1,0 +1,232 @@
+body {
+    background: url(fondonaruto.jpg) no-repeat top/140%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+nav {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    background-color: #EDEDED; /* Color de fondo */
+    border-radius: 1px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px; /* Tamaño de fuente aumentado */
+}
+
+nav ul li a:hover {
+    background-color: #ccc; /* Cambiar el color de fondo al hacer hover */
+    color: #333; /* Cambiar el color del texto al hacer hover */
+}
+
+header {
+    background-color: #EDEDED; /* Color de fondo */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+#logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px; /* Tamaño de fuente aumentado */
+}
+
+nav ul li a:hover {
+    background-color: #ccc; /* Cambiar el color de fondo al hacer hover */
+    color: #333; /* Cambiar el color del texto al hacer hover */
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.articulo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limitar el ancho del artículo */
+    max-height: 100px;
+    margin-top: -50px; /* Espacio entre la imagen y el texto */
+}
+
+aside {
+    width: 30%;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para los cuadros de animes */
+#animeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anime {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.anime img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.anime h3 {
+    margin-top: 10px;
+}
+
+.anime p {
+    font-size: 14px;
+}
+
+section div:hover {transform: scale(1.2)}
+
+footer {
+    background-color: white;
+    color: #333; 
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #666;
+}
+

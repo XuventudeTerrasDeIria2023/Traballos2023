@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMEVERSE</title>
+    <meta name="description" content="ANIMEVERSE">
+    <link rel="stylesheet" href="luffy.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="logo.jpg" alt="Logo de ANIMEVERSE"></div>
+   <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="anime.html" class="dropbtn">ANIMES</a>
+                    <div class="dropdown-content">
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="personajes.html" class="dropbtn">PERSONAJES</a>
+                </li>
+                <li id="login"><a href="iniciodesesion.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+ <div id="mensaje">
+        <p>¡Bienvenido a ANIMEVERSE! Haz clic aquí para escuchar la música de Luffy.</p>
+        <button id="playButton">Reproducir Música</button>
+    </div>
+    <!-- Elemento de audio para reproducir la canción -->
+    <audio id="miCancion" src="op1.mp3" preload="auto" loop></audio>
+    <!-- Script para reproducir la canción automáticamente -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            var cancion = document.getElementById('miCancion');
+            cancion.volume = 0.2; // Establecer volumen al 20%
+            cancion.play();
+        });
+
+        // Script para reproducir la canción cuando se hace clic en el botón
+        document.getElementById('playButton').addEventListener('click', function () {
+            var cancion = document.getElementById('miCancion');
+            cancion.play();
+            document.getElementById('mensaje').style.display = 'none'; // Ocultar el mensaje después de hacer clic
+        });
+    </script>
+    <main role="main">
+        <aside>
+            <div class="foto foto1"><img src="luffy2.jpg" alt="Imagen de Monkey D. Luffy"></div>
+        </aside>
+        <section id="pageContent">
+            <!-- Contenido de la página aquí -->
+            <article class="articulo articulo1">
+                <h2>Monkey D. Luffy</h2>
+                <p>"Monkey D. Luffy, un personaje de enorme relevancia en el universo de "One Piece", es una figura que va más allá de ser simplemente un pirata extraordinario. Su impacto en la serie y en la audiencia es innegable, y su presencia en pantalla se siente como un faro de determinación y camaradería en un mundo lleno de aventuras y peligros.</p>
+
+                <p>Desde su primera aparición en la serie, Luffy cautiva la atención del espectador con su espíritu libre y su voluntad inquebrantable de seguir sus sueños. Su dominio de la fruta del diablo "Gomu Gomu" y su habilidad para el combate lo colocan en una posición de liderazgo indiscutible en el mundo de los piratas, pero es su corazón puro y su lealtad a sus amigos lo que lo convierte en un personaje verdaderamente memorable.</p>
+
+                <p>Por un lado, Luffy es conocido por su naturaleza despreocupada y su amor por la comida y la diversión, lo que lo convierte en un capitán querido y respetado por su tripulación. Sin embargo, debajo de esta apariencia despreocupada se encuentra un líder valiente y decidido, dispuesto a enfrentar cualquier desafío para proteger a quienes ama y perseguir su sueño de encontrar el One Piece.</p>
+            </article>
+        </section>
+        <aside>
+            <div class="foto foto1"><img src="luffy1.jpg" alt="Imagen de Monkey D. Luffy"></div>
+        </aside>
+    </main>
+        <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre nosotros</h3>
+            <p>Somos ANIMEVERSE, tu destino número uno para todo lo relacionado con anime y manga.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="#" target="_blank">Términos y condiciones</a></li>
+                <li><a href="#" target="_blank">Política de privacidad</a></li>
+                <li><a href="#" target="_blank">Contáctanos</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <ul>
+                <li><a href="https://twitter.com/animeverse">Twitter</a></li>
+                <li><a href="https://www.facebook.com/animeverse">Facebook</a></li>
+                <li><a href="https://www.instagram.com/animeverse">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>  
+</body>
+
+</html>
