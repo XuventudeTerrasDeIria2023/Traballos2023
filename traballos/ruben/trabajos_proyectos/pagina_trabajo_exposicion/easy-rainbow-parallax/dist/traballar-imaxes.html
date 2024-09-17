@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabajar con Imágenes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Incluyendo estilos del botón y contenido */
+      #button {
+        display: inline-block;
+        background-color: #104dc7;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media (min-width: 500px) {
+        .content {
+          width: 80%;
+        }
+      }
+      .content h1 {
+        margin-bottom: -10px;
+        color: #03a9f4;
+        line-height: 1.5;
+      }
+      .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+      }
+      .content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <nav>
+        <a href="../../dist/index.html">
+          <img src="../../imagenes/logotrabajarconimagenes.png" width="4%;" />
+        </a>
+        <div class="container"></div>
+      </nav>
+      <section class="hero1 vertical-center">
+        <div class="container text-center">
+          <h1>Trabajar con Imágenes</h1>
+        </div>
+        <div class="optional-rainbow"></div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <article>
+            <div class="col-sm-12">
+              <p>
+                Los gráficos son uno de los elementos más utilizados en los
+                sitios web, ya que, además de ser efectivos en la interfaz de
+                navegación, brindan color y vistosidad, mejorando el diseño
+                gráfico, ampliando la información, etc.
+              </p>
+              <img
+                src="../../imagenes/selecciondefotos.png"
+                alt="Selección de Imágenes"
+                class="img-responsive"
+              />
+
+              <h3>Selección de Imágenes</h3>
+              <p>
+                Para su uso en la página web, es necesario adquirirlas con
+                anticipación, ya que sus características deben ser distintas a
+                las necesarias para su impresión. El estudio de imágenes para su
+                adecuada visualización en pantallas pretende generar archivos
+                ligeros, lo cual disminuye el tiempo de carga del sitio web. En
+                este caso, serán las pantallas las responsables de brindar la
+                calidad en la visualización de las imágenes.
+              </p>
+              <img
+                src="../../imagenes/redimensionar.jpg"
+                alt="Software de Edición"
+                class="img-responsive"
+              />
+
+              <h3>Software de Edición</h3>
+              <p>
+                En el trabajo con imágenes, podemos encontrarnos con programas
+                profesionales gratuitos y de pago. En estos últimos casos, los
+                más utilizados son Adobe Photoshop "para editar fotografías y
+                crear composiciones, pinturas digitales, animaciones, diseños
+                gráficos y mucho más".
+              </p>
+              <p>
+                Dentro de los programas gratuitos y con las herramientas
+                necesarias para un tratamiento profesional de las imágenes para
+                la página web, contamos con Gimp, Pinta y Paint.net, entre
+                otros.
+              </p>
+              <img
+                src="../../imagenes/capadovephoto.jpg"
+                alt="Formatos de Imagen"
+                class="img-responsive"
+              />
+
+              <h3>Formatos de Imagen</h3>
+              <p>
+                Los formatos de imagen más utilizados en sitios web y que
+                permiten una visualización óptima en pantalla son PNG, JPEG, GIF
+                y SVG.
+              </p>
+              <ul>
+                <li>
+                  <b>JPEG (Joint Photographic Experts Group):</b> Es el formato
+                  más utilizado en todo el sistema operativo. A pesar de que
+                  pierde calidad en su compresión, se puede elegir el nivel de
+                  esta al generarlo, de modo que cuanto más ligero, más calidad
+                  adicional se perderá.
+                </li>
+                <li>
+                  <b>PNG (Graphics Portable Network Graphics):</b> Se
+                  caracteriza porque el tamaño final de compresión es reducido,
+                  permite una mayor profundidad de contraste y es compatible con
+                  transparencias.
+                </li>
+                <li>
+                  <b>GIF (Graphics Interchange Format):</b> Dispone de una
+                  compresión limitada a 256 colores, proporcionando imágenes de
+                  tamaño reducido pero con la calidad suficiente para su
+                  visualización en pantalla. Asimismo, acepta transparencias.
+                </li>
+                <li>
+                  <b>SVG (Scalable Vector Graphics):</b> Permite la opción de
+                  elementos geométricos vectoriales y animaciones de gráficos
+                  vectoriales sencillas, con capacidad de administrar sus datos
+                  para modificarlas.
+                </li>
+              </ul>
+              <img
+                src="../../imagenes/tiposdearchivodeimagen.webp"
+                alt="Optimización de Imágenes"
+                class="img-responsive"
+              />
+
+              <h3>Optimización de Imágenes</h3>
+              <p>
+                La optimización de imágenes es el proceso de tratamiento que se
+                le aplica a una imagen para aligerar su tamaño y mantener la
+                calidad suficiente para su correcta visualización en pantalla y
+                con rápida velocidad de carga en web. La optimización dependerá
+                de la finalidad y el tamaño en el que se vaya a utilizar la
+                imagen, buscando un archivo lo menos pesado posible. También se
+                debe tener en cuenta el formato final de dicho archivo ya que
+                tienen características diferentes.
+              </p>
+              <img
+                src="../../imagenes/imagenoptimizada.jpg"
+                alt="Redimensionamiento de Imágenes"
+                class="img-responsive"
+              />
+
+              <h3>Redimensionamiento de Imágenes</h3>
+              <p>
+                Al reducir el tamaño de una imagen apenas se aprecia la pérdida
+                de calidad, pero al aumentarlo, se necesita información de la
+                que no se dispone, por lo que el programa que se utilice para
+                este proceso tendrá que rellenar el espacio con píxeles
+                repetidos o generados automáticamente según los colores
+                adyacentes, sufriendo una considerable pérdida de calidad. En la
+                mayoría de programas este procedimiento es el mismo.
+              </p>
+              <img
+                src="../../imagenes/redimensionar.jpg"
+                alt="Implementación de Código"
+                class="img-responsive"
+              />
+
+              <h3>Implementación de Código</h3>
+              <p>
+                Con el uso de imágenes en un sitio web se pueden conseguir
+                efectos visuales llamativos aplicando eventos o acciones
+                combinando varios lenguajes de programación, como son HTML, CSS
+                o JavaScript.
+              </p>
+              <img
+                src="../../imagenes/efectohover.jpg"
+                alt="Reemplazo de Imágenes"
+                class="img-responsive"
+              />
+
+              <h3>Reemplazo de Imágenes</h3>
+              <p>
+                Reemplazar una imagen del sitio web cuando el usuario realiza
+                una acción determinada aporta dinamismo y funcionalidad a la
+                página. Para realizar este efecto de sustitución de imágenes
+                contamos con diferentes técnicas según el lenguaje de
+                programación.
+              </p>
+
+              <h3>Ejemplo de Código HTML</h3>
+              <p>
+                Utilizando únicamente HTML habrá que implementar el siguiente
+                código:
+              </p>
+              <pre><code>&lt;img src="imagenes/play.png" onmouseover="this.src='imagenes/play_over.png'" onmouseout="this.src='play.png'" /&gt;</code></pre>
+              <p>
+                Así, la imagen con nombre “play.png” y guardada en la carpeta
+                “imagenes” se sustituirá por la imagen “play_over.png”, de la
+                misma carpeta, cuando el ratón pase por encima. El atributo
+                <code>onmouseover</code> hace que la primera imagen vuelva a
+                aparecer al apartar el cursor de la imagen.
+              </p>
+
+              <h3>Ejemplo de Código CSS y JavaScript</h3>
+              <p>
+                Para conseguir el mismo efecto utilizando también CSS y
+                JavaScript, se debe utilizar el siguiente código:
+              </p>
+              <pre><code>HTML:
+&lt;div class="boton_play"&gt;&lt;/div&gt;
+
+CSS:
+#boton_play {
+  background: url('../imagenes/play.png') no-repeat;
+  width: 3em;
+  height: 3em;
+  cursor: default;
+}
+
+#boton_play:hover {
+  background: url('../imagenes/play_hover.png') no-repeat;
+  cursor: pointer;
+}
+
+JavaScript:
+document.getElementById('boton_play').addEventListener('mouseover', function() {
+  this.style.background = "url('imagenes/play_hover.png')";
+});
+
+document.getElementById('boton_play').addEventListener('mouseout', function() {
+  this.style.background = "url('imagenes/play.png')";
+});
+</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Flecha para subir arriba -->
+    <a id="button"></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $("#button");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass("show");
+        } else {
+          btn.removeClass("show");
+        }
+      });
+
+      btn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+  </body>
+</html>

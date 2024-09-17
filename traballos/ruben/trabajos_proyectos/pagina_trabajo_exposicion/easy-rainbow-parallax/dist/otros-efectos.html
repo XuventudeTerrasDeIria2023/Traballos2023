@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Otros Efectos</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Incluyendo estilos del botón y contenido */
+      #button {
+        display: inline-block;
+        background-color: #104dc7;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media (min-width: 500px) {
+        .content {
+          width: 80%;
+        }
+      }
+      .content h1 {
+        margin-bottom: -10px;
+        color: #0056b3;
+        line-height: 1.5;
+      }
+      .content h2 {
+        font-size: 2.2rem;
+        margin-top: 1.5em;
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 0.5em;
+      }
+      .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+      }
+      .content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Estilo específico para esta página */
+      .hero5 {
+        background-image: url("../../imagenes/foto5.webp");
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <nav>
+        <a href="../../dist/index.html">
+          <img src="../../imagenes/logotrabajarconimagenes.png" width="4%;" />
+        </a>
+      </nav>
+      <section class="hero5 vertical-center">
+        <div class="container text-center">
+          <h1>Otros Efectos</h1>
+        </div>
+        <div class="optional-rainbow"></div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <article>
+            <div class="col-sm-12">
+              <h2>Efectos con HTML</h2>
+              <p>
+                Este lenguaje de programación se enfoca en estructurar y
+                organizar el contenido de una página web, para luego aplicar
+                efectos visuales usando CSS y otros lenguajes orientados a
+                objetos. Con la llegada de HTML5, se han introducido nuevas
+                etiquetas, como <code>&lt;canvas&gt;</code>, para superar las
+                limitaciones de HTML en cuanto a efectos visuales.
+                <code>&lt;canvas&gt;</code> es una herramienta poderosa para
+                crear gráficos y animaciones en 2D mediante JavaScript,
+                permitiendo generar gráficos dinámicos e interactivos, cruciales
+                para el desarrollo moderno de aplicaciones web. Sin embargo, su
+                contenido no se representa como nodos del DOM, por lo que los
+                navegadores accesibles para personas con discapacidades no
+                pueden interpretar su contenido. La etiqueta
+                <code>&lt;canvas&gt;</code> ofrece amplias posibilidades para
+                crear composiciones estáticas o animadas en las páginas web.
+              </p>
+              <img
+                src="../../imagenes/canvas_example.jpg"
+                alt="Ejemplo de Canvas"
+                class="img-responsive"
+              />
+
+              <h3>Efectos con CSS</h3>
+              <p>
+                Con CSS, también es posible crear efectos visuales sofisticados
+                que son más ligeros para los navegadores en comparación con
+                otros lenguajes de programación. Ejemplos de estos efectos
+                incluyen galerías de imágenes y animaciones como una pelota
+                rebotando.
+              </p>
+              <img
+                src="../../imagenes/css_effects.jpg"
+                alt="Ejemplos de Efectos CSS"
+                class="img-responsive"
+              />
+
+              <h3>Efectos con capas</h3>
+              <p>
+                En HTML, la etiqueta <code>&lt;div&gt;</code> se utiliza para
+                crear capas que pueden contener cualquier tipo de contenido.
+                Cualquier objeto del documento que contenga contenido y pueda
+                ubicarse en cualquier parte de la web se puede considerar una
+                capa y se le pueden aplicar diferentes efectos mediante
+                JavaScript. Estos efectos suelen aplicarse a pequeños elementos
+                como botones o menús de navegación.
+              </p>
+              <ul>
+                <li>
+                  <b>hide() y show():</b> Se usan para ocultar y mostrar
+                  elementos web, creando efectos de desvanecimiento.
+                </li>
+              </ul>
+              <pre><code>$(selector).hide(velocidad, callback);
+$(selector).show(velocidad, callback);</code></pre>
+              <p>
+                Estos métodos permiten, por ejemplo, ocultar una imagen con un
+                botón y mostrarla de nuevo con otro botón. El evento
+                <code>toggle</code> ofrece la misma funcionalidad con un solo
+                botón.
+              </p>
+              <img
+                src="../../imagenes/hide_show_example.jpg"
+                alt="Ejemplo de Hide y Show"
+                class="img-responsive"
+              />
+
+              <h3>Eventos fade</h3>
+              <p>
+                Modifican la opacidad de un objeto mientras lo mantienen en el
+                flujo normal de la web.
+              </p>
+              <ul>
+                <li><code>fadeIn():</code> aparece un elemento no visible</li>
+                <li><code>fadeOut():</code> desaparece un elemento visible</li>
+                <li>
+                  <code>fadeToggle():</code> alterna los métodos anteriores
+                </li>
+                <li>
+                  <code>fadeTo():</code> permite especificar la opacidad para
+                  mostrar u ocultar
+                </li>
+              </ul>
+              <pre><code>$(selector).fadeIn(velocidad, callback);
+$(selector).fadeOut(velocidad, callback);
+$(selector).fadeToggle(velocidad, callback);
+$(selector).fadeTo(velocidad, opacidad, callback);</code></pre>
+              <p>
+                Un ejemplo similar al anterior puede mostrar el objeto con una
+                opacidad del 70% en lugar del 100%.
+              </p>
+              <img
+                src="../../imagenes/fade_example.jpg"
+                alt="Ejemplo de Fade"
+                class="img-responsive"
+              />
+
+              <h3>Eventos slide</h3>
+              <p>Se utilizan para crear efectos de deslizamiento.</p>
+              <ul>
+                <li><code>slideDown():</code> deslizamiento hacia abajo</li>
+                <li><code>slideUp():</code> deslizamiento hacia arriba</li>
+                <li>
+                  <code>slideToggle():</code> alterna entre los dos métodos
+                  anteriores
+                </li>
+              </ul>
+              <pre><code>$(selector).slideToggle(velocidad, callback);</code></pre>
+              <img
+                src="../../imagenes/slide_example.jpg"
+                alt="Ejemplo de Slide"
+                class="img-responsive"
+              />
+
+              <h3>animate()</h3>
+              <p>
+                Este efecto permite pequeñas animaciones y es bastante complejo.
+                Permite definir casi cualquier propiedad del elemento
+                seleccionado (tamaño, color, etc.) y cambiar su valor.
+              </p>
+              <pre><code>$(selector).animate({ parámetros }, velocidad, callback);</code></pre>
+
+              <h3>stop()</h3>
+              <p>Detiene una animación antes de que termine.</p>
+              <pre><code>$(selector).stop(stopAll, goToEnd);</code></pre>
+              <p>
+                Permite detener toda la cola de métodos
+                <code>animate()</code> declarados con el parámetro
+                <code>stopAll</code> en true. Si el parámetro
+                <code>stopToEnd</code> es true, la animación se completa al
+                ejecutar el método <code>stop</code>.
+              </p>
+              <img
+                src="../../imagenes/animate_example.jpg"
+                alt="Ejemplo de Animate"
+                class="img-responsive"
+              />
+
+              <h3>Callback</h3>
+              <p>
+                Este parámetro es opcional y se puede incluir en cualquier
+                efecto para llamar a una función cuando el efecto termina. Por
+                ejemplo, se puede configurar que cuando un logotipo termine su
+                recorrido, se abra una nueva ventana. Esto permite crear
+                animaciones elaboradas que aportan dinamismo a cualquier sitio
+                web.
+              </p>
+
+              <h3>Encadenamiento de efectos</h3>
+              <p>
+                Todos los efectos que se apliquen a un objeto pueden encadenarse
+                en una única línea, facilitando la lectura para los navegadores
+                y optimizando el código. Por ejemplo, deslizamiento hacia abajo,
+                desaparición y reaparición del objeto.
+              </p>
+              <img
+                src="../../imagenes/chaining_example.jpg"
+                alt="Ejemplo de Encadenamiento"
+                class="img-responsive"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Flecha para subir arriba -->
+    <a id="button"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $("#button");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass("show");
+        } else {
+          btn.removeClass("show");
+        }
+      });
+
+      btn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+  </body>
+</html>

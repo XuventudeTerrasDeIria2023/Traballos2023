@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabajar con Marcos</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Incluyendo estilos del botón y contenido */
+      #button {
+        display: inline-block;
+        background-color: #104dc7;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media (min-width: 500px) {
+        .content {
+          width: 80%;
+        }
+      }
+      .content h1 {
+        margin-bottom: -10px;
+        color: #03a9f4;
+        line-height: 1.5;
+      }
+      .content h2 {
+        font-size: 2.2rem;
+        margin-top: 1.5em;
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 0.5em;
+      }
+      .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+      }
+      .content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Estilo específico para esta página */
+      .hero4 {
+        background-image: url("../../imagenes/foto3.webp");
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <nav>
+        <a href="../../dist/index.html">
+          <img src="../../imagenes/logotrabajarconimagenes.png" width="4%;" />
+        </a>
+      </nav>
+      <section class="hero4 vertical-center">
+        <div class="container text-center">
+          <h1>Trabajar con Marcos</h1>
+        </div>
+        <div class="optional-rainbow"></div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <article>
+            <div class="col-sm-12">
+              <h2>Dónde Utilizar los Marcos</h2>
+              <p>
+                Los marcos y sus etiquetas han sido suprimidos en HTML5.
+                Anteriormente, eran usados para incluir contenidos de otras
+                páginas en diferentes secciones de una web, pero ahora su uso
+                puede penalizar en los motores de búsqueda y causar problemas de
+                visualización. La mayoría de las páginas tienen secciones fijas
+                o estáticas que se repiten a lo largo del proyecto web, como la
+                cabecera, el menú de navegación y el pie de página. Actualmente,
+                se recomienda utilizar lenguajes de programación como PHP para
+                incluir estas secciones fijas, usando comandos como
+                <code>include</code> o <code>require</code>.
+              </p>
+
+              <h2>Limitaciones de los Marcos</h2>
+              <p>
+                Las limitaciones de los marcos eran notorias incluso en HTML4,
+                ya que causaban incompatibilidades entre navegadores y problemas
+                de visualización en dispositivos de baja resolución. Además, los
+                motores de búsqueda penalizan el uso de marcos por dificultar la
+                indexación del contenido.
+              </p>
+
+              <h2>Alternativas a los Marcos</h2>
+              <p>
+                Una buena alternativa es usar PHP para incluir secciones fijas
+                en la página. Esto se logra mediante el comando
+                <code>include</code>, que permite insertar documentos externos y
+                secciones fijas en la web, lo cual también ahorra codificación y
+                espacio en el servidor.
+              </p>
+              <pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt;Página de Manuel&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;header&gt;
+                      &lt;?php include("cabecera.php"); ?&gt;
+                    &lt;/header&gt;
+                    &lt;nav&gt;
+                      &lt;?php include("menu.php"); ?&gt;
+                    &lt;/nav&gt;
+                    &lt;footer&gt;
+                      &lt;?php include("pie.php"); ?&gt;
+                    &lt;/footer&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Flecha para subir arriba -->
+    <a id="button"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $("#button");
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass("show");
+        } else {
+          btn.removeClass("show");
+        }
+      });
+
+      btn.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "300");
+      });
+    </script>
+  </body>
+</html>

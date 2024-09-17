@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabajar con Ventanas</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Incluyendo estilos del botón y contenido */
+      #button {
+        display: inline-block;
+        background-color: #104dc7;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media (min-width: 500px) {
+        .content {
+          width: 80%;
+        }
+      }
+      .content h1 {
+        margin-bottom: -10px;
+        color: #0056b3; /* Asegurar que el color sea azul */
+        line-height: 1.5;
+      }
+      .content h2 {
+        font-size: 2.2rem;
+        margin-top: 1.5em;
+        color: #0056b3; /* Asegurar que el color sea azul */
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 0.5em;
+      }
+      .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+      }
+      .content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Estilo específico para esta página */
+      .hero4 {
+        background-image: url("../../imagenes/foto4.jpg");
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <nav>
+        <a href="../../dist/index.html">
+          <img src="../../imagenes/logotrabajarconimagenes.png" width="4%;" />
+        </a>
+      </nav>
+      <section class="hero4 vertical-center">
+        <div class="container text-center">
+          <h1>Trabajar con Ventanas</h1>
+        </div>
+        <div class="optional-rainbow"></div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <article>
+            <div class="col-sm-12">
+              <h2>Utilizar Ventanas</h2>
+              <p>
+                Las ventanas del navegador son una parte esencial porque le permiten visualizar cada archivo de su sitio web. Usando JavaScript, puedes controlar la aparición y desaparición de varias ventanas adicionales, así como la interacción entre ellas. Sin embargo, cabe señalar que abusar de ellas puede resultar aburrido para el usuario y puede impedir que aparezcan ventanas secundarias en el navegador. En este caso, se debe advertir a los usuarios que esta opción está deshabilitada para que la página funcione correctamente.
+              </p>
+              <img
+                src="../../imagenes/windows_control.jpg"
+                alt="Control de Ventanas"
+                class="img-responsive"
+              />
+              <h3>Crear Múltiples Ventanas</h3>
+              <p>
+                Usando la declaración JavaScript <code>window.open()</code>, las ventanas emergentes se pueden abrir y modificar usando la URL, el nombre de la ventana o las propiedades de medida y los parámetros de forma de la ventana.
+              </p>
+              <ul>
+                <li>
+                  <b>URL:</b> la dirección del contenido de la nueva ventana.
+                </li>
+                <li>
+                  <b>Nombre de ventana o atributo de destino:</b> asigne un nombre a la nueva ventana para que pueda identificarse fácilmente más adelante. Su apariencia se crea de la misma forma que un enlace en HTML.
+                </li>
+                <li>
+                  <b>Formas de abrir ventanas:</b>
+                  <ul>
+                    <li>
+                      <code>_blank</code>: configuración predeterminada. La URL se abre en una nueva ventana.
+                    </li>
+                    <li>
+                      <code>_parent</code>: cargar en ventana principal o ventana principal.
+                    </li>
+                    <li>
+                      <code>_self</code>: reemplaza el contenido de la página actual.
+                    </li>
+                    <li>
+                      <code>_top</code>: reemplaza cualquier conjunto de marcos.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Forma de ventana:</b>
+                  <ul>
+                    <li>
+                      <b>Modo de canal/Pantalla completa:</b> la ventana se muestra en modo de pantalla completa.
+                    </li>
+                    <li>
+                      <b>Alto/Ancho:</b> establece el tamaño de la nueva ventana (alto y ancho en píxeles).
+                    </li>
+                    <li>
+                      <b>Izquierda/Arriba:</b> indica la posición inicial.
+                    </li>
+                    <li>
+                      <b>Ubicación:</b> no mostrar la columna de dirección.
+                    </li>
+                    <li>
+                      <b>Barra de menú:</b> No muestra la barra de menú del navegador.
+                    </li>
+                    <li>
+                      <b>Redimensionado:</b> Permite al usuario cambiar el tamaño de la ventana.
+                    </li>
+                    <li>
+                      <b>Desplazamiento:</b> muestra u oculta el desplazamiento.
+                    </li>
+                    <li>
+                      <b>Columna de estado:</b> agregue o elimine una columna de estado.
+                    </li>
+                    <li><b>Barra de título:</b> agregue o elimine títulos.</li>
+                    <li>
+                      <b>Barra de herramientas:</b> muestra o habilita la barra de herramientas.
+                    </li>
+                    <li>
+                      <b>Reemplazar:</b> puede establecer si la nueva ventana crea una nueva entrada del historial o reemplaza la entrada actual usando el parámetro de reemplazo verdadero o falso.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <img
+                src="../../imagenes/window_open.jpg"
+                alt="Abrir Ventanas"
+                class="img-responsive"
+              />
+              <h3>Ejemplo de Código para Abrir Ventanas</h3>
+              <pre><code>JavaScript:
+window.open("URL", "nombre", "formulario");
+</code></pre>
+              <h3>Cerrar Ventanas</h3>
+              <p>
+                Para cerrar la ventana emergente creada, necesita saber su nombre o almacenarla en una variable para poder consultarla utilizando la instrucción JavaScript <code>window.close()</code>.
+              </p>
+              <img
+                src="../../imagenes/window_close.jpg"
+                alt="Cerrar Ventanas"
+                class="img-responsive"
+              />
+              <h3>Interacción entre Múltiples Ventanas</h3>
+              <p>
+                Usando JavaScript, todas las ventanas creadas pueden comunicarse entre sí y con la ventana principal. Para hacer esto, las ventanas emergentes deben almacenarse en variables para que se pueda hacer referencia a ellas cuando sea necesario. Puede cambiar el atributo de ubicación de la ventana abierta para mostrar un archivo HTML o cargar una nueva URL externa usando la instrucción <code>window.location</code>. Las ventanas auxiliares también pueden comunicarse con la ventana principal utilizando la instrucción <code>window.opener</code> para enviar mensajes o cambiar el contenido de ciertos elementos.
+              </p>
+              <img
+                src="../../imagenes/window_interaction.jpg"
+                alt="Interacción entre Ventanas"
+                class="img-responsive"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Flecha para subir arriba -->
+    <a id="button"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $('#button');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+      });
+    </script>
+  </body>
+</html>

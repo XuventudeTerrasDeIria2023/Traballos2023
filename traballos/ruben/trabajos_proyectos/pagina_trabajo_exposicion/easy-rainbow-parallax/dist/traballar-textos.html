@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabajar con Texto</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Incluyendo estilos del botón y contenido */
+      #button {
+        display: inline-block;
+        background-color: #104dc7;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .content {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      @media (min-width: 500px) {
+        .content {
+          width: 80%;
+        }
+      }
+      .content h1 {
+        margin-bottom: -10px;
+        color: #03a9f4;
+        line-height: 1.5;
+      }
+      .content h2 {
+        font-size: 2.2rem;
+        margin-top: 1.5em;
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 0.5em;
+      }
+      .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+      }
+      .content:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Estilo específico para esta página */
+      .hero2 {
+        background-image: url("../../imagenes/foto2.jpg");
+      }
+    </style>
+  </head>
+  <body id="top">
+    <div class="wrapper">
+      <nav>
+        <a href="../../dist/index.html">
+          <img src="../../imagenes/logotrabajarconimagenes.png" width="4%;" />
+        </a>
+      </nav>
+      <section class="hero2 vertical-center">
+        <div class="container text-center">
+          <h1>Trabajar con Texto</h1>
+        </div>
+        <div class="optional-rainbow"></div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <article>
+            <div class="col-sm-12">
+              <h2>Factores Estéticos y de Movimiento</h2>
+              <p>
+                En un sitio web, se pueden aplicar diversos efectos especiales a
+                los textos que se muestran en él, tanto como para destacar
+                palabras como para otorgar dinamismo a la página web. En
+                consecuencia, se requerirán utilizar diversos lenguajes de
+                programación, como el tamaño (font-size), el estilo de fuente
+                (font-style) o su anchura (font-weight); y a los bloques de
+                texto, como el color, el espacio entre los caracteres
+                (letter-spacing).
+              </p>
+
+              <h3>Creación de Textos Actualizados y con Ritmo</h3>
+              <p>
+                En ocasiones, se encuentran sitios web con textos en movimiento,
+                ideales para enfocar la atención hacia un elemento del sitio o
+                para proporcionar cualquier utilidad que pueda requerir. En
+                función del nivel de complejidad, se empleará un lenguaje de
+                programación u otro. Descubrimos diversas aplicaciones JQuery
+                que posibilitan la creación de estos efectos.
+              </p>
+              <p>
+                La función más habitual es aplicar a los enlaces que se
+                encuentran en bloques de texto con el fin de resaltarlos y
+                diferenciarlos del resto de texto. Se pueden aplicar estilos a
+                cualquier texto a través de CSS, como decorarlos con degradados
+                o darles profundidad aplicando sombras.
+              </p>
+
+              <h3>La Implementación de Efectos</h3>
+              <p>
+                Para la implementación de efectos en los textos, la opción más
+                adecuada será usar el código JavaScript. De esta manera, se
+                podrán generar sitios web dinámicos y atractivos. En este
+                ejemplo se encuentra este ejemplo.
+              </p>
+
+              <h3>Efectos en la Página Web</h3>
+              <p>
+                Durante la implementación de los efectos en la página web, es
+                necesario tener en cuenta las necesidades del sitio web, así
+                como su adecuada visualización en todos los navegadores y
+                dispositivos posibles mediante un diseño adaptado o que responda
+                a diversas resoluciones, tanto en el atributo media como en la
+                regla @import como en la propia hoja de estilo. También se puede
+                utilizar el lenguaje JavaScript para elaborar un script que
+                detecte previamente la resolución de la pantalla del usuario.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Flecha para subir arriba -->
+    <a id="button"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $('#button');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+      });
+    </script>
+  </body>
+</html>
