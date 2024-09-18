@@ -173,7 +173,7 @@ h3 {
     border: 3px solid red;
 }
 .portfolio ul li {
-    position: relative;
+    /* position: relative; */
 }
 
 .portfolio ul li .overlay {
