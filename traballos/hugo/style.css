@@ -170,7 +170,7 @@ h3 {
     display:block !important;
     margin: 0 auto;
     height:inherit;   
-    border: 5px solid red;
+    border: 5px solid orange;
 
 }
 .portfolio ul  {
@@ -246,7 +246,6 @@ h3 {
     top: 12%;
     background: none;
     font-size: 35px;
-    :
 }
 
 #carousel-testimonials .arrow.left {
