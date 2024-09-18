@@ -163,7 +163,9 @@ h3 {
     margin: 250px 0 50px 0;
 }
 
-
+.portfolio{/* susi */
+    border: 2px solid blue;
+}
 .portfolio ul li {
     position: relative;
 }
