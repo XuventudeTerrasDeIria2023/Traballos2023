@@ -168,11 +168,19 @@ h3 {
  
 .portfolio.spacer {
     display:block;
-    margin: 0 auto;
-    height: auto;
+    margin: auto;
+    height: 100%;   
     border: 5px solid green;
+
 }
-.portfolio ul,.portfolio ul li {
+.portfolio ul  {
+    display:block;
+    margin: auto;
+    height: 100%;  
+    border: 5px solid green;
+
+}
+.portfolio ul li {
     position: relative;
 }
 
