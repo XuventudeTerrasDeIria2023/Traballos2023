@@ -170,6 +170,7 @@ h3 {
     display:block;
     position: relative; 
     margin: 0 auto;
+    height:auto;
     border: 2px solid blue;
 }
 .portfolio ul li {
