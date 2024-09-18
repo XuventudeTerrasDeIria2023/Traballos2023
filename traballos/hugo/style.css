@@ -168,16 +168,16 @@ h3 {
  
 .portfolio.spacer {
     display:block !important;
-    margin: auto;
+    margin: 0 auto;
     height:inherit;   
     border: 5px solid red;
 
 }
 .portfolio ul  {
     display: block !important;
-    margin: auto;
+    margin: 5%;
     height:inherit;   
-        border: 5px solid green;
+    border: 5px solid green;
 
 }
 .portfolio ul li {
