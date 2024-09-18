@@ -166,6 +166,14 @@ h3 {
 .portfolio{/* susi  border: 2px solid yellow; */
    
 }
+.portfolio  {
+    position: relative; 
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+.portfolio ul li {
+    position: relative;
+}
 .portfolio ul li {
     position: relative;
 }
