@@ -67,7 +67,7 @@ h3 {
 }
 
 .spacer {
-    padding: auto 0;
+    padding: 100px 0;
 }
 
 .center {
@@ -163,18 +163,13 @@ h3 {
     margin: 250px 0 50px 0;
 }
 
-/* susi  border: 2px solid yellow; */
-   
  
 .portfolio  {
     display:block;
     position: relative; 
     margin: 0 auto;
-    height:auto;
+    height: auto;
     border: 2px solid blue;
-}
-.portfolio ul li {
-    position: relative;
 }
 .portfolio ul li {
     position: relative;
