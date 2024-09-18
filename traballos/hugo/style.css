@@ -86,6 +86,7 @@ h3 {
     bottom: 0;
     left: 0;
     right: 0;
+    border: 3px solid blue;
 }
 
 .fullpage .container {
@@ -165,7 +166,7 @@ h3 {
 
  
  
-.portfolio .container {
+.portfolio.spacer {
     display:block;
     margin: 0 auto;
     height: auto;
