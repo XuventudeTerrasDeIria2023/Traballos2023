@@ -167,6 +167,7 @@ h3 {
    
  
 .portfolio  {
+    display:block;
     position: relative; 
     margin: 0 auto;
     border: 2px solid blue;
