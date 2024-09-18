@@ -90,12 +90,12 @@ h3 {
  }
 
 .fullpage .container {
-    display: table;
+    display: grid;
     height: inherit;
 }
 
 .fullpage .absolute-center {
-    display: table-cell;
+    display:grid;
     vertical-align: middle;
 }
 
@@ -167,14 +167,14 @@ h3 {
  
  
 .content-body{
-    display:block !important;
+   
     margin: 0 auto;
-    height:inherit;   
-    border: 5px solid orange;
+    height:100%;   
+    border: 5px solid pink;
 
 }
 .portfolio ul  {
-    display: block !important;
+    position: relative;
     margin: 5%;
     height:inherit;   
     border: 5px solid green;
