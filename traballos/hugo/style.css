@@ -170,10 +170,10 @@ h3 {
     display:block;
     margin: 0 auto;
     height: auto;
-    border: 3px solid red;
+    border: 5px solid green;
 }
-.portfolio ul li {
-    /* position: relative; */
+.portfolio ul,.portfolio ul li {
+    position: relative;
 }
 
 .portfolio ul li .overlay {
