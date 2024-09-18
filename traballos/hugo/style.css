@@ -90,7 +90,7 @@ h3 {
  }
 
 .fullpage .container {
-    /* display: table; */
+    display: table;
     height: inherit;
 }
 
