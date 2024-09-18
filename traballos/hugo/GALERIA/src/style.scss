@@ -1,0 +1,125 @@
+$gap: 2px;
+
+$media-queries: 0 1024px;
+$cols: 3 5;
+$rows: 5 3;
+
+$imageWidth: 3;
+$imageHeight:3;
+
+$galleryWidth: 80vw;
+
+.gallery {
+  display: grid;
+  padding: 0;
+  height: $galleryWidth * 0.6;
+  width: $galleryWidth;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+li {
+  display: grid-item;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  border: $gap solid #fff;
+  
+  &:hover {
+    overflow: visible;
+    
+    img { 
+      z-index: 20;
+    }
+  }
+  
+  .text {
+    z-index: 15;
+    text-decoration: none;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    letter-spacing: .05em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #444;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    h1 {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+    }
+  }
+}
+
+a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom: 0;
+  z-index: 30;
+}
+
+img {
+  position: absolute;
+  width: calc(300% + #{($imageWidth + 1)*$gap});
+  height: calc(300% + #{($imageHeight + 1)*$gap});
+  left: calc(-100% - #{$gap*($imageWidth - 1)});
+  top: calc(-100% - #{$gap*($imageHeight - 1)});
+}
+
+@mixin n-fractions($n) {
+  $c: " 1fr";
+  $content: $c;
+  @for $i from 1 to $n {
+      $content: $content + $c;
+  }
+  grid-template-columns: #{$content};
+  @if ($n == 3) {
+    width: 60vw;
+    height: 60vw * (5/3);
+  } @else {
+    width: 80vw;
+    height: 80vw * (3/5);
+  }
+}
+
+$media-queries-list: append($media-queries, auto);
+@each $query in $media-queries-list {
+  $i: index($media-queries-list,$query);
+  
+  @if ($query != auto) {
+    $next: nth($media-queries-list,($i+1));
+    $max: if( $next == auto, 999999px, $next - 1 );
+  
+    @media screen and (min-width: $query) and (max-width: $max) {
+      .gallery {
+        @include n-fractions(nth($cols,$i));
+      }
+      
+      // top-align first row
+      li:nth-child(-1n+#{nth($cols,$i)}) img {
+        top:0%;
+      }
+
+      // bottom-align last row
+      li:nth-child(1n+#{(nth($rows,$i) - 1)*nth($cols,$i) + 1}) img {
+        top:calc(-200% - #{$gap*2*2});
+      }
+
+      // left align first col
+      li:nth-child(#{nth($cols,$i)}n+1) img {
+        left: 0%;
+      }
+
+      // right align last col
+      li:nth-child(#{nth($cols,$i)}n ) img {
+        left:calc(-200% - #{$gap*2*2});
+      }
+    }
+  }
+}
