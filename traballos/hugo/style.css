@@ -82,13 +82,13 @@ h3 {
 .header {
     background: rgba(0, 0, 0, 0.8);
     /* position: relative; */
-    height:calc(100vh + 25em);
+    height:100vh;
     display: block;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    border: 5px solid yellow;
+    border: 5px solid red;
  }
 
 .fullpage .container {
@@ -172,8 +172,6 @@ h3 {
    position: relative;
     /* margin: 0 auto;
     height:auto;    */
-    border: 5px solid pink;
-
 }
 .portfolio ul  {
     /* position: relative;
