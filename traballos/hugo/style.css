@@ -164,9 +164,12 @@ h3 {
 }
 
  
-.portfolio {
+.portfolio,
+.portfolio ul {
+   
+}
+.portfolio .container {
     display:block;
-    position: relative; 
     margin: 0 auto;
     height: auto;
     border: 3px solid orange;
