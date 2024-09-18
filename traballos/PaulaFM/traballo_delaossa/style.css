@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+@font-face {
+    font-family: "Bungee Spice Regular";
+    src: url(Bungee_Spice/BungeeSpice-Regular.ttf) format('truetype');
+
+}
+
+body {
+    line-height: 1;
+    /*    margin: 1em;*/
+}
+
+body,
+html {
+    background-color: #FFF;
+}
+
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-size: 25px;
+    font-family: "Bungee Spice Regular";
+}
+
+/*****************************LOGO******************************/
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 75px;
+    color: #FFF;
+}
+
+#logo img {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 2px;
+    border-radius: .5em;
+}
+
+/*****************************INDEX********************************/
+
+.fotoinicio {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+}
+
+.tituloprinciapal {
+    font-family: "Bungee Spice Regular";
+    text-align: center;
+    font-size: 60px;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+}
+
+/*************************************TRAYECTORIA**********************/
+
+
+.titulo1 {
+    text-align: center;
+    font-family: "Bungee Spice Regular";
+    font-size: 30px;
+}
+
+.trayectoria {
+    background-color: #FFC18C;
+    text-align: center;
+    font-family: Armata;
+    font-size: 18px;
+    padding: 1em;
+    position: absolute;
+    top: 19%;
+    right: 33%;
+    left: 27%;
+    width: 30%;
+    border-radius: .5em;
+    border: 2px 2px 2px 2px #EE6E00;
+}
+
+.imagen1 {
+    width: 12%;
+    /*    box-shadow: 1px 1px 1px 1px #EE6E00;*/
+    border: 4px solid #EE6E00;
+    border-radius: 1em;
+    position: absolute;
+    top: 20%;
+    right: 23%;
+    left: 60%;
+}
+
+.imagen1:hover {
+    transform: scale(115%);
+    width: 12%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    left: 60%;
+}
+
+.imagen2 {
+
+    width: 10%;
+    border: 4px solid #EE6E00;
+    border-radius: 1em;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    left: 61%;
+}
+
+.imagen2:hover {
+    transform: scale(115%);
+    width: 10%;
+    box-shadow: 1px 1px 1px 1px #EE6E00;
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    left: 60%;
+}
+
+.imagen3 {
+    width: 10%;
+    border: 4px solid #EE6E00;
+    border-radius: 1em;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.imagen3:hover {
+    transform: scale(115%);
+    width: 10%;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.imagen4 {
+    width: 10%;
+    border: 4px solid #EE6E00;
+    border-radius: 1em;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+.imagen4:hover {
+    transform: scale(115%);
+    width: 10%;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+
+/***********************************ALBUMS***************************/
+
+.titulo1 {
+    text-align: center;
+    font-family: "Bungee_Spice";
+    font-size: 30px;
+}
+
+
+/*******************************Section1**************/
+
+
+.contenedor1 {
+    position: relative;
+}
+
+.imaxe1 {
+    display: block;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+div.bloque-texto1 {
+    position: absolute;
+    top: 10em;
+    left: 30%;
+
+    height: 10vh;
+    width: 17%;
+    opacity: 0;
+    transition: 1.5s ease;
+    /*			background-color: #FFC18C;*/
+    display: inline-block;
+}
+
+
+div.texto1 {
+    color: black;
+    background-color: #FFC18C;
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.contenedor1:hover .bloque-texto1 {
+    opacity: 1;
+}
+
+/*****************************************Section2***********************/
+
+
+.contenedor2 {
+    position: relative;
+}
+
+.imaxe2 {
+    display: block;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 42%;
+}
+
+.bloque-texto2 {
+    position: absolute;
+    top: 10em;
+    left: 45%;
+    height: 10vh;
+    width: 18%;
+    opacity: 0;
+    transition: 1.5s ease;
+    /*			background-color: #FFC18C;*/
+    display: inline-block;
+
+
+}
+
+.texto2 {
+    color: black;
+    background-color: #FFC18C;
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contenedor2:hover .bloque-texto2 {
+    opacity: 1;
+}
+
+
+/****************************************Section3**************************/
+
+
+.contenedor3 {
+    position: relative;
+}
+
+.imaxe3 {
+    display: block;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+
+div.bloque-texto3 {
+    position: absolute;
+    top: 10em;
+    left: 66%;
+    bottom: 0;
+    height: auto;
+    width: 15%;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+div.texto3 {
+    color: black;
+    background-color: #FFC18C;
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 18px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contenedor3:hover .bloque-texto3 {
+    opacity: 1;
+}
+
+/*********************************CANCIONES*******************************/
+
+.encabezado {
+    text-align: center;
+    font-family: Armata;
+    font-size: 95 %;
+}
+
+.titulo1 {
+    text-align: center;
+    font-family: "Bungee Spice Regular";
+    font-size: 30px;
+}
+
+.veneno {
+    background-color: #FFC18C;
+    border: 2px dotted #EE6E00;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.vene{
+    font-family: Armata;
+}
+
+.plaza {
+    background-color: #FFC18C;
+    border: 2px dotted #EE6E00;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+address {
+    padding: 10px 20px 30px 10px;
+}
+
+.as1 {
+    width: 60%;
+    border: 2px dotted #EE6E00;
+}
+
+.as1:hover {
+    width: 90%;
+    border: 2px dotted #EE6E00;
+}
+
+.as2 {
+    width: 50%;
+    border: 2px dotted #EE6E00;
+}
+
+.as2:hover {
+    width: 70%;
+    border: 2px dotted #EE6E00;
+}
+
+aside {
+    margin: 10px auto;
+    /*    background: #FF8720;*/
+    min-height: 100px;
+    width: 40%;
+}
+
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/******************************final******************/
+
+.final {
+    font-family: Armata;
+    padding: .2em;
+    position: absolute;
+    top: 90%;
+    right: 22%;
+    width: 60%;
+}
+
+footer {
+    background: #FF8720;
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    position: relative;
+    top: 13em;
+    text-align: right;
+    font-family: Armata;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+aside {
+    margin: 10px auto;
+    /*    background: #FF8720;*/
+    min-height: 100px;
+}
+
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+header {
+    background: #FF8720;
+    padding: 20px 30px;
+    max-width: 940px;
+    margin: auto;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul li a {
+    background: #FFC18C;
+    ;
+    padding: 6px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: bisque;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+article {
+    /*        	border-bottom: 2px dotted #999;*/
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
