@@ -88,7 +88,6 @@ h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    border: 5px solid red;
  }
 
 .fullpage .container {
@@ -177,7 +176,6 @@ h3 {
     /* position: relative;
     margin: 5%;
     height:inherit;    */
-    border: 5px solid green;
 
 }
 .portfolio ul li {
