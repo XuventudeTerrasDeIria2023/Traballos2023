@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Alejandro Pan Morono</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+body{
+	width: 60%;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+form {
+	border: 2px solid #03dffc;
+	border-radius: 0.5em;
+
+}
+legend {
+	font-weight: bold;
+	border-radius: 0.7em;
+	color: white;
+	background-color: #CCC;
+	padding: .4em;
+
+}
+label {
+	font-weight: bold;
+	border-radius: 0.7em;
+	color: white;
+	background-color: #666;
+
+	
+}
+:focus {
+	border-color: #03dffc;
+	background-color: #CCC;
+
+}
+input [type="file"] {
+background-color: white;
+border-radius: 0.7em;
+
+}
+
+input [type="file"]:focus{
+background-color: #CCC;
+border-radius: 0.7em;
+cursor: pointer;
+box-shadow: 1px 2px 3px #03dffc;
+
+}
+
+#nome, #apellido, #contrasinal {
+	width: 77em;
+
+}
+
+button {
+	color: white;
+	background-color: #444;
+	border-radius: 0.7em;
+	box-shadow: 1px 2px 3px #03dffc;
+	margin: .5em;
+	padding: .7em;
+
+}
+button:hover {
+	background-color: #666;
+	box-shadow: 1px 2px 3px #ccc;
+	font-family: serif;
+}
+h2 {
+	font-size: 2em;
+}
+div {
+	margin: 1em;
+}
+fieldset {
+	margin: 1em;
+}
+#colorselect{
+	width: 3em;
+	height: 5em;
+	
+}
+
+#diferente1 {
+	width: 8em;
+	margin-bottom: .5em;
+	display: inline;
+}
+
+#diferente2 {
+	width: 6em;
+	margin-bottom: .5em;
+}
+#selector{
+	width: 25em;
+	height: 5em;
+}
+
+.diferencia{
+	background-color: #ccc;
+	padding: .3em;
+}
+
+.diferencia2 {
+	background-color:white;
+	color: black;
+	font-weight: normal;
+	
+}
+.oscurita{
+	font-weight: bold;
+	border-radius: 0.7em;
+	color: white;
+	background-color: #666;
+}
+#file {
+	/* margin-top: 2em;
+	display: inline; */
+}
+	</style>
+</head>
+
+<body>
+	<h2>Formulario Unidade</h2>
+<form method="post" action="mailto:alejandromorono.93@gmail.com" id="form">
+<div>
+<fieldset>
+	<legend class="oscurita">Completar</legend>
+	<div>
+		<label class="diferencia" for="nome">*Nome</label>
+		<p><input type="text" name="nome" id="nome" required></p>
+	
+</div>
+
+<div>
+
+<p><label class="diferencia" for="apellido">Apellidos</label></p>
+<input type="text" name="apellidos" id="apellido">
+</div>
+
+<div>
+<p><label class="diferencia" for="contrasinal">*Contrasinal</label></p>
+<input type="password" name="passwd" id="contrasinal" required>
+</div>
+
+<div>
+<input type="checkbox" id="geografía" name="asignatura" value="asignaturageografia">
+<label class="diferencia2" for="geografía">Geografía</label>
+
+<input type="checkbox" id="matematicas" name="asignatura" value="asignaturamatematicas">
+<label class="diferencia2" for="matematicas">Matemáticas</label>
+
+<input type="checkbox" id="historia" name="asignatura" value="asignaturahistoria">
+<label class="diferencia2" for="historia">Historia</label>
+
+<input type="checkbox" id="lengua" name="asignatura" value="asignaturalengua">
+<label class="diferencia2" for="lengua">Lengua</label>
+
+
+</div>
+<div>
+	<legend id="diferente1">Elixa un ficheiro:</legend>
+	<input type="file" id="file">
+	
+</div>
+
+<div>
+	<input type="radio" name="formato" id="jpg" value="formatojpg">
+	<label class="diferencia2" for="jpg">JPG</label>
+
+	<input type="radio" name="formato" id="png" value="formatopng">
+	<label class="diferencia2" for="png">PNG</label>
+
+</div>
+
+<div>
+	<legend id="diferente2">Suxerencias</legend>
+	<textarea id="areatexto" placeholder="Utilice este recadro para escribir" rows="4" cols="57"></textarea>
+
+</div>
+
+</fieldset>
+
+<fieldset>
+	<legend class="oscurita">Completar</legend>
+	<div>
+	<input type="date" id="fecha">
+	</div>
+
+	<div>
+
+	<select multiple id="selector" name="conector">
+
+	<option id="usb" value="usb">USB</option>
+	<option id="paralelo" value="paralelo">Paralelo</option>
+	<option id="ps2" value="ps2">Ps2</option>
+	
+</select>
+
+
+
+	
+	
+	</div>
+
+	<div>
+		<p>Elixa unha cor: <input type="color" id="colorselect" value="#000000"></p>
+	
+	</div>
+
+</fieldset>
+
+<fieldset>
+
+
+	<button type="submit" form="form">Enviar<i class="fa fa-arrow-up"></i></button>
+
+	<button type="reset">Limpiar<i class="fa fa-asterisk"></i></button>
+
+</fieldset>
+</form>
+
+</body>
+
+</html>

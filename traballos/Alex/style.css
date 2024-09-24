@@ -1,0 +1,592 @@
+html {
+  box-sizing: border-box;
+  font-family: "ff-meta-serif-web-pro", serif;
+  color: #e5d6d6;
+  font-size: 16px;
+}
+/* @media (min-width: 6.25em) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (min-width: 12.5em) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 18.75em) {
+  html {
+    font-size: 19px;
+  }
+}
+@media (min-width: 25em) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 31.25em) {
+  html {
+    font-size: 21px;
+  }
+}
+@media (min-width: 37.5em) {
+  html {
+    font-size: 22px;
+  }
+}
+@media (min-width: 43.75em) {
+  html {
+    font-size: 23px;
+  }
+}
+@media (min-width: 50em) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 56.25em) {
+  html {
+    font-size: 25px;
+  }
+}
+@media (min-width: 62.5em) {
+  html {
+    font-size: 26px;
+  }
+}
+@media (min-width: 68.75em) {
+  html {
+    font-size: 27px;
+  }
+}
+@media (min-width: 75em) {
+  html {
+    font-size: 28px;
+  }
+}
+@media (min-width: 81.25em) {
+  html {
+    font-size: 29px;
+  }
+}
+@media (min-width: 87.5em) {
+  html {
+    font-size: 30px;
+  }
+}
+@media (min-width: 93.75em) {
+  html {
+    font-size: 31px;
+  }
+}
+@media (min-width: 100em) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 106.25em) {
+  html {
+    font-size: 33px;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 34px;
+  }
+}
+@media (min-width: 118.75em) {
+  html {
+    font-size: 35px;
+  }
+}
+@media (min-width: 125em) {
+  html {
+    font-size: 36px;
+  }
+} */
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  width: 70%;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * The fixed Side 
+ */
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 50px;
+  border-right: 1px dashed rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "nimbus-sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.0875rem;
+  font-size: 10px;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.side:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.side .side__inner {
+  position: relative;
+  height: 100%;
+  white-space: nowrap;
+}
+.side a {
+  color: inherit;
+  word-spacing: 0;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.side .top,
+.side .bottom {
+  position: absolute;
+  left: 0;
+  transform: rotate(-90deg) perspective(1px);
+  transform-origin: 50px 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  word-spacing: 0.5rem;
+}
+.side .top {
+  top: 25px;
+  text-align: right;
+  color: black;
+}
+.side .bottom {
+  top: auto;
+  bottom: 75px;
+}
+.side .bottom:hover a {
+  color: rgba(0, 0, 0, 0.2);
+}
+.side .bottom:hover a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/**
+ * The first navigation
+ */
+.anchornav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.anchornav li {
+  display: block;
+}
+.anchornav li::after {
+  content: "";
+  width: 1.3rem;
+  display: block;
+  height: 2px;
+  background: black;
+}
+.anchornav li:last-child::after {
+  display: none;
+}
+.anchornav a {
+  display: block;
+  padding: 1em 0;
+  font-family: "nimbus-sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.anchornav a span {
+  display: inline;
+  padding: 0.5em 0 0;
+  opacity: 0.3;
+  letter-spacing: normal;
+  font-family: "ff-meta-serif-web-pro", serif;
+  text-transform: none;
+}
+.anchornav a:hover {
+  color: #de5f5f;
+}
+.anchornav a:hover span {
+  opacity: 1;
+  color: #181818;
+}
+
+/**
+ * The different sections
+ */
+.section {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-height: 60vh;
+  width: 100%;
+  align-content: center;
+  padding: 20vh 50px 20vh 75px;
+}
+.section svg {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+}
+.section svg.bottom {
+  bottom: 0;
+  top: auto;
+  fill: grey;
+}
+.section .section__inner {
+  height: 100%;
+  max-width: 800px;
+  margin: auto auto auto 0;
+  padding: .5em;
+  background-color:rgba(255, 255, 255, .2);
+  backdrop-filter: blur(7px);
+  color:#666666;
+}
+.section.section--hello {
+  /* background-color: #FDEF52; */
+  background:url(Fotos/Desayunando\ Portugal.jpg) no-repeat right;
+  background-size:50%;
+  
+  
+  color: #181818;
+}
+.section.section--intro {
+  /* background-color: white; */
+  background: url(Fotos/desayuno2.jpg) no-repeat right;
+  color: #555;
+}
+.section.section--about {
+  /* background-color: #de5f5f; */
+  background: url(Fotos/FotografiandoVolteada.JPG) no-repeat right;
+  /* transform: flip(180deg); */
+  /* transform: scaleX(-1); */
+  background-size:cover;
+  /* clip-path: circle(50%); */
+
+  color: white;
+}
+.section.section--about svg {
+  fill: #de5f5f;
+}
+.section.section--clients {
+  background-color: #343436;
+  background: url(Fotos/IMG_20210214_164307.jpg) no-repeat right;
+  background-size: 100%;
+  color: white;
+}
+.section.section--clients svg {
+  fill: #343436;
+}
+.section.section--portfolio {
+  background-color: orange;
+  /* background: url(/Fotos/L1020986.JPG)no-repeat; */
+  background-size: 100%;
+  color: white;
+}
+.section.section--portfolio svg {
+  top: -20px;
+  fill: orange;
+}
+.section.section--portfolio svg.bottom {
+  top: auto;
+  bottom: -50px;
+}
+.section.section--portfolio1 {
+  /* background-color: #3A99D8; */
+  /* background: url(/Fotos/Mirador-Ezaro.jpg) no-repeat right; */
+  background-size: 100%;
+  color: white;
+}
+.section.section--portfolio1 svg {
+  top: -50px;
+  fill: #3A99D8;
+}
+.section.section--pepperhill svg {
+  top: -50px;
+  fill: #3A99D8;
+}
+.section.section--contact svg {
+  fill: white;
+}
+
+/**
+ * Typo
+ */
+h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: bold;
+  margin: 0 0 1em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (min-width: 30rem) {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+    letter-spacing: -2px;
+  }
+}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
+  color: inherit;
+}
+h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
+  border-bottom: 0.1875rem solid;
+}
+h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
+  color: #de5f5f;
+}
+
+h1, .h1 {
+  font-size: 1.2rem;
+}
+@media (min-width: 30rem) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: 1.2rem;
+}
+@media (min-width: 30rem) {
+  h2, .h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.pre {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 1.4px;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: inherit;
+}
+.pre span {
+  font-size: 0.9em;
+  margin-right: 0.4em;
+  opacity: 0.5;
+}
+.pre:hover {
+  opacity: 1;
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+@media (min-width: 30rem) {
+  p {
+    font-size: 0.875rem;
+  }
+}
+p a {
+  font-weight: bold;
+  color: inherit;
+}
+p a:hover {
+  border-bottom: 0.1875rem solid;
+}
+
+.lead {
+  display: block;
+  font-size: 0.875rem;
+  margin: 0;
+}
+@media (min-width: 30rem) {
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+.portfolio {
+  font-size: 0.75rem;
+}
+.portfolio.block {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 30rem) {
+  .portfolio.block {
+    width: 30%;
+  }
+}
+.portfolio .link {
+  display: block;
+  margin: 2em 0 0 0;
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.portfolio p {
+  font-size: inherit;
+  color: #343436;
+  opacity: 0.7;
+}
+
+html, body {
+  /* width: 100%;
+  height: 100%; */
+  margin: auto;
+  width: 70%;
+}
+
+.container {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+}
+
+.item-1 {
+  background-image: url("Fotos/IMG_20210214_164307.jpg");
+}
+
+.item-2 {
+  background-image: url("Fotos/Mirador-Ezaro.jpg");
+}
+
+.item-3 {
+  background-image: url("Fotos/L1020986.JPG");
+}
+
+.item-4 {
+  background-image: url("Fotos/desayuno2.jpg");
+}
+
+.item-5 {
+  background-image: url("Fotos/Desayunando\ Portugal.jpg");
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+.social img {
+  display: block;
+  width: 32px;
+}
+/* ------------------------------------------------ */
+
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:500); */
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+.container2 {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
