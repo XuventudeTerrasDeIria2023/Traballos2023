@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="./style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+        
+
+        <div class="container">
+            <h1 class="brand"><br><span>Friro</span> Renovables</h1><br>
+            <div class="wrapper animated bounceInLeft">
+                <div class="company-info">
+<!--                    <h3>JL Web Design</h3>-->
+<!--
+                        <ul>
+                            <li><i class="fa fa-road"></i> Donggaun, China</li>
+                            <li><i class="fa fa-phone"></i> (555) 555 555</li>
+                            <li><i class="fa fa-envelope"></i> test@web.design</li>
+                        </ul>
+-->
+                </div>
+                <div class="contact">
+                    <h3>Contacta con nosotros</h3>
+                    <form method="post" action="mailto:mail@mail.com" id="form1">
+                        <p>
+                            <label for="name">*Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">*Correo electronico</label>
+                            <input type="email" id="email" name="email" required placeholder="mail@mail.com">
+                        </p>
+                        <p>
+                            <label for="phone">*Número de telefono</label>
+<!--                            <input type="tel" id="phone" name="phone" min="9" max="9" required>-->
+                            <input type="tel" id="phone" placeholder="606606606" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required >
+
+                        </p>
+                        <p class="full">
+                            <label>*Mensaje</label>
+                            <textarea name="message" rows="5" minlength="10" required placeholder="Escriba aquí su mensaje."></textarea>
+                        </p>
+
+                        <p class="full">
+                            <button type="submit" value="submit" form="form1">Enviar</button>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+            
+        </div>
+<a href="../index.html" id="HOLA"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+
+
+   <script src="botonjava.js"></script>
+    </body>
+</html>
+
